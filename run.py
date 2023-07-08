@@ -3,7 +3,7 @@
 Code Breaker in the style of Mastermind.
 A code of four colours will be randomly generated from six colour choices.
 Player objective: Guess the correct code within the allowed number of attempts.
-Choices: Red (R), Green (G), Blue (B), Yellow (Y), Purple (P), White (W) 
+Choices: Red (R), Green (G), Blue (B), Yellow (Y), Pink (P), White (W) 
 """
 
 # imports
@@ -51,8 +51,11 @@ def player_guess_input(attempt):
         for character in guess_list:
             if character not in COLOUR_CHOICES:
                 print(f"Error: {character} is not a valid character.")
-                print(f"Characters must be from the following list only:")
-                print(f"{COLOUR_CHOICES}")
+                print("Choose only from the following characters: R  G  B  Y  P  W")
+                print("Please do not use commas or spaces.\n")
+                break
+
+    return guess_list
 
 
 # function to compare user input with code
