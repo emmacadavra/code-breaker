@@ -15,12 +15,18 @@ CODE_LENGTH = 4
 MAX_ATTEMPTS = 10
 
 
-# menu
-
+# menu/title screen
+# press 1 to play
+# press 2 for instructions
+# press 3 to exit
 
 
 # function to generate code
-
+def generate_code():
+    """
+    Generates a 4-colour combination from the 6 choices in COLOUR_CHOICES.
+    Duplicates are enabled.
+    """
 
 
 # function for user input
