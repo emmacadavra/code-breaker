@@ -37,11 +37,12 @@ print(generate_code())
 
 
 # function for user input
-def player_guess_input():
+def player_guess_input(attempt):
     """
     Asks the player to enter their guess, and validates the input.
     """
-
+    while True:
+        guess = input("Enter your prediction: \n").upper().strip()
 
 # function to compare user input with code
 
