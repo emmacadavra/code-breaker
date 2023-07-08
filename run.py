@@ -37,7 +37,7 @@ print(generate_code())
 
 
 # function for user input
-def player_guess_input():
+def player_guess_input(attempt):
     """
     Asks the player to enter their guess, and validates the input.
     """
@@ -45,10 +45,16 @@ def player_guess_input():
         guess = input("Enter your prediction: \n").upper().strip()
         guess_list = [g for g in guess]
         if len(guess_list) != CODE_LENGTH:
-            print(f"Invalid - please enter {CODE_LENGTH} characters.")
+            print(f"Invalid - please enter {CODE_LENGTH} characters.\n")
             continue
 
-player_guess_input()
+        for character in guess_list:
+            if character not in COLOUR_CHOICES:
+                print(f"Error: {character} is not a valid character.")
+                print(f"Characters must be from the following list only:")
+                print(f"{COLOUR_CHOICES}")
+
+
 # function to compare user input with code
 
 
