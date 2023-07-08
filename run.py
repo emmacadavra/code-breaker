@@ -11,6 +11,8 @@ import random
 
 # constants
 COLOUR_CHOICES = ["R", "G", "B", "Y", "P", "W"]
+CODE_LENGTH = 4
+MAX_ATTEMPTS = 10
 
 
 # menu
