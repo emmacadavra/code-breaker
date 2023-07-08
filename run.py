@@ -43,6 +43,10 @@ def player_guess_input(attempt):
     """
     while True:
         guess = input("Enter your prediction: \n").upper().strip()
+        guess_list = [g for g in guess]
+        if len(guess_list) != CODE_LENGTH:
+            print(f"Invalid - please enter {CODE_LENGTH} characters.")
+            continue
 
 # function to compare user input with code
 
