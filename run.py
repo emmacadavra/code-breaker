@@ -2,7 +2,7 @@
 """
 Code Breaker in the style of Mastermind.
 A code of four colours will be randomly generated from six colour choices.
-Objective: Guess the correct code within the allowed number of attempts.
+Player objective: Guess the correct code within the allowed number of attempts.
 Choices: Red (R), Green (G), Blue (B), Yellow (Y), Purple (P), White (W) 
 """
 
@@ -37,7 +37,10 @@ print(generate_code())
 
 
 # function for user input
-
+def player_guess_input():
+    """
+    Asks the player to enter their guess, and validates the input.
+    """
 
 
 # function to compare user input with code
