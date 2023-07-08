@@ -30,6 +30,8 @@ def generate_code():
     colour_code = []
     while len(colour_code) < CODE_LENGTH:
         random_colour = random.choice(COLOUR_CHOICES)
+        colour_code.append(random_colour)
+    return colour_code
 
 
 # function for user input
