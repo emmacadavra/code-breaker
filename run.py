@@ -32,8 +32,9 @@ def generate_code():
         random_colour = random.choice(COLOUR_CHOICES)
         colour_code.append(random_colour)
     return colour_code
+    print(colour_code)
 
-
+generate_code()
 # function for user input
 
 
