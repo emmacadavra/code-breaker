@@ -37,7 +37,7 @@ print(generate_code())
 
 
 # function for user input
-def player_guess_input(attempt):
+def player_guess_input():
     """
     Asks the player to enter their guess, and validates the input.
     """
@@ -48,6 +48,7 @@ def player_guess_input(attempt):
             print(f"Invalid - please enter {CODE_LENGTH} characters.")
             continue
 
+player_guess_input()
 # function to compare user input with code
 
 
