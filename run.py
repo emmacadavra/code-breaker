@@ -27,6 +27,9 @@ def generate_code():
     Generates a 4-colour combination from the 6 choices in COLOUR_CHOICES.
     Duplicates are enabled.
     """
+    colour_code = []
+    while len(colour_code) < CODE_LENGTH:
+        random_colour = random.choice(COLOUR_CHOICES)
 
 
 # function for user input
