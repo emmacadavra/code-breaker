@@ -103,4 +103,7 @@ def main():
         else:
             attempt_number += 1
             print(f"Correct colour and position: {position}")
-            print(f"COrrect colour, but incorrect position: {colour}")
+            print(f"Correct colour, but incorrect position: {colour}")
+
+
+main()
