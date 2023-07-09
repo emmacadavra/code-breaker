@@ -19,6 +19,14 @@ MAX_ATTEMPTS = 9
 # press 1 to play
 # press 2 for instructions
 # press 3 to exit
+# press T for Triforce...?
+def menu():
+    """
+    Title screen/menu with options:
+    Press 1 to play
+    Press 2 for instructions
+    press 3 to exit
+    """
 
 
 # function to generate code
