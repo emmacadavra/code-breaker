@@ -169,7 +169,7 @@ def menu():
                 run_game()
                 break
             elif menu_select == 2:
-                print("These are some instructions!")
+                instructions()
                 break
             elif menu_select == 3:
                 print("This will be a picture of the Triforce for fun")
