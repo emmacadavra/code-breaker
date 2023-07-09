@@ -39,6 +39,12 @@ def menu():
         main()
     elif menu_select == 2:
         print("These are some instructions!")
+    elif menu_select == 3:
+        print("This will be a picture of the Triforce for fun")
+    elif menu_select == 4:
+        print("This will exit the program (I think?)")
+    
+
 
 
 
