@@ -66,7 +66,7 @@ def player_guess_input(attempt):
             if character not in COLOUR_CHOICES:
                 print(f"Error: '{character}' is not a valid character.")
                 print(f"Choose only from the following characters, with no commas or spaces:")
-                print(f"{Colours.red}R  {Colours.green}G  {Colours.yellow}Y  {Colours.blue}B  {Colours.pink}P  {Colours.white}W\n")
+                print(f"{Colours.red}R  {Colours.green}G  {Colours.yellow}Y  {Colours.blue}B  {Colours.pink}P  {Colours.white}W{Colours.default}\n")
                 break
             invalid_input = False
 
