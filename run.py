@@ -94,4 +94,5 @@ def main():
     attempt_number = 0
     while attempt_number < MAX_ATTEMPTS:
         player_guess = player_guess_input(attempt_number)
-        
+        modified_answer = list(original_answer)
+        position, colour = check_result(player_guess, modified_answer)
