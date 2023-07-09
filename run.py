@@ -32,6 +32,16 @@ class Colours:
     white_block = "\033[1;37;47m"
 
 
+def main_logo():
+    print(f"""{Colours.yellow}
+    
+                      _             ___          _      
+      /\/\   __ _ ___| |_ ___ _ __ / __\___   __| | ___ 
+     /    \ / _` / __| __/ _ \ '__/ /  / _ \ / _` |/ _ \
+    / /\/\ \ (_| \__ \ ||  __/ | / /__| (_) | (_| |  __/
+    \/    \/\__,_|___/\__\___|_| \____/\___/ \__,_|\___|
+                                                    
+{Colours.default}\n""")
 # menu/title screen
 def main_menu():
     """
@@ -40,8 +50,8 @@ def main_menu():
     Press 2 for instructions
     press 3 to exit
     """
-
-    print("Welcome to MasterCode!")
+    print(main_logo())
+    print("Welcome to MasterCode!\n")
 
     print("""
             Press '1' to Play Game
@@ -61,7 +71,7 @@ def main_menu():
                 instructions()
                 break
             elif menu_select == 3:
-                print("This will be a picture of the Triforce for fun")
+                triforce()
                 break
             elif menu_select == 4:
                 print("This will exit the program (I think?)")
@@ -77,6 +87,7 @@ def main_menu():
                 Press '3' for Triforce
                 Press '4' to Exit
                 """)
+
 
 
 # instructions on how to play
@@ -187,6 +198,18 @@ def check_result(guess, answer):
 
 
 # display user input with result of comparison
+
+
+# Triforce lol
+def triforce():
+    tri = f"{Colours.yellow}▲"
+    big_tri = []
+    for i in range(1,21,2):
+        big_tri.append(" "*int((19-i)/2) + tri*i + " "*int((19-i)/2))
+    for t1 in big_tri:
+        print(" "*10 + t1 + " "*10)
+    for t2 in big_tri:
+        print(t2 + " " + t2)
 
 # main function 
 main_menu()
