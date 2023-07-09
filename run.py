@@ -59,7 +59,8 @@ def player_guess_input(attempt):
 
 
 # function to compare user input with code
-
+def check_result(guess, answer):
+    
 
 
 # display user input with result of comparison
