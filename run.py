@@ -33,11 +33,9 @@ def generate_code():
         colour_code.append(random_colour)
     return colour_code
 
-print(generate_code())
-
 
 # function for user input
-def player_guess_input(attempt):
+def player_guess_input():
     """
     Asks the player to enter their guess, and validates the input.
     """
@@ -77,8 +75,8 @@ def check_result(guess, answer):
 
     for i in range(len(guess)):
         if guess[i] in answer:
-            answer.remove(guess[i])
             correct_colour += 1
+            answer.remove(guess[i])
     return correct_position, correct_colour 
 
 
@@ -92,9 +90,11 @@ def main():
     Run main program functions
     """
     original_answer = generate_code()
+    print(original_answer)
+
     attempt_number = 0
     while attempt_number < MAX_ATTEMPTS:
-        player_guess = player_guess_input(attempt_number)
+        player_guess = player_guess_input()
         modified_answer = list(original_answer)
         position, colour = check_result(player_guess, modified_answer)
         if position == CODE_LENGTH:
