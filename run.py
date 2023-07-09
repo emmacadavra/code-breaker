@@ -35,18 +35,30 @@ def menu():
             \n
             """)
 
-    menu_select = int(input("Press key: \n"))
-    
-    if menu_select == 1:
-        main()
-    elif menu_select == 2:
-        print("These are some instructions!")
-    elif menu_select == 3:
-        print("This will be a picture of the Triforce for fun")
-    elif menu_select == 4:
-        print("This will exit the program (I think?)")
-    else:
-        raise ValueError
+    while True:
+        try:
+            menu_select = int(input("Press key: \n"))
+            
+            if menu_select == 1:
+                main()
+            elif menu_select == 2:
+                print("These are some instructions!")
+            elif menu_select == 3:
+                print("This will be a picture of the Triforce for fun")
+            elif menu_select == 4:
+                print("This will exit the program (I think?)")
+            else:
+                raise ValueError
+        
+        except ValueError:
+            print("""
+                Invalid key press: Please choose from the following:\n
+                Press '1' to Play Game
+                Press '2' for Instructions
+                Press '3' for Triforce
+                Press '4' to Exit
+                \n
+                """)
 
 
 
