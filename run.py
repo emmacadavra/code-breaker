@@ -74,6 +74,10 @@ def check_result(guess, answer):
         guess.remove(0)
         index_count = guess.count(0)
 
+    for i in range(len(guess)):
+        if guess[i] in answer:
+            answer.remove(guess[i])
+            correct_colour += 1
 
 
 # display user input with result of comparison
