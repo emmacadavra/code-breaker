@@ -26,6 +26,13 @@ class Colours:
     pink = "\033[1;35;40m"
     cyan = "\033[1;36;40m"
     white = "\033[1;37;40m"
+    red_block = "\033[1;31;41m"
+    green_block = "\033[1;32;42m"
+    yellow_block = "\033[1;33;43m"
+    blue_block = "\033[1;34;44m"
+    pink_block = "\033[1;35;45m"
+    cyan_block = "\033[1;36;46m"
+    white_block = "\033[1;37;47m"
 
 
 # function to generate code
@@ -57,7 +64,7 @@ def player_guess_input(attempt):
         for character in guess_list:
             if character not in COLOUR_CHOICES:
                 print(f"Error: {character} is not a valid character.")
-                print("Choose only from the following characters: R  G  B  Y  P  W")
+                print(f"Choose only from the following characters: {Colours.red}R  {Colours.green}G  {Colours.yellow}Y  {Colours.blue}B  {Colours.pink}P  {Colours.white}W")
                 print("Please do not use commas or spaces.\n")
                 break
             invalid_input = False
