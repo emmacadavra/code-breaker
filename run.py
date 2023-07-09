@@ -1,9 +1,9 @@
 # Write your code to expect a terminal of 80 characters wide and 24 rows high
 """
-Code Breaker in the style of Mastermind.
+MasterCode - a code breaker game in the style of Mastermind.
 A code of four colours will be randomly generated from six colour choices.
 Player objective: Guess the correct code within the allowed number of attempts.
-Choices: Red (R), Green (G), Blue (B), Yellow (Y), Pink (P), White (W) 
+Choices: Red (R), Green (G), Yellow (Y), Blue (B), Pink (P), White (W) 
 """
 
 # imports
@@ -115,8 +115,8 @@ def run_game():
         modified_answer = list(original_answer)
         position, colour = check_result(player_guess, modified_answer)
         if position == CODE_LENGTH:
-            print("You cracked the code!")
-            print(f"You did it in {attempt_number + 1} attempt(s).\n")
+            print("You cracked the code like a true Hero!")
+            print(f"You defeated this challenge in {Colours.white}{attempt_number + 1}{Colours.default} attempt(s).\n")
             break
         elif attempt_number == MAX_ATTEMPTS and position != CODE_LENGTH:
             print("Oh no! You weren't able to crack the code this time.")
@@ -126,7 +126,7 @@ def run_game():
             attempt_number += 1
             print(f"Correct colour and position: {position}")
             print(f"Correct colour, but incorrect position: {colour}")
-            print(f"You have {MAX_ATTEMPTS - attempt_number + 1} attempt(s) remaining.\n")
+            print(f"You have {Colours.white}{MAX_ATTEMPTS - attempt_number + 1}{Colours.default} attempt(s) remaining.\n")
 
 
 # menu/title screen
@@ -137,6 +137,9 @@ def menu():
     Press 2 for instructions
     press 3 to exit
     """
+
+    print("Welcome to MasterCode!")
+
     print("""
             Press '1' to Play Game
             Press '2' for Instructions
