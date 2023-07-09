@@ -100,3 +100,7 @@ def main():
             print("You cracked the code!")
             print(f"You did it {attempt_number} attempts.")
             break
+        else:
+            attempt_number += 1
+            print(f"Correct colour and position: {position}")
+            print(f"COrrect colour, but incorrect position: {colour}")
