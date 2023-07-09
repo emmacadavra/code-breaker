@@ -70,6 +70,9 @@ def check_result(guess, answer):
             correct_position += 1
         index_count = guess.count(0)
 
+    while index_count > 0:
+        guess.remove(0)
+
 
 
 # display user input with result of comparison
