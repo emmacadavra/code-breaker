@@ -46,7 +46,7 @@ def instructions():
     print("The terminal will ONLY accept answers that are 4 characters long, with no commas or spaces.")
     print("Make sure you only use the following characters for their respective colours:\n")
     print(f"{Colours.red}R  {Colours.green}G  {Colours.yellow}Y  {Colours.blue}B  {Colours.pink}P  {Colours.white}W{Colours.default}\n")
-    print("Go forth, hero, and become the MasterCode breaker!")
+    print(f"{Colours.white}Go forth, hero, and become the MasterCode breaker!{Colours.default}\n")
 
 
 
