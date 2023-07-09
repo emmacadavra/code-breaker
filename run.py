@@ -86,4 +86,6 @@ def check_result(guess, answer):
 
 
 # main game code
+original_answer = generate_code()
+
 
