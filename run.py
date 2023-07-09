@@ -27,14 +27,18 @@ def menu():
     Press 2 for instructions
     press 3 to exit
     """
-    menu_select = input("""
+    menu_select = int(input("""
                         Press '1' to Play Game
                         Press '2' for Instructions
                         Press '3' for Triforce
                         Press '4' to Exit
                         \n
-                        """)
+                        """))
     
+    if menu_select == 1:
+        main()
+    elif menu_select == 2:
+        print("These are some instructions!")
 
 
 
