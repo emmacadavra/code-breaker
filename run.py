@@ -1,9 +1,5 @@
-# Write your code to expect a terminal of 80 characters wide and 24 rows high
 """
 MasterCode - a code breaker game in the style of Mastermind.
-A code of four colours will be randomly generated from six colour choices.
-Player objective: Guess the correct code within the allowed number of attempts.
-Choices: Red (R), Green (G), Yellow (Y), Blue (B), Pink (P), White (W) 
 """
 
 # imports
@@ -34,6 +30,24 @@ class Colours:
     pink_block = "\033[1;35;45m"
     cyan_block = "\033[1;36;46m"
     white_block = "\033[1;37;47m"
+
+# instructions on how to play
+def instructions():
+    """
+    Instructions for the user on how to play the game
+    """
+    print("Instructions on how to play MasterCode:\n")
+    print("A secret code of four colours will be randomly generated, choosing from the following colours:\n")
+    print("{Colours.red}R  {Colours.green}G  {Colours.yellow}Y  {Colours.blue}B  {Colours.pink}P  {Colours.white}W{Colours.default}")
+    print("{Colours.red_block} {Colours.default}  {Colours.green_block} {Colours.default}  {Colours.yellow_block} {Colours.default}  {Colours.blue_block} {Colours.default}  {Colours.pink_block} {Colours.default}  {Colours.white_block} {Colours.default}\n")
+    print("Your heroic challenge is to find the solution in 10 attempts or fewer.")
+    print("In doing so, you will become a MasterCode breaker!\n")
+    print("A colour may appear more than once in the secret code, so don't forget to consider this!")
+    print("The terminal will ONLY accept answers that are 4 characters long, with no commas or spaces.")
+    print("Make sure you only use the following characters for their respective colours:\n")
+    print("{Colours.red}R  {Colours.green}G  {Colours.yellow}Y  {Colours.blue}B  {Colours.pink}P  {Colours.white}W{Colours.default}\n")
+    print("Go forth, hero, and become the MasterCode breaker!")
+
 
 
 # function to generate code
