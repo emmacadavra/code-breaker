@@ -96,3 +96,7 @@ def main():
         player_guess = player_guess_input(attempt_number)
         modified_answer = list(original_answer)
         position, colour = check_result(player_guess, modified_answer)
+        if position == CODE_LENGTH:
+            print("You cracked the code!")
+            print(f"You did it {attempt_number} attempts.")
+            break
