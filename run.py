@@ -78,6 +78,7 @@ def check_result(guess, answer):
         if guess[i] in answer:
             answer.remove(guess[i])
             correct_colour += 1
+    return correct_position, correct_colour 
 
 
 # display user input with result of comparison
