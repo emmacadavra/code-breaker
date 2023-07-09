@@ -89,3 +89,10 @@ def check_result(guess, answer):
 original_answer = generate_code()
 
 attempt_number = 0
+
+
+def main():
+    """
+    Run main program functions
+    """
+    
