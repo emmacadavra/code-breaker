@@ -27,13 +27,15 @@ def menu():
     Press 2 for instructions
     press 3 to exit
     """
-    menu_select = int(input("""
-                        Press '1' to Play Game
-                        Press '2' for Instructions
-                        Press '3' for Triforce
-                        Press '4' to Exit
-                        \n
-                        """))
+    print("""
+            Press '1' to Play Game
+            Press '2' for Instructions
+            Press '3' for Triforce
+            Press '4' to Exit
+            \n
+            """)
+
+    menu_select = int(input("Press key: \n"))
     
     if menu_select == 1:
         main()
@@ -43,7 +45,8 @@ def menu():
         print("This will be a picture of the Triforce for fun")
     elif menu_select == 4:
         print("This will exit the program (I think?)")
-    
+    else:
+        raise ValueError
 
 
 
