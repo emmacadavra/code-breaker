@@ -92,3 +92,6 @@ def main():
     """
     original_answer = generate_code()
     attempt_number = 0
+    while attempt_number < MAX_ATTEMPTS:
+        player_guess = player_guess_input(attempt_number)
+        
