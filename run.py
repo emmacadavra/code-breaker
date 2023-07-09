@@ -12,7 +12,7 @@ import random
 # constants
 COLOUR_CHOICES = ["R", "G", "B", "Y", "P", "W"]
 CODE_LENGTH = 4
-MAX_ATTEMPTS = 10
+MAX_ATTEMPTS = 9
 
 
 # menu/title screen
@@ -100,7 +100,7 @@ def main():
         position, colour = check_result(player_guess, modified_answer)
         if position == CODE_LENGTH:
             print("You cracked the code!")
-            print(f"You did it in {attempt_number} attempt(s).\n")
+            print(f"You did it in {attempt_number + 1} attempt(s).\n")
             break
         elif attempt_number == MAX_ATTEMPTS and position != CODE_LENGTH:
             print("Oh no! You weren't able to crack the code this time.")
@@ -110,7 +110,7 @@ def main():
             attempt_number += 1
             print(f"Correct colour and position: {position}")
             print(f"Correct colour, but incorrect position: {colour}")
-            print(f"You have {MAX_ATTEMPTS - attempt_number} attempt(s) remaining.\n")
+            print(f"You have {MAX_ATTEMPTS - attempt_number + 1} attempt(s) remaining.\n")
 
 
 main()
