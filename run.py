@@ -19,6 +19,7 @@ class Colours:
     """
     ANSI escape codes to be used with their respective colours
     """
+    default = "\033[0;37;40m"
     red = "\033[1;31;40m"
     green = "\033[1;32;40m"
     yellow = "\033[1;33;40m"
@@ -58,14 +59,14 @@ def player_guess_input(attempt):
         guess = input("Enter your prediction: \n").upper().strip()
         guess_list = [g for g in guess]
         if len(guess_list) != CODE_LENGTH:
-            print(f"Invalid - please enter {CODE_LENGTH} characters.\n")
+            print(f"Invalid - please enter {CODE_LENGTH} characters, with no commas or spaces.\n")
             continue
 
         for character in guess_list:
             if character not in COLOUR_CHOICES:
-                print(f"Error: {character} is not a valid character.")
-                print(f"Choose only from the following characters: {Colours.red}R  {Colours.green}G  {Colours.yellow}Y  {Colours.blue}B  {Colours.pink}P  {Colours.white}W")
-                print("Please do not use commas or spaces.\n")
+                print(f"Error: '{character}' is not a valid character.")
+                print(f"Choose only from the following characters, with no commas or spaces:")
+                print(f"{Colours.red}R  {Colours.green}G  {Colours.yellow}Y  {Colours.blue}B  {Colours.pink}P  {Colours.white}W\n")
                 break
             invalid_input = False
 
