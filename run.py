@@ -35,7 +35,7 @@ def generate_code():
 
 
 # function for user input
-def player_guess_input():
+def player_guess_input(attempt):
     """
     Asks the player to enter their guess, and validates the input.
     """
@@ -95,12 +95,12 @@ def main():
     attempt_number = 0
 
     while attempt_number <= MAX_ATTEMPTS:
-        player_guess = player_guess_input()
+        player_guess = player_guess_input(attempt_number)
         modified_answer = list(original_answer)
         position, colour = check_result(player_guess, modified_answer)
         if position == CODE_LENGTH:
             print("You cracked the code!")
-            print(f"You did it {attempt_number} attempts.")
+            print(f"You did it in {attempt_number} attempt(s).\n")
             break
         elif attempt_number == MAX_ATTEMPTS and position != CODE_LENGTH:
             print("Oh no! You weren't able to crack the code this time.")
@@ -110,6 +110,7 @@ def main():
             attempt_number += 1
             print(f"Correct colour and position: {position}")
             print(f"Correct colour, but incorrect position: {colour}")
+            print(f"You have {MAX_ATTEMPTS - attempt_number} attempt(s) remaining.\n")
 
 
 main()
