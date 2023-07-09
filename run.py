@@ -31,6 +31,54 @@ class Colours:
     cyan_block = "\033[1;36;46m"
     white_block = "\033[1;37;47m"
 
+
+# menu/title screen
+def main_menu():
+    """
+    Title screen/menu with options:
+    Press 1 to play
+    Press 2 for instructions
+    press 3 to exit
+    """
+
+    print("Welcome to MasterCode!")
+
+    print("""
+            Press '1' to Play Game
+            Press '2' for Instructions
+            Press '3' for Triforce
+            Press '4' to Exit
+            """)
+
+    while True:
+        try:
+            menu_select = int(input("Press key: \n"))
+            
+            if menu_select == 1:
+                run_game()
+                break
+            elif menu_select == 2:
+                instructions()
+                break
+            elif menu_select == 3:
+                print("This will be a picture of the Triforce for fun")
+                break
+            elif menu_select == 4:
+                print("This will exit the program (I think?)")
+                break
+            else:
+                raise ValueError
+        
+        except ValueError:
+            print("""
+                Invalid key press. Please choose from the following:\n
+                Press '1' to Play Game
+                Press '2' for Instructions
+                Press '3' for Triforce
+                Press '4' to Exit
+                """)
+
+
 # instructions on how to play
 def instructions():
     """
@@ -49,7 +97,6 @@ def instructions():
     print(f"{Colours.white}Go forth, hero, and become the MasterCode breaker!{Colours.default}\n")
 
 
-
 # function to generate code
 def generate_code():
     """
@@ -61,6 +108,35 @@ def generate_code():
         random_colour = random.choice(COLOUR_CHOICES)
         colour_code.append(random_colour)
     return colour_code
+
+
+# main game code
+def run_game():
+    """
+    Run main game functions
+    """
+    original_answer = generate_code()
+    print(original_answer)
+
+    attempt_number = 0
+
+    while attempt_number <= MAX_ATTEMPTS:
+        player_guess = player_guess_input(attempt_number)
+        modified_answer = list(original_answer)
+        position, colour = check_result(player_guess, modified_answer)
+        if position == CODE_LENGTH:
+            print("You cracked the code like a true Hero!")
+            print(f"You defeated this challenge in {Colours.white}{attempt_number + 1}{Colours.default} attempt(s).\n")
+            break
+        elif attempt_number == MAX_ATTEMPTS and position != CODE_LENGTH:
+            print("Oh no! You weren't able to crack the code this time.")
+            # print("Try again?")
+            break
+        else:
+            attempt_number += 1
+            print(f"Correct colour and position: {position}")
+            print(f"Correct colour, but incorrect position: {colour}")
+            print(f"You have {Colours.white}{MAX_ATTEMPTS - attempt_number + 1}{Colours.default} attempt(s) remaining.\n")
 
 
 # function for user input
@@ -112,82 +188,5 @@ def check_result(guess, answer):
 
 # display user input with result of comparison
 
-
-
-# main game code
-def run_game():
-    """
-    Run main game functions
-    """
-    original_answer = generate_code()
-    print(original_answer)
-
-    attempt_number = 0
-
-    while attempt_number <= MAX_ATTEMPTS:
-        player_guess = player_guess_input(attempt_number)
-        modified_answer = list(original_answer)
-        position, colour = check_result(player_guess, modified_answer)
-        if position == CODE_LENGTH:
-            print("You cracked the code like a true Hero!")
-            print(f"You defeated this challenge in {Colours.white}{attempt_number + 1}{Colours.default} attempt(s).\n")
-            break
-        elif attempt_number == MAX_ATTEMPTS and position != CODE_LENGTH:
-            print("Oh no! You weren't able to crack the code this time.")
-            # print("Try again?")
-            break
-        else:
-            attempt_number += 1
-            print(f"Correct colour and position: {position}")
-            print(f"Correct colour, but incorrect position: {colour}")
-            print(f"You have {Colours.white}{MAX_ATTEMPTS - attempt_number + 1}{Colours.default} attempt(s) remaining.\n")
-
-
-# menu/title screen
-def menu():
-    """
-    Title screen/menu with options:
-    Press 1 to play
-    Press 2 for instructions
-    press 3 to exit
-    """
-
-    print("Welcome to MasterCode!")
-
-    print("""
-            Press '1' to Play Game
-            Press '2' for Instructions
-            Press '3' for Triforce
-            Press '4' to Exit
-            """)
-
-    while True:
-        try:
-            menu_select = int(input("Press key: \n"))
-            
-            if menu_select == 1:
-                run_game()
-                break
-            elif menu_select == 2:
-                instructions()
-                break
-            elif menu_select == 3:
-                print("This will be a picture of the Triforce for fun")
-                break
-            elif menu_select == 4:
-                print("This will exit the program (I think?)")
-                break
-            else:
-                raise ValueError
-        
-        except ValueError:
-            print("""
-                Invalid key press. Please choose from the following:\n
-                Press '1' to Play Game
-                Press '2' for Instructions
-                Press '3' for Triforce
-                Press '4' to Exit
-                """)
-
-
-menu()
+# main function 
+main_menu()
