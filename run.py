@@ -93,6 +93,10 @@ def main():
     print(original_answer)
 
     attempt_number = 0
+    if attempt_number == MAX_ATTEMPTS and position != CODE_LENGTH:
+        print("Oh no! You weren't able to crack the code this time.")
+        # print("Try again?")
+        break
     while attempt_number < MAX_ATTEMPTS:
         player_guess = player_guess_input()
         modified_answer = list(original_answer)
