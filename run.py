@@ -97,18 +97,19 @@ def main():
         print("Oh no! You weren't able to crack the code this time.")
         # print("Try again?")
         break
-    while attempt_number < MAX_ATTEMPTS:
-        player_guess = player_guess_input()
-        modified_answer = list(original_answer)
-        position, colour = check_result(player_guess, modified_answer)
-        if position == CODE_LENGTH:
-            print("You cracked the code!")
-            print(f"You did it {attempt_number} attempts.")
-            break
-        else:
-            attempt_number += 1
-            print(f"Correct colour and position: {position}")
-            print(f"Correct colour, but incorrect position: {colour}")
+    else:
+        while attempt_number < MAX_ATTEMPTS:
+            player_guess = player_guess_input()
+            modified_answer = list(original_answer)
+            position, colour = check_result(player_guess, modified_answer)
+            if position == CODE_LENGTH:
+                print("You cracked the code!")
+                print(f"You did it {attempt_number} attempts.")
+                break
+            else:
+                attempt_number += 1
+                print(f"Correct colour and position: {position}")
+                print(f"Correct colour, but incorrect position: {colour}")
 
 
 main()
