@@ -15,54 +15,6 @@ CODE_LENGTH = 4
 MAX_ATTEMPTS = 9
 
 
-# menu/title screen
-# press 1 to play
-# press 2 for instructions
-# press 3 to exit
-# press T for Triforce...?
-def menu():
-    """
-    Title screen/menu with options:
-    Press 1 to play
-    Press 2 for instructions
-    press 3 to exit
-    """
-    print("""
-            Press '1' to Play Game
-            Press '2' for Instructions
-            Press '3' for Triforce
-            Press '4' to Exit
-            \n
-            """)
-
-    while True:
-        try:
-            menu_select = int(input("Press key: \n"))
-            
-            if menu_select == 1:
-                main()
-            elif menu_select == 2:
-                print("These are some instructions!")
-            elif menu_select == 3:
-                print("This will be a picture of the Triforce for fun")
-            elif menu_select == 4:
-                print("This will exit the program (I think?)")
-            else:
-                raise ValueError
-        
-        except ValueError:
-            print("""
-                Invalid key press: Please choose from the following:\n
-                Press '1' to Play Game
-                Press '2' for Instructions
-                Press '3' for Triforce
-                Press '4' to Exit
-                \n
-                """)
-
-
-
-
 # function to generate code
 def generate_code():
     """
@@ -155,4 +107,50 @@ def main():
             print(f"You have {MAX_ATTEMPTS - attempt_number + 1} attempt(s) remaining.\n")
 
 
-main()
+# menu/title screen
+# press 1 to play
+# press 2 for instructions
+# press 3 for Triforce
+# press 4 to exit
+def menu():
+    """
+    Title screen/menu with options:
+    Press 1 to play
+    Press 2 for instructions
+    press 3 to exit
+    """
+    print("""
+            Press '1' to Play Game
+            Press '2' for Instructions
+            Press '3' for Triforce
+            Press '4' to Exit
+            \n
+            """)
+
+    while True:
+        try:
+            menu_select = int(input("Press key: \n"))
+            
+            if menu_select == 1:
+                main()
+            elif menu_select == 2:
+                print("These are some instructions!")
+            elif menu_select == 3:
+                print("This will be a picture of the Triforce for fun")
+            elif menu_select == 4:
+                print("This will exit the program (I think?)")
+            else:
+                raise ValueError
+        
+        except ValueError:
+            print("""
+                Invalid key press: Please choose from the following:\n
+                Press '1' to Play Game
+                Press '2' for Instructions
+                Press '3' for Triforce
+                Press '4' to Exit
+                \n
+                """)
+
+
+menu()
