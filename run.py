@@ -10,9 +10,20 @@ Choices: Red (R), Green (G), Blue (B), Yellow (Y), Pink (P), White (W)
 import random
 
 # constants
-COLOUR_CHOICES = ["R", "G", "B", "Y", "P", "W"]
+COLOUR_CHOICES = ["R", "G", "Y", "B", "P", "W"]
 CODE_LENGTH = 4
 MAX_ATTEMPTS = 9
+
+# colour class
+class Colours:
+    """
+    ANSI escape codes to be used with their respective colours
+    """
+    red = "\033[1;31;40m"
+    green = "\033[1;32;40m"
+    yellow = "\033[1;33;40m"
+    blue = "\033[1;34;40m"
+    pink = "\033[1;35;40m"
 
 
 # function to generate code
@@ -82,7 +93,7 @@ def check_result(guess, answer):
 # main game code
 def run_game():
     """
-    Run main program functions
+    Run main game functions
     """
     original_answer = generate_code()
     print(original_answer)
