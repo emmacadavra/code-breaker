@@ -24,6 +24,8 @@ class Colours:
     yellow = "\033[1;33;40m"
     blue = "\033[1;34;40m"
     pink = "\033[1;35;40m"
+    cyan = "\033[1;36;40m"
+    white = "\033[1;37;40m"
 
 
 # function to generate code
