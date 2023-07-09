@@ -60,7 +60,11 @@ def player_guess_input(attempt):
 
 # function to compare user input with code
 def check_result(guess, answer):
-    
+    for i in CODE_LENGTH:
+        if guess[i] == answer[i]:
+            guess[i] = 0
+            answer[i] = 0
+
 
 
 # display user input with result of comparison
