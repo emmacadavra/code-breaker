@@ -72,6 +72,7 @@ def check_result(guess, answer):
 
     while index_count > 0:
         guess.remove(0)
+        index_count = guess.count(0)
 
 
 
