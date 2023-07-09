@@ -61,9 +61,14 @@ def player_guess_input(attempt):
 # function to compare user input with code
 def check_result(guess, answer):
     for i in CODE_LENGTH:
+        correct_position = 0
+        correct_colour = 0
+
         if guess[i] == answer[i]:
             guess[i] = 0
             answer[i] = 0
+            correct_position += 1
+        index_count = guess.count(0)
 
 
 
