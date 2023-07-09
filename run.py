@@ -108,10 +108,6 @@ def main():
 
 
 # menu/title screen
-# press 1 to play
-# press 2 for instructions
-# press 3 for Triforce
-# press 4 to exit
 def menu():
     """
     Title screen/menu with options:
@@ -124,7 +120,6 @@ def menu():
             Press '2' for Instructions
             Press '3' for Triforce
             Press '4' to Exit
-            \n
             """)
 
     while True:
@@ -133,23 +128,26 @@ def menu():
             
             if menu_select == 1:
                 main()
+                break
             elif menu_select == 2:
                 print("These are some instructions!")
+                break
             elif menu_select == 3:
                 print("This will be a picture of the Triforce for fun")
+                break
             elif menu_select == 4:
                 print("This will exit the program (I think?)")
+                break
             else:
                 raise ValueError
         
         except ValueError:
             print("""
-                Invalid key press: Please choose from the following:\n
+                Invalid key press. Please choose from the following:\n
                 Press '1' to Play Game
                 Press '2' for Instructions
                 Press '3' for Triforce
                 Press '4' to Exit
-                \n
                 """)
 
 
