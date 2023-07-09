@@ -71,6 +71,7 @@ def check_result(guess, answer):
         if guess[i] in answer:
             correct_colour += 1
             answer.remove(guess[i])
+
     return correct_position, correct_colour 
 
 
@@ -79,7 +80,7 @@ def check_result(guess, answer):
 
 
 # main game code
-def main():
+def run_game():
     """
     Run main program functions
     """
@@ -127,7 +128,7 @@ def menu():
             menu_select = int(input("Press key: \n"))
             
             if menu_select == 1:
-                main()
+                run_game()
                 break
             elif menu_select == 2:
                 print("These are some instructions!")
