@@ -76,26 +76,27 @@ def instructions():
     print(f"{Colors.white}Go forth, hero, and become the MasterCode breaker!{Colors.default}\n")
 
 
-# # play again function
-# def play_again():
-#     while True:
-#         try:
-#             play_again = (input("Enter choice: \n")).upper()
-#             break
-#             if play_again == "Y":
-#                 run_game()
-#                 break
-#             elif play_again == "N":
-#                 main_menu()
-#                 break
-#             else:
-#                 raise ValueError
+# play again function
+def play_again():
+    while True:
+        try:
+            play_again = (input("Enter choice: \n")).upper().strip()
+            if play_again == "Y":
+                clear_screen()
+                run_game()
+                break
+            elif play_again == "N":
+                clear_screen()
+                main_menu()
+                break
+            else:
+                raise ValueError
 
-#         except ValueError:
-#                         print("""
-#                         Invalid key press.
-#                         Please press 'Y' to play the game, or 'N' to return to the main menu.
-#                         """)
+        except ValueError:
+                        print("""
+                        Invalid key press.
+                        Please press 'Y' to play the game, or 'N' to return to the main menu.
+                        """)
 
 
 # function to generate code
@@ -130,53 +131,17 @@ def run_game():
         print(f"{display_player_guess(player_guess)}\n")
         position, color = check_result(player_guess, modified_answer)
         if position == CODE_LENGTH:
+            print
             print("You cracked the code like a true Hero!")
             print(f"You defeated this challenge in {Colors.white}{attempt_number + 1}{Colors.default} attempt(s).\n")
             print("Would you like to try to become the MasterCode Breaker once more? (Y/N)")
-            # while True:
-            #     try:
-            #         play_again = (input("Enter choice: \n")).upper()
-            #         break
-            #         if play_again == "Y":
-            #             clear_screen()
-            #             run_game()
-            #             break
-            #         elif play_again == "N":
-            #             clear_screen()
-            #             main_menu()
-            #             break
-            #         else:
-            #             raise ValueError
+            play_again()
 
-            #     except ValueError:
-            #                     print("""
-            #                     Invalid key press.
-            #                     Please press 'Y' to play the game, or 'N' to return to the main menu.
-            #                     """)
         elif attempt_number == MAX_ATTEMPTS and position != CODE_LENGTH:
             print(game_over())
             print("You couldn't defeat the challenge this time, but do not despair!")
             print("Would you like to try again to become the MasterCode Breaker? (Y/N)")
-            # while True:
-            #     try:
-            #         play_again = (input("Enter choice: \n")).upper()
-            #         break
-            #         if play_again == "Y":
-            #             clear_screen()
-            #             run_game()
-            #             break
-            #         elif play_again == "N":
-            #             clear_screen()
-            #             main_menu()
-            #             break
-            #         else:
-            #             raise ValueError
-
-            #     except ValueError:
-            #                     print("""
-            #                     Invalid key press.
-            #                     Please press 'Y' to play the game, or 'N' to return to the main menu.
-            #                     """)
+            play_again()
 
         else:
             attempt_number += 1
