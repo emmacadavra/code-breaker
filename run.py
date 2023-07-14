@@ -5,7 +5,7 @@ MasterCode - a code breaker game in the style of Mastermind.
 # imports
 import random
 import os
-from classes.graphics import main_logo, header_image, divider_image, you_win, game_over, triforce
+import classes.graphics as graphics
 from classes.colors import Colors
 
 # constants
@@ -20,7 +20,7 @@ def main_menu():
     """
     clear_screen()
 
-    main_logo()
+    graphics.main_logo()
     print("""
         ~*~ Press '1' to Play   ~*~   Press '2' for Instructions ~*~
         ~*~ Press '3' for the Triforce   ~*~   Press '4' to Exit ~*~
@@ -37,7 +37,7 @@ def main_menu():
                 break
             elif menu_select == 3:
                 clear_screen()
-                triforce()
+                graphics.triforce()
                 break
             elif menu_select == 4:
                 print("Exiting program...")
@@ -61,7 +61,7 @@ def instructions():
     Instructions for the user on how to play the game
     """
     clear_screen()
-    header_image()
+    graphics.header_image()
 
     print("Instructions on how to play MasterCode:\n")
     print("A secret code of four colors will be randomly generated from the following colors:\n")
@@ -118,8 +118,8 @@ def run_game():
     Run main game functions
     """
     clear_screen()
-    header_image()
-    divider_image()
+    graphics.header_image()
+    graphics.divider_image()
     print("""
         Welcome, Hero, to the ultimate challenge!
 
@@ -130,7 +130,7 @@ def run_game():
         
         Have you the courage to face up to the mighty task...?
         """)
-    divider_image()
+    graphics.divider_image()
     
 
     original_answer = generate_code()
@@ -144,7 +144,7 @@ def run_game():
         print(f"{display_player_guess(player_guess)}\n")
         position, color = check_result(player_guess, modified_answer)
         if position == CODE_LENGTH:
-            you_win()
+            graphics.you_win()
             print("You cracked the code like a true Hero, and became the MasterCode Breaker!")
             print(f"You defeated this challenge in {Colors.white}{attempt_number + 1}{Colors.default} attempt(s).\n")
             print("Would you like to try to become the MasterCode Breaker once more? (Y/N)")
@@ -152,7 +152,7 @@ def run_game():
             break
 
         elif attempt_number == MAX_ATTEMPTS and position != CODE_LENGTH:
-            game_over()
+            graphics.game_over()
             print("You couldn't defeat the challenge this time, but do not despair!")
             print("Would you like to try again to become the MasterCode Breaker? (Y/N)")
             play_again()
