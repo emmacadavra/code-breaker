@@ -19,8 +19,8 @@ def main_menu():
     """
     print(main_logo())
     print("""
-        - Press '1' to Play  -  Press '2' for Instructions -
-        - Press '3' for the Triforce  -  Press '4' to Exit -
+        ~*~ Press '1' to Play   ~*~   Press '2' for Instructions ~*~
+        ~*~ Press '3' for the Triforce   ~*~   Press '4' to Exit ~*~
         """)
 
     while True:
