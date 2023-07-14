@@ -166,7 +166,7 @@ def run_game():
 
 
 # function for user input
-def player_guess_input(attempt):
+def player_guess_input():
     """
     Asks the player to enter their guess, and validates the input.
     """
