@@ -70,9 +70,9 @@ def instructions():
     print("In doing so, you will become a MasterCode breaker!\n")
     print("Remember: a color may appear more than once in the secret code!")
     print("Only type guesses that are 4 characters long with no commas or spaces.")
-    print("Make sure you only use the following characters for their respective colors:")
-    print(f"{Colors.red}R  {Colors.green}G  {Colors.blue}B  {Colors.yellow}Y  {Colors.pink}P  {Colors.white}W{Colors.default}\n")
-    print(f"{Colors.white}Go forth, Hero, and become the MasterCode breaker!{Colors.default}\n")
+    print("Make sure you only use the following characters for their respective colors:\n")
+    print(f"    {Colors.red}R  {Colors.green}G  {Colors.blue}B  {Colors.yellow}Y  {Colors.pink}P  {Colors.white}W{Colors.default}\n")
+    print(f"{Colors.white}Go forth, Hero, and become the MasterCode breaker!{Colors.default}")
     print("Are you ready? ('Y' to play, 'N' to return to the menu)")
     play_again()
 
