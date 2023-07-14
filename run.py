@@ -149,12 +149,14 @@ def run_game():
             print(f"You defeated this challenge in {Colors.white}{attempt_number + 1}{Colors.default} attempt(s).\n")
             print("Would you like to try to become the MasterCode Breaker once more? (Y/N)")
             play_again()
+            break
 
         elif attempt_number == MAX_ATTEMPTS and position != CODE_LENGTH:
             game_over()
             print("You couldn't defeat the challenge this time, but do not despair!")
             print("Would you like to try again to become the MasterCode Breaker? (Y/N)")
             play_again()
+            break
 
         else:
             attempt_number += 1
