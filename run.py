@@ -39,8 +39,10 @@ def main_menu():
                 play_again()
                 break
             elif menu_select == 4:
-                print("Exiting program...")
+                divider_image()
+                print("Exiting program...\n")
                 print("Program closed.")
+                divider_image()
                 break
             else:
                 raise ValueError
