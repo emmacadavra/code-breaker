@@ -64,16 +64,18 @@ def instructions():
     graphics.header_image()
 
     print("Instructions on how to play MasterCode:\n")
-    print("A secret code of four colors will be randomly generated from the following colors:\n")
-    print(f"{Colors.red}R  {Colors.green}G  {Colors.blue}B  {Colors.yellow}Y  {Colors.pink}P  {Colors.white}W{Colors.default}")
-    print(f"{Colors.red_block} {Colors.default}  {Colors.green_block} {Colors.default}  {Colors.blue_block} {Colors.default}  {Colors.yellow_block} {Colors.default}  {Colors.pink_block} {Colors.default}  {Colors.white_block} {Colors.default}\n")
-    print("Your heroic challenge is to find the solution in 10 attempts or fewer.")
-    print("In doing so, you will become a MasterCode breaker!\n")
-    print("A color may appear more than once in the secret code, so don't forget to consider this!")
-    print("The terminal will ONLY accept answers that are 4 characters long, with no commas or spaces.")
-    print("Make sure you only use the following characters for their respective colors:\n")
-    print(f"{Colors.red}R  {Colors.green}G  {Colors.blue}B  {Colors.yellow}Y  {Colors.pink}P  {Colors.white}W{Colors.default}\n")
-    print(f"{Colors.white}Go forth, hero, and become the MasterCode breaker!{Colors.default}\n")
+    print(f"""
+    A secret code of four colors will be randomly generated from the following colors:
+    {Colors.red}R  {Colors.green}G  {Colors.blue}B  {Colors.yellow}Y  {Colors.pink}P  {Colors.white}W{Colors.default}
+    {Colors.red_block} {Colors.default}  {Colors.green_block} {Colors.default}  {Colors.blue_block} {Colors.default}  {Colors.yellow_block} {Colors.default}  {Colors.pink_block} {Colors.default}  {Colors.white_block} {Colors.default}
+    Your heroic challenge is to find the solution in 10 attempts or fewer.
+    In doing so, you will become a MasterCode breaker!\n
+    A color may appear more than once in the secret code, so don't forget to consider this!
+    The terminal will ONLY accept answers that are 4 characters long, with no commas or spaces.
+    Make sure you only use the following characters for their respective colors:
+    {Colors.red}R  {Colors.green}G  {Colors.blue}B  {Colors.yellow}Y  {Colors.pink}P  {Colors.white}W{Colors.default}
+    {Colors.white}Go forth, hero, and become the MasterCode breaker!{Colors.default}
+    """)
 
 
 # play again function
