@@ -100,7 +100,9 @@ def display_player_guess():
         if item == "R":
             output += f" {Colors.red_block} {Colors.default}"
         elif item == "G":
-            output += output += f" {Colors.green_block} {Colors.default}"
+            output += f" {Colors.green_block} {Colors.default}"
+        elif item == "B":
+            output += f" {Colors.blue_block} {Colors.default}"
 
 # main game code
 def run_game():
