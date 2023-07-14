@@ -19,7 +19,7 @@ def main_menu():
     Title screen/menu with player options
     """
     clear_screen()
-
+    
     print(main_logo())
     print("""
         ~*~ Press '1' to Play   ~*~   Press '2' for Instructions ~*~
@@ -60,6 +60,7 @@ def instructions():
     Instructions for the user on how to play the game
     """
     clear_screen()
+    print(header_image())
 
     print("Instructions on how to play MasterCode:\n")
     print("A secret code of four colours will be randomly generated from the following colours:\n")
@@ -115,6 +116,7 @@ def run_game():
     Run main game functions
     """
     clear_screen()
+    print(header_image())
 
     original_answer = generate_code()
     print(original_answer)
@@ -265,7 +267,6 @@ def clear_screen():
         _ = os.system('clear')
     else:
         _ = os.system('cls')
-    print(header_image())
 
 
 # main function 
