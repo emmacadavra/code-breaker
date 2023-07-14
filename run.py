@@ -19,7 +19,7 @@ def main_menu():
     Title screen/menu with player options
     """
     clear_screen()
-    
+
     print(main_logo())
     print("""
         ~*~ Press '1' to Play   ~*~   Press '2' for Instructions ~*~
@@ -110,11 +110,26 @@ def run_game():
             break
         elif attempt_number == MAX_ATTEMPTS and position != CODE_LENGTH:
             print(game_over())
-            print("")
+            print("You couldn't defeat the challenge this time, but do not despair!")
+            print("Would you like to try again to become the MasterCode Breaker? (Y/N)")
             while True:
                 try:
-                    menu_select = int(input("Press key: \n"))
+                    play_again = (input("Press key: \n")).upper()
                     break
+                    if play_again == "Y":
+                        run_game()
+                        break
+                    elif play_again == "N":
+                        main_menu()
+                        break
+                    else:
+                        raise ValueError
+
+                except ValueError:
+                        print("""
+                        Invalid key press.
+                        Please press 'Y' to play again, or 'N' to return to the main menu.
+                        """)
         else:
             attempt_number += 1
             print(f"Correct colour and position: {position}")
