@@ -37,7 +37,7 @@ def header_image():
                     {Colors.yellow}╔╦╗╔═╗╔═╗╔╦╗╔═╗╦═╗  ╔═╗╔═╗╔╦╗╔═╗{Colors.pink}
          />         {Colors.yellow}║║║╠═╣╚═╗ ║ ║╣ ╠╦╝  ║  ║ ║ ║║║╣{Colors.pink}
         //          {Colors.yellow}╩ ╩╩ ╩╚═╝ ╩ ╚═╝╩╚═  ╚═╝╚═╝═╩╝╚═╝{Colors.blue}
-[//////{Colors.pink}<*>|||<{Colors.cyan}==========================================-----------{Colors.blue}
+[//////{Colors.pink}<*>|||<{Colors.cyan}==========================================-----------{Colors.pink}
         \\\ 
          \>{Colors.default}
         \n""")

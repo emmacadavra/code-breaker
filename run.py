@@ -202,7 +202,7 @@ def clear_screen():
         _ = os.system('clear')
     else:
         _ = os.system('cls')
-    print(header())
+    print(header_image())
 
 
 
