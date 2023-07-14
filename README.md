@@ -82,6 +82,8 @@
 
 ## **Testing**
 
+A separate file has been created for information about testing. Please click the following link to access it: [**TESTING.md**](TESTING.md)
+
 ## **Deployment**
 
 ## **Credits**
