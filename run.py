@@ -11,7 +11,7 @@ from classes.colors import Colors
 # constants
 COLOR_CHOICES = ["R", "G", "B", "Y", "P", "W"]
 CODE_LENGTH = 4
-MAX_ATTEMPTS = 9
+MAX_ATTEMPTS = 14
 
 
 # menu/title screen
@@ -69,7 +69,7 @@ def instructions():
     generated from the following options:
     {Colors.red}R  {Colors.green}G  {Colors.blue}B  {Colors.yellow}Y  {Colors.pink}P  {Colors.white}W{Colors.default}
     {Colors.red_block} {Colors.default}  {Colors.green_block} {Colors.default}  {Colors.blue_block} {Colors.default}  {Colors.yellow_block} {Colors.default}  {Colors.pink_block} {Colors.default}  {Colors.white_block} {Colors.default}
-    Your heroic challenge is to find the solution in 10 attempts or fewer.
+    Your heroic challenge is to find the solution in 15 attempts or fewer.
     In doing so, you will become a MasterCode breaker!\n
     A color may appear more than once in the secret
     code, so don't forget to consider this!
