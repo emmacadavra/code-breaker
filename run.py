@@ -4,6 +4,7 @@ MasterCode - a code breaker game in the style of Mastermind.
 
 # imports
 import random
+import os
 from classes.graphics import main_logo, triforce
 from classes.colors import Colors
 
@@ -187,6 +188,18 @@ def check_result(guess, answer):
             answer.remove(letter)
 
     return correct_position, correct_color 
+
+
+def clear_screen():
+    """
+    Clears the terminal screen/window
+    """
+    if os.name == 'posix':
+        _ = os.system('clear')
+    else:
+        _ = os.system('cls')
+    print(header())
+
 
 
 # main function 
