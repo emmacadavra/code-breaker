@@ -1,17 +1,18 @@
 """
 MasterCode - a code breaker game in the style of Mastermind.
 """
-
 # imports
 import random
 import os
 import classes.graphics as graphics
 from classes.colors import Colors
 
+
 # constants
 COLOR_CHOICES = ["R", "G", "B", "Y", "P", "W"]
 CODE_LENGTH = 4
 MAX_ATTEMPTS = 9
+
 
 # menu/title screen
 def main_menu():
@@ -52,7 +53,6 @@ def main_menu():
         ~*~ Press '1' to Play   ~*~   Press '2' for Instructions ~*~
         ~*~ Press '3' for the Triforce   ~*~   Press '4' to Exit ~*~
                 """)
-
 
 
 # instructions on how to play
@@ -134,7 +134,6 @@ def run_game():
         """)
     graphics.divider_image()
     
-
     original_answer = generate_code()
     print(original_answer)
 
@@ -201,7 +200,7 @@ def display_player_guess(guess):
     """
     Displays the player's guess as a string of color blocks
     """
-    output=""
+    output = ""
     for item in guess:
         if item == "R":
             output += f" {Colors.red_block} {Colors.default}"
