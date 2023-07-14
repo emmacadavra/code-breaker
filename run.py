@@ -12,7 +12,6 @@ COLOR_CHOICES = ["R", "G", "Y", "B", "P", "W"]
 CODE_LENGTH = 4
 MAX_ATTEMPTS = 9
 
-
 # menu/title screen
 def main_menu():
     """
@@ -92,6 +91,15 @@ def generate_code():
     return color_code
 
 
+def display_player_guess():
+    """
+    Displays the player's guess as a string of color blocks
+    """
+    output=""
+    for item in guess:
+        if item == "R":
+            output += f" {Colors.red_block} {Colors.default}"
+
 # main game code
 def run_game():
     """
@@ -166,9 +174,6 @@ def check_result(guess, answer):
             answer.remove(guess[i])
 
     return correct_position, correct_color 
-
-
-# display user input with result of comparison
 
 
 # main function 
