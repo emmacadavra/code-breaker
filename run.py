@@ -18,6 +18,8 @@ def main_menu():
     """
     Title screen/menu with player options
     """
+    clear_screen()
+    
     print(main_logo())
     print("""
         ~*~ Press '1' to Play   ~*~   Press '2' for Instructions ~*~
@@ -27,7 +29,6 @@ def main_menu():
     while True:
         try:
             menu_select = int(input("Press key: \n"))
-            
             if menu_select == 1:
                 run_game()
                 break
@@ -108,9 +109,12 @@ def run_game():
             print(f"You defeated this challenge in {Colors.white}{attempt_number + 1}{Colors.default} attempt(s).\n")
             break
         elif attempt_number == MAX_ATTEMPTS and position != CODE_LENGTH:
-            print("Oh no! You weren't able to crack the code this time.")
-            # print("Try again?")
-            break
+            print(game_over())
+            print("")
+            while True:
+                try:
+                    menu_select = int(input("Press key: \n"))
+                    break
         else:
             attempt_number += 1
             print(f"Correct colour and position: {position}")

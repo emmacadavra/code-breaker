@@ -72,7 +72,7 @@ def triforce():
 
 def game_over():
     """
-    Displays a 'Game Over' graphic'
+    Displays a 'Game Over' graphic
     """
     print(f"""{Colors.red}
 
@@ -94,5 +94,4 @@ def game_over():
 ░ ░ ░ ▒       ░░     ░     ░░   ░   
     ░ ░        ░     ░  ░   ░       
               ░                     
-
     {Colors.default}""")
