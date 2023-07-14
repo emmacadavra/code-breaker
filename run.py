@@ -63,16 +63,13 @@ def instructions():
     clear_screen()
     graphics.header_image()
 
-    print(f"{Colors.white}Instructions on how to play MasterCode:{Colors.default}")
     print(f"A secret code of 4 colors will be randomly generated from the following colors:")
-    print(f"""
-        {Colors.red}R  {Colors.green}G  {Colors.blue}B  {Colors.yellow}Y  {Colors.pink}P  {Colors.white}W{Colors.default}
-        {Colors.red_block} {Colors.default}  {Colors.green_block} {Colors.default}  {Colors.blue_block} {Colors.default}  {Colors.yellow_block} {Colors.default}  {Colors.pink_block} {Colors.default}  {Colors.white_block} {Colors.default}
-        """)
+    print(f"    {Colors.red}R  {Colors.green}G  {Colors.blue}B  {Colors.yellow}Y  {Colors.pink}P  {Colors.white}W{Colors.default}")
+    print(f"    {Colors.red_block} {Colors.default}  {Colors.green_block} {Colors.default}  {Colors.blue_block} {Colors.default}  {Colors.yellow_block} {Colors.default}  {Colors.pink_block} {Colors.default}  {Colors.white_block} {Colors.default}\n")
     print("Your heroic challenge is to find the solution in 15 attempts or fewer.")
     print("In doing so, you will become a MasterCode breaker!\n")
     print("Remember: a color may appear more than once in the secret code!")
-    print("The game ONLY accepts answers that are 4 characters long, with no commas or spaces.")
+    print("Only type guesses that are 4 characters long with no commas or spaces.")
     print("Make sure you only use the following characters for their respective colors:")
     print(f"{Colors.red}R  {Colors.green}G  {Colors.blue}B  {Colors.yellow}Y  {Colors.pink}P  {Colors.white}W{Colors.default}\n")
     print(f"{Colors.white}Go forth, Hero, and become the MasterCode breaker!{Colors.default}\n")
