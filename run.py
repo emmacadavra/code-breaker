@@ -89,26 +89,6 @@ def generate_code():
     return color_code
 
 
-def display_player_guess(guess):
-    """
-    Displays the player's guess as a string of color blocks
-    """
-    output=""
-    for item in guess:
-        if item == "R":
-            output += f" {Colors.red_block} {Colors.default}"
-        elif item == "G":
-            output += f" {Colors.green_block} {Colors.default}"
-        elif item == "B":
-            output += f" {Colors.blue_block} {Colors.default}"
-        elif item == "Y":
-            output += f" {Colors.yellow_block} {Colors.default}"
-        elif item == "P":
-            output += f" {Colors.pink_block} {Colors.default}"
-        elif item == "W":
-            output += f" {Colors.white_block} {Colors.default}"
-    return output
-
 # main game code
 def run_game():
     """
@@ -146,7 +126,7 @@ def player_guess_input(attempt):
     """
     while True:
         try:
-            guess = input("Enter your prediction: \n").upper().strip()
+            guess = input("Enter your prediction: \n").upper()
             guess_list = [g for g in guess]
 
             if len(guess_list) != CODE_LENGTH:
@@ -165,6 +145,28 @@ def player_guess_input(attempt):
             print(e)
 
     return guess_list
+
+
+# display the player's guess in colour
+def display_player_guess(guess):
+    """
+    Displays the player's guess as a string of color blocks
+    """
+    output=""
+    for item in guess:
+        if item == "R":
+            output += f" {Colors.red_block} {Colors.default}"
+        elif item == "G":
+            output += f" {Colors.green_block} {Colors.default}"
+        elif item == "B":
+            output += f" {Colors.blue_block} {Colors.default}"
+        elif item == "Y":
+            output += f" {Colors.yellow_block} {Colors.default}"
+        elif item == "P":
+            output += f" {Colors.pink_block} {Colors.default}"
+        elif item == "W":
+            output += f" {Colors.white_block} {Colors.default}"
+    return output
 
 
 # function to compare user input with code
