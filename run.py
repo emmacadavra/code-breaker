@@ -125,15 +125,15 @@ def run_game():
     graphics.header_image()
     graphics.divider_image()
     print("""
-        Welcome, Hero, to the ultimate challenge!
+    Welcome, Hero, to the ultimate challenge!
 
-        A secret code, unknown to anyone, prevents you from
-        completing your heroic quest to save the world!\n
-        You must solve the puzzle by breaking the secret code,
-        and doing so will earn you the title of MasterCode Breaker!
+    A secret code, unknown to anyone, prevents you from
+    completing your heroic quest to save the world!\n
+    You must solve the puzzle by breaking the secret code,
+    and doing so will earn you the title of MasterCode Breaker!
 
-        Have you the courage to face up to the mighty task...?
-        """)
+    Have you the courage to face up to the mighty task...?
+    """)
     graphics.divider_image()
 
     original_answer = generate_code()
