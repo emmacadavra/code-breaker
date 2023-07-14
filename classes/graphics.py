@@ -27,7 +27,7 @@ def main_logo():
      ||||                   {Colors.yellow}-____- \\\,/   \\\/  \\\,/{Colors.cyan}
      \\\//
       \/{Colors.default}
-      \n""")
+    """)
 
 def header_image():
     """
