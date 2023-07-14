@@ -6,17 +6,22 @@
 
 1. [**Application Overview**](#application-overview)
 1. [**Planning Stage**](#planning-stage)
-   - [**_Target Audience_**](#target-audience)
-   - [**_User Stories_**](#user-stories)
-   - [**_Application Aims_**](#application-aims)
-   - [**_UX Flow Chart_**](#ux-flow-chart)
+   - [**Target Audience**](#target-audience)
+   - [**User Stories**](#user-stories)
+   - [**Application Aims**](#application-aims)
+   - [**UX Flow Chart**](#ux-flow-chart)
 1. [**Current Features**](#current-features)
-   - [**_Main Menu_**](#main-menu)
-     - [_Main Logo Graphic_](#main-logo-graphic)
-     - [_Instructions_](#instructions)
-     - [_Bonus Triforce!_](#bonus-triforce)
-     - [_Exit Game_](#exit-game)
-   - [**_Start Game_**](#start-game)
+   - [**Main Menu**](#main-menu)
+     - [**_Main Logo Graphic_**](#main-logo-graphic)
+     - [**_Instructions_**](#instructions)
+     - [**_Bonus Triforce!_**](#bonus-triforce)
+     - [**_Exit Game_**](#exit-game)
+   - [**Run Game**](#run-game)
+     - [**_Generating the Secret Code_**](#generating-the-secret-code)
+     - [**_Player Guess Input with Error Handling_**](#player-guess-input-with-error-handling)
+     - [**_Player Guess Ouput_**](#player-guess-ouput)
+     - [**_Comparing Player Guess to Secret Code_**](#comparing-player-guess-to-secret-code)
+
 
 ## **Planning Stage**
 
@@ -30,14 +35,22 @@
 
 ## **Current Features**
 
-### Main Menu
+### **Main Menu**
 
-#### Main Logo Graphic
+#### **Main Logo Graphic**
 
-#### Instructions
+#### **Instructions**
 
-#### Bonus Triforce!
+#### **Bonus Triforce!**
 
-#### Exit Game
+#### **Exit Game**
 
-### Start Game
+### **Run Game**
+
+#### **Generating the Secret Code**
+
+#### **Player Guess Input with Error Handling**
+
+#### **Player Guess Ouput**
+
+#### **Comparing Player Guess to Secret Code**
