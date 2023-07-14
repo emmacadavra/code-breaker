@@ -4,6 +4,7 @@ MasterCode - a code breaker game in the style of Mastermind.
 
 # imports
 import random
+from classes.graphics.py import Colors, main_logo, triforce
 
 # constants
 COLOR_CHOICES = ["R", "G", "Y", "B", "P", "W"]
