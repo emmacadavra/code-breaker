@@ -1,7 +1,7 @@
 from classes.colors import Colors
 
 
-# main logo
+# main logo image function
 def main_logo():
     """
     Displays the main logo for the game
@@ -28,6 +28,7 @@ def main_logo():
     """)
 
 
+# header/banner image function
 def header_image():
     """
     A header/banner image that shows above the game/instructions areas
@@ -42,7 +43,7 @@ def header_image():
     """)
 
 
-# divider
+# divider image function
 def divider_image():
     """
     Displays a divider image of two swords"
@@ -54,7 +55,7 @@ def divider_image():
     """)
 
 
-# Triforce
+# Triforce function
 def triforce():
     """
     Displays the Triforce 'bonus' content - code by John Cartwright (see credits in README.md)

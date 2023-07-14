@@ -63,9 +63,11 @@ def instructions():
     """
     Instructions for the user on how to play the game
     """
+    # clear the screen and input the header image
     clear_screen()
     graphics.header_image()
 
+    # display the game instructions to the player
     print(f"A secret code of 4 colors will be randomly generated from the following colors:\n")
     print(f"    {Colors.red}Red  {Colors.green}Green  {Colors.blue}Blue  {Colors.yellow}Yellow  {Colors.purple}Purple  {Colors.white}White{Colors.default}\n")
     print("Your heroic challenge is to find the solution in 15 attempts or fewer.")
@@ -76,11 +78,17 @@ def instructions():
     print(f"    {Colors.red_block} {Colors.default}  {Colors.green_block} {Colors.default}  {Colors.blue_block} {Colors.default}  {Colors.yellow_block} {Colors.default}  {Colors.purple_block} {Colors.default}  {Colors.white_block} {Colors.default}\n")
     print(f"{Colors.white}Go forth, Hero, and become the MasterCode breaker!{Colors.default}")
     print("Are you ready? ('Y' to play, 'N' to return to the menu)")
+
+    # call the play_again function to direct player to game/menu depending on their choice
     play_again()
 
 
 # play again function
 def play_again():
+    """
+    Checks if the player has entered 'Y' or 'N' correctly, and directs them to game/menu.
+    Outputs ValueError if user key press is invalid.
+    """
     while True:
         try:
             play_again_choice = (input("Enter choice: \n")).upper().strip()
@@ -120,6 +128,7 @@ def run_game():
     """
     Run main game functions
     """
+    # clear the screen and input the header image with introduction text below
     clear_screen()
     graphics.header_image()
     print("      Welcome, Hero, to the ultimate challenge!\n")
@@ -130,6 +139,7 @@ def run_game():
     print("  Have you the courage to face up to the mighty task...?")
     graphics.divider_image()
 
+    # randomly generate a new secret code
     original_answer = generate_code()
     print(original_answer)
 
@@ -137,8 +147,13 @@ def run_game():
 
     while attempt_number <= MAX_ATTEMPTS:
         player_guess = player_guess_input(attempt_number)
+        # creates a modified list variable that can be amended without changing original secret code
         modified_answer = list(original_answer)
+
+        # displays the player's guess as coloured blocks for visual clarity
         print(f"{display_player_guess(player_guess)}\n")
+
+        # checks the player's guess against the modified list and outputs appropriately
         position, color = check_result(player_guess, modified_answer)
         if position == CODE_LENGTH:
             graphics.you_win()
@@ -163,10 +178,11 @@ def run_game():
             print(f"You have {Colors.white}{MAX_ATTEMPTS - attempt_number + 1}{Colors.default} attempt(s) remaining.\n")
 
 
-# function for user input
+# function for player input
 def player_guess_input(attempt):
     """
     Asks the player to enter their guess, and validates the input.
+    Outputs ValueError if input is invalid.
     """
     while True:
         try:
@@ -217,6 +233,12 @@ def display_player_guess(guess):
 
 # function to compare user input with code
 def check_result(guess, answer):
+    """
+    Checks the player's guess against the secret code.
+    Outputs number in correct position and number correct but in wrong position.
+    Removes any matches from the code list to prevent double counting.
+    Feeds correct position/correct but in wrong position to run_game.
+    """
     correct_position = 0
     correct_color = 0
     for i in range(CODE_LENGTH):
