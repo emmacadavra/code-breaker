@@ -147,7 +147,7 @@ def run_game():
         position, color = check_result(player_guess, modified_answer)
         if position == CODE_LENGTH:
             graphics.you_win()
-            print(f"The secret code was: {display_player_guess(original_answer)}\n")
+            print(f"The secret code is: {display_player_guess(original_answer)}\n")
             print("You cracked the code like a true Hero, and became the MasterCode Breaker!")
             print(f"You defeated this challenge in {Colors.white}{attempt_number + 1}{Colors.default} attempt(s).\n")
             print("Would you like to try to become the MasterCode Breaker once more? (Y/N)")
@@ -181,7 +181,9 @@ def player_guess_input(attempt):
             guess_list = [g for g in guess]
 
             if len(guess_list) != CODE_LENGTH:
-                raise ValueError(f"Invalid - please enter {CODE_LENGTH} characters, with no commas or spaces.\n")
+                raise ValueError(f"Invalid - please enter {CODE_LENGTH} characters.\n" +
+                                 f"Choose only from the following characters, with no commas or spaces:\n" +
+                                 f"{Colors.red}R  {Colors.green}G  {Colors.blue}B  {Colors.yellow}Y  {Colors.purple}P  {Colors.white}W{Colors.default}\n")
                 continue
 
             for character in guess_list:
