@@ -39,10 +39,10 @@ def main_menu():
                 play_again()
                 break
             elif menu_select == 4:
-                divider_image()
+                graphics.divider_image()
                 print("Exiting game...\n")
                 print("Game closed.")
-                divider_image()
+                graphics.divider_image()
                 break
             else:
                 raise ValueError
