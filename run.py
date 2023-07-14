@@ -74,26 +74,26 @@ def instructions():
     print(f"{Colors.white}Go forth, hero, and become the MasterCode breaker!{Colors.default}\n")
 
 
-# play again function
-def play_again():
-    while True:
-        try:
-            play_again = (input("Enter choice: \n")).upper()
-            break
-            if play_again == "Y":
-                run_game()
-                break
-            elif play_again == "N":
-                main_menu()
-                break
-            else:
-                raise ValueError
+# # play again function
+# def play_again():
+#     while True:
+#         try:
+#             play_again = (input("Enter choice: \n")).upper()
+#             break
+#             if play_again == "Y":
+#                 run_game()
+#                 break
+#             elif play_again == "N":
+#                 main_menu()
+#                 break
+#             else:
+#                 raise ValueError
 
-        except ValueError:
-                        print("""
-                        Invalid key press.
-                        Please press 'Y' to play the game, or 'N' to return to the main menu.
-                        """)
+#         except ValueError:
+#                         print("""
+#                         Invalid key press.
+#                         Please press 'Y' to play the game, or 'N' to return to the main menu.
+#                         """)
 
 
 # function to generate code
@@ -134,7 +134,25 @@ def run_game():
             print(game_over())
             print("You couldn't defeat the challenge this time, but do not despair!")
             print("Would you like to try again to become the MasterCode Breaker? (Y/N)")
-            play_again()
+            while True:
+                try:
+                    play_again = (input("Enter choice: \n")).upper()
+                    break
+                    if play_again == "Y":
+                        run_game()
+                        break
+                    elif play_again == "N":
+                        main_menu()
+                        break
+                    else:
+                        raise ValueError
+
+                except ValueError:
+                                print("""
+                                Invalid key press.
+                                Please press 'Y' to play the game, or 'N' to return to the main menu.
+                                """)
+
         else:
             attempt_number += 1
             print(f"Correct colour and position: {position}")
