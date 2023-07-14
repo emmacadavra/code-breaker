@@ -20,7 +20,7 @@ def main_menu():
     """
     clear_screen()
 
-    print(main_logo())
+    main_logo()
     print("""
         ~*~ Press '1' to Play   ~*~   Press '2' for Instructions ~*~
         ~*~ Press '3' for the Triforce   ~*~   Press '4' to Exit ~*~
@@ -61,7 +61,7 @@ def instructions():
     Instructions for the user on how to play the game
     """
     clear_screen()
-    print(header_image())
+    header_image()
 
     print("Instructions on how to play MasterCode:\n")
     print("A secret code of four colours will be randomly generated from the following colours:\n")
@@ -118,9 +118,9 @@ def run_game():
     Run main game functions
     """
     clear_screen()
-    print(header_image())
+    header_image()
     print("Welcome, Hero, to the ultimate challenge!")
-    print(divider_image())
+    divider_image()
     print("""
         A secret code, unknown to anyone, prevents you from
         completing your heroic quest to save the world!
@@ -130,9 +130,8 @@ def run_game():
         and doing so you will earn you the title of MasterCode Breaker!
         """)
     print("Have you the courage to face up to the mighty task...?")
-    print(divider_image())
-
-
+    divider_image()
+    
 
     original_answer = generate_code()
     print(original_answer)
@@ -145,14 +144,14 @@ def run_game():
         print(f"{display_player_guess(player_guess)}\n")
         position, color = check_result(player_guess, modified_answer)
         if position == CODE_LENGTH:
-            print(you_win())
+            you_win()
             print("You cracked the code like a true Hero!")
             print(f"You defeated this challenge in {Colors.white}{attempt_number + 1}{Colors.default} attempt(s).\n")
             print("Would you like to try to become the MasterCode Breaker once more? (Y/N)")
             play_again()
 
         elif attempt_number == MAX_ATTEMPTS and position != CODE_LENGTH:
-            print(game_over())
+            game_over()
             print("You couldn't defeat the challenge this time, but do not despair!")
             print("Would you like to try again to become the MasterCode Breaker? (Y/N)")
             play_again()
@@ -172,7 +171,7 @@ def player_guess_input(attempt):
     while True:
         try:
             guess = input("Enter your prediction: \n").upper()
-            print=""
+            print("")
             guess_list = [g for g in guess]
 
             if len(guess_list) != CODE_LENGTH:
