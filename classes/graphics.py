@@ -68,9 +68,8 @@ def triforce():
     for t2 in big_tri:
         print(t2 + " " + t2)
 
-    print(f"{Colors.cyan}Hey, listen! You found the Triforce!!")
-    print("These golden triangles possess mystical powers...")
-    print(f"{Colors.white}Would you like to play MasterCode? ('Y' to play, 'N' to return to the menu){Colors.default}")
+    print(f"{Colors.cyan}Hey, listen! These golden triangles possess mystical powers...")
+    print(f"{Colors.default}Would you like to play MasterCode? ('Y' to play, 'N' to return to the menu)")
 
 
 # You Win! graphic function
