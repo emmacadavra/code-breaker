@@ -1,3 +1,4 @@
+from classes.colors import Colors
 
 # main logo
 def main_logo():
