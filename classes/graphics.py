@@ -11,23 +11,23 @@ def main_logo():
      [\\\]         
      [//]        
   /\_[\\\]_/\     
- //__<()>__\\\    
-/// \[/\]/ \\\\\     /\\\,/\\\,               ,              
-\(   ||||   )/    /| || ||    _          ||              
-     ||||         || || ||   < \,  _-_, =||=  _-_  ,._-_ 
-     ||||         ||=|= ||   /-|| ||_.   ||  || \\\  ||   
-     ||||        ~|| || ||  (( ||  ~ ||  ||  ||/    ||   
-     ||||         |, \\\,\\\,  \/\\\ ,-_-   \\\, \\\,/   \\\,  
-     ||||        _-
-     ||||                   ,- _~.        |\        
-     ||||                  (' /|           \\\         
-     ||||                 ((  ||    /'\\\  / \\\  _-_ 
-     ||||                 ((  ||   || || || || || \\\\
-     ||||                  ( / |   || || || || ||/  
-     ||||                   -____- \\\,/   \\\/  \\\,/ 
-     \\\//
-      \/                       
-{Colors.default}\n""")
+ //__{Colors.yellow}<()>{Colors.blue}__\\\    
+/// \[{Colors.cyan}/\{Colors.blue}]/ \\\\\     {Colors.yellow}/\\\,/\\\,               ,{Colors.blue}
+\(   |{Colors.cyan}||{Colors.blue}|   )/    {Colors.yellow}/| || ||    _          ||{Colors.blue}
+     |{Colors.cyan}||{Colors.blue}|         {Colors.yellow}|| || ||   < \,  _-_, =||=  _-_  ,._-_{Colors.blue}
+     |{Colors.cyan}||{Colors.blue}|         {Colors.yellow}||=|= ||   /-|| ||_.   ||  || \\\  ||{Colors.blue}
+     |{Colors.cyan}||{Colors.blue}|        {Colors.yellow}~|| || ||  (( ||  ~ ||  ||  ||/    ||{Colors.blue}
+     |{Colors.cyan}||{Colors.blue}|         {Colors.yellow}|, \\\,\\\,  \/\\\ ,-_-   \\\, \\\,/   \\\,{Colors.blue}
+     |{Colors.cyan}||{Colors.blue}|        {Colors.yellow}_-{Colors.blue}
+     |{Colors.cyan}||{Colors.blue}|                   {Colors.yellow},- _~.        |\{Colors.blue}
+     |{Colors.cyan}||{Colors.blue}|                  {Colors.yellow}(' /|           \\\{Colors.blue}
+     |{Colors.cyan}||{Colors.blue}|                 {Colors.yellow}((  ||    /'\\\  / \\\  _-_{Colors.blue}
+     |{Colors.cyan}||{Colors.blue}|                 {Colors.yellow}((  ||   || || || || || \\\\{Colors.blue}
+     |{Colors.cyan}||{Colors.blue}|                  {Colors.yellow}( / |   || || || || ||/{Colors.blue}
+     |{Colors.cyan}||{Colors.blue}|                   {Colors.yellow}-____- \\\,/   \\\/  \\\,/
+     {Colors.cyan}\\\//
+      \/{Colors.default}
+      \n""")
 
 # divider
 def divider_image():
