@@ -58,11 +58,11 @@ def triforce():
     """
     Displays the Triforce 'bonus' content - code by John Cartwright (see credits in README.md)
     """
-    print(header_image())
+    header_image()
 
     tri = f"{Colors.yellow}▲"
     big_tri = []
-    for i in range(1,21,2):
+    for i in range(1, 21, 2):
         big_tri.append(" "*int((19-i)/2) + tri*i + " "*int((19-i)/2))
     for t1 in big_tri:
         print(" "*10 + t1 + " "*10)
