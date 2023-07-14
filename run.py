@@ -46,11 +46,9 @@ def main_menu():
         
         except ValueError:
             print("""
-                Invalid key press. Please choose from the following:\n
-                Press '1' to Play Game
-                Press '2' for Instructions
-                Press '3' for Triforce
-                Press '4' to Exit
+        Invalid key press. Please choose from the following:\n
+        ~*~ Press '1' to Play   ~*~   Press '2' for Instructions ~*~
+        ~*~ Press '3' for the Triforce   ~*~   Press '4' to Exit ~*~
                 """)
 
 
@@ -61,6 +59,7 @@ def instructions():
     Instructions for the user on how to play the game
     """
     clear_screen()
+    header_image()
 
     print("Instructions on how to play MasterCode:\n")
     print("A secret code of four colours will be randomly generated from the following colours:\n")
@@ -94,6 +93,7 @@ def run_game():
     Run main game functions
     """
     clear_screen()
+    header_image()
 
     original_answer = generate_code()
     print(original_answer)
