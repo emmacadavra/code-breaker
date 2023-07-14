@@ -145,7 +145,7 @@ def run_game():
         position, color = check_result(player_guess, modified_answer)
         if position == CODE_LENGTH:
             you_win()
-            print("You cracked the code like a true Hero!")
+            print("You cracked the code like a true Hero, and became the MasterCode Breaker!")
             print(f"You defeated this challenge in {Colors.white}{attempt_number + 1}{Colors.default} attempt(s).\n")
             print("Would you like to try to become the MasterCode Breaker once more? (Y/N)")
             play_again()

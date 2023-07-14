@@ -75,7 +75,6 @@ def you_win():
     Displays a 'You Win!' graphic when the player wins
     """
     print(f"""
-        
        {Colors.green}██╗   ██╗ ██████╗ ██╗   ██╗{Colors.white}
     .  {Colors.green}╚██╗ ██╔╝██╔═══██╗██║   ██║{Colors.white}    0
    / \  {Colors.green}╚████╔╝ ██║   ██║██║   ██║{Colors.white}    8
