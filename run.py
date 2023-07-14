@@ -4,7 +4,6 @@ MasterCode - a code breaker game in the style of Mastermind.
 
 # imports
 import random
-import getpass
 from classes.graphics import main_logo, triforce
 from classes.colors import Colors
 
@@ -30,7 +29,7 @@ def main_menu():
 
     while True:
         try:
-            menu_select = int(getpass.getpass(prompt="Press key: \n", stream=None))
+            menu_select = int(input("Press key: \n"))
             
             if menu_select == 1:
                 run_game()
@@ -42,7 +41,8 @@ def main_menu():
                 triforce()
                 break
             elif menu_select == 4:
-                print("This will exit the program (I think?)")
+                print("Exiting program...")
+                print("Program closed.")
                 break
             else:
                 raise ValueError
