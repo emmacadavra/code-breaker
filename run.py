@@ -36,6 +36,7 @@ def main_menu():
             elif menu_select == 3:
                 clear_screen()
                 graphics.triforce()
+                play_again()
                 break
             elif menu_select == 4:
                 print("Exiting program...")

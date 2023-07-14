@@ -71,12 +71,11 @@ def triforce():
     for t2 in big_tri:
         print(t2 + " " + t2)
 
-    print("""
+    print("""{Colors.default}
     You found the Triforce! Wow!
-    These golden triangles possess mystical powers...
+These golden triangles possess mystical powers...
     """)
     print("Would you like to play MasterCode? ('Y' to play, 'N' to return to the menu)")
-    play_again()
 
 
 # You Win! graphic function
