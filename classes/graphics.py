@@ -26,7 +26,21 @@ def main_logo():
      ||||                  {Colors.yellow}( / |   || || || || ||/{Colors.cyan}
      ||||                   {Colors.yellow}-____- \\\,/   \\\/  \\\,/{Colors.cyan}
      \\\//
-      \/{Colors.default}\n""")
+      \/{Colors.default}
+      \n""")
+
+def header():
+    """
+    A header/banner image that shows above the game/instructions areas
+    """
+    print(f"""
+                    {Colors.yellow}╔╦╗╔═╗╔═╗╔╦╗╔═╗╦═╗  ╔═╗╔═╗╔╦╗╔═╗{Colors.pink}
+         />         {Colors.yellow}║║║╠═╣╚═╗ ║ ║╣ ╠╦╝  ║  ║ ║ ║║║╣{Colors.pink}
+        //          {Colors.yellow}╩ ╩╩ ╩╚═╝ ╩ ╚═╝╩╚═  ╚═╝╚═╝═╩╝╚═╝{Colors.blue}
+[//////{Colors.pink}<*>|||<{Colors.cyan}==========================================-----------{Colors.blue}
+        \\\ 
+         \>{Colors.default}
+        \n""")
 
 # divider
 def divider_image():
