@@ -101,7 +101,6 @@ def game_over():
     Displays a 'Game Over' graphic when the player loses
     """
     print(f"""{Colors.red}
-
   ▄████  ▄▄▄       ███▄ ▄███▓▓█████
  ██▒ ▀█▒▒████▄    ▓██▒▀█▀ ██▒▓█   ▀
 ▒██░▄▄▄░▒██  ▀█▄  ▓██    ▓██░▒███

@@ -1,32 +1,43 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# **MasterCode**
 
-Welcome,
+## **Application Overview**
 
-This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **March 14, 2023**
+## **Table of Contents:**
 
-## Reminders
+1. [**Application Overview**](#application-overview)
+1. [**Planning Stage**](#planning-stage)
+   - [**_Target Audience_**](#target-audience)
+   - [**_User Stories_**](#user-stories)
+   - [**_Application Aims_**](#application-aims)
+   - [**_UX Flow Chart_**](#ux-flow-chart)
+1. [**Current Features**](#current-features)
+   - [**_Main Menu_**](#main-menu)
+     - [_Main Logo Graphic_](#main-logo-graphic)
+     - [_Instructions_](#instructions)
+     - [_Bonus Triforce!_](#bonus-triforce)
+     - [_Exit Game_](#exit-game)
+   - [**_Start Game_**](#start-game)
 
-- Your code must be placed in the `run.py` file
-- Your dependencies must be placed in the `requirements.txt` file
-- Do not edit any of the other files or your code may not deploy properly
+## **Planning Stage**
 
-## Creating the Heroku app
+### **Target Audience**
 
-When you create the app, you will need to add two buildpacks from the _Settings_ tab. The ordering is as follows:
+### **User Stories**
 
-1. `heroku/python`
-2. `heroku/nodejs`
+### **Application Aims**
 
-You must then create a _Config Var_ called `PORT`. Set this to `8000`
+### **UX Flow Chart**
 
-If you have credentials, such as in the Love Sandwiches project, you must create another _Config Var_ called `CREDS` and paste the JSON into the value field.
+## **Current Features**
 
-Connect your GitHub repository and deploy as normal.
+### Main Menu
 
-## Constraints
+#### Main Logo Graphic
 
-The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
+#### Instructions
 
----
+#### Bonus Triforce!
 
-Happy coding!
+#### Exit Game
+
+### Start Game
