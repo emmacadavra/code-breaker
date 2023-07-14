@@ -2,11 +2,13 @@
 
 ## **Application Overview**
 
-MasterCode is a terminal-based, code breaker game based on Mordecai Meirowitz's [_Mastermind_](<https://en.wikipedia.org/wiki/Mastermind_(board_game)>).
+MasterCode is a terminal-based, code breaker game based on [_Mastermind_](<https://en.wikipedia.org/wiki/Mastermind_(board_game)>), originally created by Mordecai Meirowitz.
 
-The style of the game is inspired by classic text-based adventure role-playing games, and thematically borrows from - and serves as an homage to - Nintendo's magnificent and iconic [_The Legend of Zelda_](https://zelda.com/about/) franchise. I chose the name 'MasterCode' due to its similarity to both _Mastermind_ (by which most people would recognise this game), and of course to the famous _Master Sword_ wielded by the hero of Hyrule himself.
+The game itself is faithful to the traditional rules of _Mastermind_ - a secret code of 4 colours is randomly generated from a selection of 6 different colours, and concealed from the player. The player is then given 12 attempts to guess the secret code. If the player succeeds, they win! But if they do not, they lose. Duplicate colours are allowed, which adds to the overall difficulty of the game.
 
-When creating this game, I really wanted to focus on recreating the light-hearted, whimsical feel of some older text-based adventure games (for the most part!), as well as beloved classics from _The Legend of Zelda's_ titles such as _Ocarina of Time_, which remains one of my favourite entries in the franchise.
+The style of the game is inspired by classic text-based adventure role-playing games, and thematically borrows from - and serves as an homage to - Nintendo's magnificent and iconic [_The Legend of Zelda_](https://zelda.com/about/) franchise. I chose the name 'MasterCode' due to its similarity to both _Mastermind_ (by which most people would recognise this style of game), and of course to the famous _Master Sword_ wielded by the hero of Hyrule himself.
+
+When creating this game, I really wanted to focus on recreating the light-hearted (to a fashion, at least!), whimsical feel of some older text-based adventure games, as well as beloved classics from _The Legend of Zelda's_ titles such as _Ocarina of Time_, which remains one of my favourite entries in the franchise.
 
 [**_Please follow this link to the final deployed version of this project._**](https://mastercode-breaker-0e80af73ee79.herokuapp.com/)
 
@@ -56,7 +58,8 @@ The addition of the text-based adventure elements, and inclusion of _The Legend 
 ### **User Stories**
 
 As a user, I want to:
-* 
+
+-
 
 ### **Application Aims**
 
