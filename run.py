@@ -146,8 +146,7 @@ def player_guess_input(attempt):
     """
     Asks the player to enter their guess, and validates the input.
     """
-    invalid_input = True
-    while invalid_input:
+    while True:
         guess = input("Enter your prediction: \n").upper().strip()
         guess_list = [g for g in guess]
         if len(guess_list) != CODE_LENGTH:
@@ -160,7 +159,7 @@ def player_guess_input(attempt):
                 print(f"Choose only from the following characters, with no commas or spaces:")
                 print(f"{Colors.red}R  {Colors.green}G  {Colors.blue}B  {Colors.yellow}Y  {Colors.pink}P  {Colors.white}W{Colors.default}\n")
                 break
-            invalid_input = False
+            return
 
     return guess_list
 
