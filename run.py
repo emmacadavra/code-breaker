@@ -147,10 +147,12 @@ def player_guess_input(attempt):
     Asks the player to enter their guess, and validates the input.
     """
     while True:
-        guess = input("Enter your prediction: \n").upper().strip()
-        guess_list = [g for g in guess]
-        if len(guess_list) != CODE_LENGTH:
-            print(f"Invalid - please enter {CODE_LENGTH} characters, with no commas or spaces.\n")
+        try:
+            guess = input("Enter your prediction: \n").upper().strip()
+            guess_list = [g for g in guess]
+
+            if len(guess_list) != CODE_LENGTH:
+            raise ValueError(f"Invalid - please enter {CODE_LENGTH} characters, with no commas or spaces.\n")
             continue
 
         for character in guess_list:
