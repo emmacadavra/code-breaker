@@ -5,7 +5,7 @@ MasterCode - a code breaker game in the style of Mastermind.
 # imports
 import random
 import os
-from classes.graphics import main_logo, header_image, divider_image, triforce
+from classes.graphics import main_logo, header_image, divider_image, game_over, triforce
 from classes.colors import Colors
 
 # constants
