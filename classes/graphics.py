@@ -27,6 +27,11 @@ def divider_image():
     """
     Displays a divider image of two swords"
     """
+    print("""
+              O                                     O
+        {o)xxx|===============-  *  -===============|xxx(o}
+              O                                     O
+        """)
 
 # Triforce
 def triforce():
