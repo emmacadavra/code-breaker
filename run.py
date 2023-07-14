@@ -66,7 +66,7 @@ def instructions():
     Instructions for the user on how to play the game
     """
     print("Instructions on how to play MasterCode:\n")
-    print("A secret code of four colours will be randomly generated, choosing from the following colours:\n")
+    print("A secret code of four colours will be randomly generated from the following colours:\n")
     print(f"{Colors.red}R  {Colors.green}G  {Colors.blue}B  {Colors.yellow}Y  {Colors.pink}P  {Colors.white}W{Colors.default}")
     print(f"{Colors.red_block} {Colors.default}  {Colors.green_block} {Colors.default}  {Colors.blue_block} {Colors.default}  {Colors.yellow_block} {Colors.default}  {Colors.pink_block} {Colors.default}  {Colors.white_block} {Colors.default}\n")
     print("Your heroic challenge is to find the solution in 10 attempts or fewer.")
