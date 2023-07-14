@@ -40,10 +40,10 @@ def main_menu():
                 break
             elif menu_select == 4:
                 graphics.divider_image()
-                print("""
-                Exiting game...
+                print(f"""
+                {Colors.white}Exiting game...
 
-                ...Game closed.
+                ...Game closed.{Colors.default}
                 """)
                 graphics.divider_image()
                 break
@@ -67,14 +67,14 @@ def instructions():
     graphics.header_image()
 
     print(f"A secret code of 4 colors will be randomly generated from the following colors:")
-    print(f"    {Colors.red}R  {Colors.green}G  {Colors.blue}B  {Colors.yellow}Y  {Colors.pink}P  {Colors.white}W{Colors.default}")
-    print(f"    {Colors.red_block} {Colors.default}  {Colors.green_block} {Colors.default}  {Colors.blue_block} {Colors.default}  {Colors.yellow_block} {Colors.default}  {Colors.pink_block} {Colors.default}  {Colors.white_block} {Colors.default}\n")
+    print(f"    {Colors.red}R  {Colors.green}G  {Colors.blue}B  {Colors.yellow}Y  {Colors.purple}P  {Colors.white}W{Colors.default}")
+    print(f"    {Colors.red_block} {Colors.default}  {Colors.green_block} {Colors.default}  {Colors.blue_block} {Colors.default}  {Colors.yellow_block} {Colors.default}  {Colors.purple_block} {Colors.default}  {Colors.white_block} {Colors.default}\n")
     print("Your heroic challenge is to find the solution in 15 attempts or fewer.")
     print("In doing so, you will become a MasterCode breaker!\n")
     print("Remember: a color may appear more than once in the secret code!")
     print("Only type guesses that are 4 characters long with no commas or spaces.")
     print("Make sure you only use the following characters for their respective colors:\n")
-    print(f"    {Colors.red}R  {Colors.green}G  {Colors.blue}B  {Colors.yellow}Y  {Colors.pink}P  {Colors.white}W{Colors.default}\n")
+    print(f"    {Colors.red}R  {Colors.green}G  {Colors.blue}B  {Colors.yellow}Y  {Colors.purple}P  {Colors.white}W{Colors.default}\n")
     print(f"{Colors.white}Go forth, Hero, and become the MasterCode breaker!{Colors.default}")
     print("Are you ready? ('Y' to play, 'N' to return to the menu)")
     play_again()
@@ -189,7 +189,7 @@ def player_guess_input(attempt):
                 if character not in COLOR_CHOICES:
                     raise ValueError(f"Error: '{character}' is not a valid character.\n" +
                                      f"Choose only from the following characters, with no commas or spaces:\n" +
-                                     f"{Colors.red}R  {Colors.green}G  {Colors.blue}B  {Colors.yellow}Y  {Colors.pink}P  {Colors.white}W{Colors.default}\n")
+                                     f"{Colors.red}R  {Colors.green}G  {Colors.blue}B  {Colors.yellow}Y  {Colors.purple}P  {Colors.white}W{Colors.default}\n")
             break
 
         except ValueError as e:
@@ -214,7 +214,7 @@ def display_player_guess(guess):
         elif item == "Y":
             output += f" {Colors.yellow_block} {Colors.default}"
         elif item == "P":
-            output += f" {Colors.pink_block} {Colors.default}"
+            output += f" {Colors.purple_block} {Colors.default}"
         elif item == "W":
             output += f" {Colors.white_block} {Colors.default}"
     return output

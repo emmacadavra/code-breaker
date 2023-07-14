@@ -9,11 +9,11 @@ def main_logo():
     print(f"""
      {Colors.blue}(__)
       []
-      []           {Colors.yellow}/\\\,/\\\,               ,{Colors.pink}
-  /\_[{Colors.blue}/\{Colors.pink}]_/\      {Colors.yellow}/| || ||    _          ||{Colors.pink}
- //__{Colors.yellow}<()>{Colors.pink}__\\\     {Colors.yellow}|| || ||   < \,  _-_, =||=  _-_  ,._-_{Colors.pink}
-/// \[{Colors.cyan}/\{Colors.pink}]/ \\\\\    {Colors.yellow}||=|= ||   /-|| ||_.   ||  || \\\  ||{Colors.pink}
-\(   {Colors.cyan}||||{Colors.pink}   )/   {Colors.yellow}~|| || ||  (( ||  ~ ||  ||  ||/    ||{Colors.cyan}
+      []           {Colors.yellow}/\\\,/\\\,               ,{Colors.purple}
+  /\_[{Colors.blue}/\{Colors.purple}]_/\      {Colors.yellow}/| || ||    _          ||{Colors.purple}
+ //__{Colors.yellow}<()>{Colors.purple}__\\\     {Colors.yellow}|| || ||   < \,  _-_, =||=  _-_  ,._-_{Colors.purple}
+/// \[{Colors.cyan}/\{Colors.purple}]/ \\\\\    {Colors.yellow}||=|= ||   /-|| ||_.   ||  || \\\  ||{Colors.purple}
+\(   {Colors.cyan}||||{Colors.purple}   )/   {Colors.yellow}~|| || ||  (( ||  ~ ||  ||  ||/    ||{Colors.cyan}
      ||||         {Colors.yellow}|, \\\,\\\,  \/\\\ ,-_-   \\\, \\\,/   \\\,{Colors.cyan}
      ||||        {Colors.yellow}_-{Colors.cyan}
      ||||                 {Colors.yellow},- _~.        |\{Colors.cyan}
@@ -33,10 +33,10 @@ def header_image():
     A header/banner image that shows above the game/instructions areas
     """
     print(f"""
-                    {Colors.yellow}╔╦╗╔═╗╔═╗╔╦╗╔═╗╦═╗  ╔═╗╔═╗╔╦╗╔═╗{Colors.pink}
-         />         {Colors.yellow}║║║╠═╣╚═╗ ║ ║╣ ╠╦╝  ║  ║ ║ ║║║╣{Colors.pink}
+                    {Colors.yellow}╔╦╗╔═╗╔═╗╔╦╗╔═╗╦═╗  ╔═╗╔═╗╔╦╗╔═╗{Colors.purple}
+         />         {Colors.yellow}║║║╠═╣╚═╗ ║ ║╣ ╠╦╝  ║  ║ ║ ║║║╣{Colors.purple}
         //          {Colors.yellow}╩ ╩╩ ╩╚═╝ ╩ ╚═╝╩╚═  ╚═╝╚═╝═╩╝╚═╝{Colors.blue}
-[//////{Colors.pink}<*>|||<{Colors.cyan}==========================================-----------{Colors.pink}
+[//////{Colors.purple}<*>|||<{Colors.cyan}==========================================-----------{Colors.purple}
         \\\ 
          \>{Colors.default}
     """)
