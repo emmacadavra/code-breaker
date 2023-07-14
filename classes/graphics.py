@@ -1,5 +1,5 @@
 # colour class
-class Colours:
+class Colors:
     """
     ANSI escape codes to be used with their respective colours
     """
@@ -22,20 +22,20 @@ class Colours:
 
 # main logo
 def main_logo():
-    print(f"""{Colours.yellow}
+    print(f"""{Colors.yellow}
     
                       _             ___          _      
       /\/\   __ _ ___| |_ ___ _ __ / __\___   __| | ___ 
-     /    \ / _` / __| __/ _ \ '__/ /  / _ \ / _` |/ _ \
+     /    \ / _` / __| __/ _ \ '__/ /  / _ \ / _` |/ _ \\
     / /\/\ \ (_| \__ \ ||  __/ | / /__| (_) | (_| |  __/
     \/    \/\__,_|___/\__\___|_| \____/\___/ \__,_|\___|
                                                     
-{Colours.default}\n""")
+{Colors.default}\n""")
 
 
 # Triforce
 def triforce():
-    tri = f"{Colours.yellow}▲"
+    tri = f"{Colors.yellow}▲"
     big_tri = []
     for i in range(1,21,2):
         big_tri.append(" "*int((19-i)/2) + tri*i + " "*int((19-i)/2))

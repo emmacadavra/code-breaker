@@ -6,7 +6,7 @@ MasterCode - a code breaker game in the style of Mastermind.
 import random
 
 # constants
-COLOUR_CHOICES = ["R", "G", "Y", "B", "P", "W"]
+COLOR_CHOICES = ["R", "G", "Y", "B", "P", "W"]
 CODE_LENGTH = 4
 MAX_ATTEMPTS = 9
 
@@ -66,28 +66,28 @@ def instructions():
     """
     print("Instructions on how to play MasterCode:\n")
     print("A secret code of four colours will be randomly generated, choosing from the following colours:\n")
-    print(f"{Colours.red}R  {Colours.green}G  {Colours.yellow}Y  {Colours.blue}B  {Colours.pink}P  {Colours.white}W{Colours.default}")
-    print(f"{Colours.red_block} {Colours.default}  {Colours.green_block} {Colours.default}  {Colours.yellow_block} {Colours.default}  {Colours.blue_block} {Colours.default}  {Colours.pink_block} {Colours.default}  {Colours.white_block} {Colours.default}\n")
+    print(f"{Colors.red}R  {Colors.green}G  {Colors.yellow}Y  {Colors.blue}B  {Colors.pink}P  {Colors.white}W{Colors.default}")
+    print(f"{Colors.red_block} {Colors.default}  {Colors.green_block} {Colors.default}  {Colors.yellow_block} {Colors.default}  {Colors.blue_block} {Colors.default}  {Colors.pink_block} {Colors.default}  {Colors.white_block} {Colors.default}\n")
     print("Your heroic challenge is to find the solution in 10 attempts or fewer.")
     print("In doing so, you will become a MasterCode breaker!\n")
     print("A colour may appear more than once in the secret code, so don't forget to consider this!")
     print("The terminal will ONLY accept answers that are 4 characters long, with no commas or spaces.")
     print("Make sure you only use the following characters for their respective colours:\n")
-    print(f"{Colours.red}R  {Colours.green}G  {Colours.yellow}Y  {Colours.blue}B  {Colours.pink}P  {Colours.white}W{Colours.default}\n")
-    print(f"{Colours.white}Go forth, hero, and become the MasterCode breaker!{Colours.default}\n")
+    print(f"{Colors.red}R  {Colors.green}G  {Colors.yellow}Y  {Colors.blue}B  {Colors.pink}P  {Colors.white}W{Colors.default}\n")
+    print(f"{Colors.white}Go forth, hero, and become the MasterCode breaker!{Colors.default}\n")
 
 
 # function to generate code
 def generate_code():
     """
-    Generates a 4-colour combination from the 6 choices in COLOUR_CHOICES.
+    Generates a 4-color combination from the 6 choices in COLOR_CHOICES.
     Duplicates are enabled.
     """
-    colour_code = []
-    while len(colour_code) < CODE_LENGTH:
-        random_colour = random.choice(COLOUR_CHOICES)
-        colour_code.append(random_colour)
-    return colour_code
+    color_code = []
+    while len(color_code) < CODE_LENGTH:
+        random_color = random.choice(COLOR_CHOICES)
+        color_code.append(random_color)
+    return color_code
 
 
 # main game code
@@ -103,10 +103,10 @@ def run_game():
     while attempt_number <= MAX_ATTEMPTS:
         player_guess = player_guess_input(attempt_number)
         modified_answer = list(original_answer)
-        position, colour = check_result(player_guess, modified_answer)
+        position, color = check_result(player_guess, modified_answer)
         if position == CODE_LENGTH:
             print("You cracked the code like a true Hero!")
-            print(f"You defeated this challenge in {Colours.white}{attempt_number + 1}{Colours.default} attempt(s).\n")
+            print(f"You defeated this challenge in {Colors.white}{attempt_number + 1}{Colors.default} attempt(s).\n")
             break
         elif attempt_number == MAX_ATTEMPTS and position != CODE_LENGTH:
             print("Oh no! You weren't able to crack the code this time.")
@@ -115,8 +115,8 @@ def run_game():
         else:
             attempt_number += 1
             print(f"Correct colour and position: {position}")
-            print(f"Correct colour, but incorrect position: {colour}")
-            print(f"You have {Colours.white}{MAX_ATTEMPTS - attempt_number + 1}{Colours.default} attempt(s) remaining.\n")
+            print(f"Correct colour, but incorrect position: {color}")
+            print(f"You have {Colors.white}{MAX_ATTEMPTS - attempt_number + 1}{Colors.default} attempt(s) remaining.\n")
 
 
 # function for user input
@@ -133,10 +133,10 @@ def player_guess_input(attempt):
             continue
 
         for character in guess_list:
-            if character not in COLOUR_CHOICES:
+            if character not in COLOR_CHOICES:
                 print(f"Error: '{character}' is not a valid character.")
                 print(f"Choose only from the following characters, with no commas or spaces:")
-                print(f"{Colours.red}R  {Colours.green}G  {Colours.yellow}Y  {Colours.blue}B  {Colours.pink}P  {Colours.white}W{Colours.default}\n")
+                print(f"{Colors.red}R  {Colors.green}G  {Colors.yellow}Y  {Colors.blue}B  {Colors.pink}P  {Colors.white}W{Colors.default}\n")
                 break
             invalid_input = False
 
@@ -146,7 +146,7 @@ def player_guess_input(attempt):
 # function to compare user input with code
 def check_result(guess, answer):
     correct_position = 0
-    correct_colour = 0
+    correct_color = 0
     for i in range(CODE_LENGTH):
         if guess[i] == answer[i]:
             correct_position += 1
@@ -160,15 +160,13 @@ def check_result(guess, answer):
 
     for i in range(len(guess)):
         if guess[i] in answer:
-            correct_colour += 1
+            correct_color += 1
             answer.remove(guess[i])
 
-    return correct_position, correct_colour 
+    return correct_position, correct_color 
 
 
 # display user input with result of comparison
-
-
 
 
 # main function 
