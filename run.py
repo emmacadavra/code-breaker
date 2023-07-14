@@ -154,6 +154,7 @@ def run_game():
 
         elif attempt_number == MAX_ATTEMPTS and position != CODE_LENGTH:
             graphics.game_over()
+            print(f"The code was: {display_player_guess(original_answer)}")
             print("You couldn't defeat the challenge this time, but do not despair!")
             print("Would you like to try again to become the MasterCode Breaker? (Y/N)")
             play_again()
@@ -167,7 +168,7 @@ def run_game():
 
 
 # function for user input
-def player_guess_input():
+def player_guess_input(attempt):
     """
     Asks the player to enter their guess, and validates the input.
     """
