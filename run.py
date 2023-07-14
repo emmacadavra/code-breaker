@@ -119,17 +119,17 @@ def run_game():
     """
     clear_screen()
     header_image()
-    print("Welcome, Hero, to the ultimate challenge!")
     divider_image()
     print("""
+        Welcome, Hero, to the ultimate challenge!
+
         A secret code, unknown to anyone, prevents you from
-        completing your heroic quest to save the world!
-        """)
-    print("""
+        completing your heroic quest to save the world!\n
         You must solve the puzzle by breaking the secret code,
-        and doing so you will earn you the title of MasterCode Breaker!
+        and doing so will earn you the title of MasterCode Breaker!
+        
+        Have you the courage to face up to the mighty task...?
         """)
-    print("Have you the courage to face up to the mighty task...?")
     divider_image()
     
 
