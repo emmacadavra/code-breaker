@@ -5,7 +5,7 @@ MasterCode - a code breaker game in the style of Mastermind.
 # imports
 import random
 import os
-from classes.graphics import main_logo, triforce
+from classes.graphics import main_logo, header_image, divider_image, triforce
 from classes.colors import Colors
 
 # constants
@@ -61,7 +61,7 @@ def instructions():
     Instructions for the user on how to play the game
     """
     clear_screen()
-    
+
     print("Instructions on how to play MasterCode:\n")
     print("A secret code of four colours will be randomly generated from the following colours:\n")
     print(f"{Colors.red}R  {Colors.green}G  {Colors.blue}B  {Colors.yellow}Y  {Colors.pink}P  {Colors.white}W{Colors.default}")
