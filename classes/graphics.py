@@ -1,5 +1,6 @@
 from classes.colors import Colors
 
+
 # main logo
 def main_logo():
     """
@@ -29,6 +30,7 @@ def main_logo():
       \/{Colors.default}
     """)
 
+
 def header_image():
     """
     A header/banner image that shows above the game/instructions areas
@@ -52,6 +54,7 @@ def divider_image():
         {o)xxx|===============-  *  -===============|xxx(o}
               O                                     O
         """)
+
 
 # Triforce
 def triforce():
