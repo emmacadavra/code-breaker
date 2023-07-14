@@ -18,3 +18,4 @@ class Colors:
     pink_block = "\033[1;35;45m"
     cyan_block = "\033[1;36;46m"
     white_block = "\033[1;37;47m"
+    
