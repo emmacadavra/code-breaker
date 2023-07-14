@@ -180,10 +180,10 @@ def check_result(guess, answer):
         guess.remove(0)
         index_count = guess.count(0)
 
-    for i in range(len(guess)):
-        if guess[i] in answer:
+    for i, letter in enumerate(guess):
+        if letter in answer:
             correct_color += 1
-            answer.remove(guess[i])
+            answer.remove(letter)
 
     return correct_position, correct_color 
 
