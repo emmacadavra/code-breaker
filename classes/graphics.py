@@ -58,7 +58,8 @@ def triforce():
     """
     Displays the Triforce 'bonus' content - code by John Cartwright (see credits in README.md)
     """
-    clear_screen()
+    print(header_image())
+    print("")
 
     tri = f"{Colors.yellow}▲"
     big_tri = []

@@ -19,7 +19,7 @@ def main_menu():
     Title screen/menu with player options
     """
     clear_screen()
-    
+
     print(main_logo())
     print("""
         ~*~ Press '1' to Play   ~*~   Press '2' for Instructions ~*~
@@ -36,6 +36,7 @@ def main_menu():
                 instructions()
                 break
             elif menu_select == 3:
+                clear_screen()
                 triforce()
                 break
             elif menu_select == 4:
