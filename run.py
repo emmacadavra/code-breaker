@@ -162,7 +162,9 @@ def player_guess_input(attempt):
                                     f"{Colors.red}R  {Colors.green}G  {Colors.blue}B  {Colors.yellow}Y  {Colors.pink}P  {Colors.white}W{Colors.default}\n")
             
             break
-      
+
+        except ValueError as e:
+            print(e)
 
     return guess_list
 
