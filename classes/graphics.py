@@ -41,6 +41,7 @@ def header_image():
          \>{Colors.default}
     """)
 
+
 # divider
 def divider_image():
     """
@@ -72,7 +73,7 @@ def triforce():
         print(t2 + " " + t2)
 
     print("""{Colors.default}
-    You found the Triforce! Wow!
+    You found the Triforce! Wow!!
 These golden triangles possess mystical powers...
     """)
     print("Would you like to play MasterCode? ('Y' to play, 'N' to return to the menu)")
