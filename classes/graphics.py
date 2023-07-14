@@ -6,26 +6,26 @@ def main_logo():
     Displays the main logo for the game
     """
     print(f"""{Colors.blue}
-     (__)
+     {Colors.pink}(__){Colors.blue}
      [//]
      [\\\]         
      [//]        
   /\_[\\\]_/\     
  //__{Colors.yellow}<()>{Colors.blue}__\\\    
 /// \[{Colors.cyan}/\{Colors.blue}]/ \\\\\     {Colors.yellow}/\\\,/\\\,               ,{Colors.blue}
-\(   |{Colors.cyan}||{Colors.blue}|   )/    {Colors.yellow}/| || ||    _          ||{Colors.blue}
-     |{Colors.cyan}||{Colors.blue}|         {Colors.yellow}|| || ||   < \,  _-_, =||=  _-_  ,._-_{Colors.blue}
-     |{Colors.cyan}||{Colors.blue}|         {Colors.yellow}||=|= ||   /-|| ||_.   ||  || \\\  ||{Colors.blue}
-     |{Colors.cyan}||{Colors.blue}|        {Colors.yellow}~|| || ||  (( ||  ~ ||  ||  ||/    ||{Colors.blue}
-     |{Colors.cyan}||{Colors.blue}|         {Colors.yellow}|, \\\,\\\,  \/\\\ ,-_-   \\\, \\\,/   \\\,{Colors.blue}
-     |{Colors.cyan}||{Colors.blue}|        {Colors.yellow}_-{Colors.blue}
-     |{Colors.cyan}||{Colors.blue}|                   {Colors.yellow},- _~.        |\{Colors.blue}
-     |{Colors.cyan}||{Colors.blue}|                  {Colors.yellow}(' /|           \\\{Colors.blue}
-     |{Colors.cyan}||{Colors.blue}|                 {Colors.yellow}((  ||    /'\\\  / \\\  _-_{Colors.blue}
-     |{Colors.cyan}||{Colors.blue}|                 {Colors.yellow}((  ||   || || || || || \\\\{Colors.blue}
-     |{Colors.cyan}||{Colors.blue}|                  {Colors.yellow}( / |   || || || || ||/{Colors.blue}
-     |{Colors.cyan}||{Colors.blue}|                   {Colors.yellow}-____- \\\,/   \\\/  \\\,/
-     {Colors.cyan}\\\//
+\(   {Colors.cyan}||||{Colors.blue}   )/    {Colors.yellow}/| || ||    _          ||{Colors.cyan}
+     ||||         {Colors.yellow}|| || ||   < \,  _-_, =||=  _-_  ,._-_{Colors.cyan}
+     ||||         {Colors.yellow}||=|= ||   /-|| ||_.   ||  || \\\  ||{Colors.cyan}
+     ||||        {Colors.yellow}~|| || ||  (( ||  ~ ||  ||  ||/    ||{Colors.cyan}
+     ||||         {Colors.yellow}|, \\\,\\\,  \/\\\ ,-_-   \\\, \\\,/   \\\,{Colors.cyan}
+     ||||        {Colors.yellow}_-{Colors.cyan}
+     ||||                   {Colors.yellow},- _~.        |\{Colors.cyan}
+     ||||                  {Colors.yellow}(' /|           \\\{Colors.cyan}
+     ||||                 {Colors.yellow}((  ||    /'\\\  / \\\  _-_{Colors.cyan}
+     ||||                 {Colors.yellow}((  ||   || || || || || \\\\{Colors.cyan}
+     ||||                  {Colors.yellow}( / |   || || || || ||/{Colors.cyan}
+     ||||                   {Colors.yellow}-____- \\\,/   \\\/  \\\,/{Colors.cyan}
+     \\\//
       \/{Colors.default}
       \n""")
 
