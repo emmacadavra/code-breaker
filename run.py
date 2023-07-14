@@ -40,8 +40,8 @@ def main_menu():
                 break
             elif menu_select == 4:
                 divider_image()
-                print("Exiting program...\n")
-                print("Program closed.")
+                print("Exiting game...\n")
+                print("Game closed.")
                 divider_image()
                 break
             else:
