@@ -6,14 +6,14 @@ def main_logo():
     Displays the main logo for the game
     """
     print(f"""
-     {Colors.yellow}(__){Colors.blue}
+     {Colors.blue}(__)
      [//]
-     [\\\]         
-     [//]        
-  {Colors.pink}/\_{Colors.blue}[\\\]{Colors.pink}_/\     
- //__{Colors.yellow}<()>{Colors.pink}__\\\    
+     [\\\]
+     [//]{Colors.pink}
+  /\_[{Colors.blue}\\/{Colors.pink}]_/\ 
+ //__{Colors.yellow}<()>{Colors.pink}__\\\ 
 /// \[{Colors.cyan}/\{Colors.pink}]/ \\\\\     {Colors.yellow}/\\\,/\\\,               ,{Colors.pink}
-\(   {Colors.cyan}|{Colors.default}|{Colors.cyan}||{Colors.pink}   )/    {Colors.yellow}/| || ||    _          ||{Colors.cyan}
+\(   {Colors.cyan}||||{Colors.pink}   )/    {Colors.yellow}/| || ||    _          ||{Colors.cyan}
      ||||         {Colors.yellow}|| || ||   < \,  _-_, =||=  _-_  ,._-_{Colors.cyan}
      ||||         {Colors.yellow}||=|= ||   /-|| ||_.   ||  || \\\  ||{Colors.cyan}
      ||||        {Colors.yellow}~|| || ||  (( ||  ~ ||  ||  ||/    ||{Colors.cyan}
@@ -26,8 +26,7 @@ def main_logo():
      ||||                  {Colors.yellow}( / |   || || || || ||/{Colors.cyan}
      ||||                   {Colors.yellow}-____- \\\,/   \\\/  \\\,/{Colors.cyan}
      \\\//
-      \/{Colors.default}
-      \n""")
+      \/{Colors.default}\n""")
 
 # divider
 def divider_image():
