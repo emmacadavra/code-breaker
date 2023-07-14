@@ -126,7 +126,7 @@ def player_guess_input(attempt):
     """
     while True:
         try:
-            guess = input("Enter your prediction: \n", end="").upper()
+            guess = input("Enter your prediction: \n").upper()
             guess_list = [g for g in guess]
 
             if len(guess_list) != CODE_LENGTH:
