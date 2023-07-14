@@ -58,7 +58,9 @@ def triforce():
     """
     Displays the Triforce 'bonus' content - code by John Cartwright (see credits in README.md)
     """
-    print("")
+    print("""
+    Hey! Listen!
+    """)
 
     tri = f"{Colors.yellow}▲"
     big_tri = []
@@ -68,6 +70,13 @@ def triforce():
         print(" "*10 + t1 + " "*10)
     for t2 in big_tri:
         print(t2 + " " + t2)
+
+    print("""
+    You found the Triforce! Wow!
+    These golden triangles possess mystical powers...
+    """)
+    print("Would you like to play MasterCode? ('Y' to play, 'N' to return to the menu)")
+    play_again()
 
 
 # You Win! graphic function
