@@ -8,7 +8,7 @@ from classes.colors import Colors
 from classes.graphics import main_logo, triforce
 
 # constants
-COLOR_CHOICES = ["R", "G", "Y", "B", "P", "W"]
+COLOR_CHOICES = ["R", "G", "B", "Y", "P", "W"]
 CODE_LENGTH = 4
 MAX_ATTEMPTS = 9
 
@@ -67,14 +67,14 @@ def instructions():
     """
     print("Instructions on how to play MasterCode:\n")
     print("A secret code of four colours will be randomly generated, choosing from the following colours:\n")
-    print(f"{Colors.red}R  {Colors.green}G  {Colors.yellow}Y  {Colors.blue}B  {Colors.pink}P  {Colors.white}W{Colors.default}")
-    print(f"{Colors.red_block} {Colors.default}  {Colors.green_block} {Colors.default}  {Colors.yellow_block} {Colors.default}  {Colors.blue_block} {Colors.default}  {Colors.pink_block} {Colors.default}  {Colors.white_block} {Colors.default}\n")
+    print(f"{Colors.red}R  {Colors.green}G  {Colors.blue}B  {Colors.yellow}Y  {Colors.pink}P  {Colors.white}W{Colors.default}")
+    print(f"{Colors.red_block} {Colors.default}  {Colors.green_block} {Colors.default}  {Colors.blue_block} {Colors.default}  {Colors.yellow_block} {Colors.default}  {Colors.pink_block} {Colors.default}  {Colors.white_block} {Colors.default}\n")
     print("Your heroic challenge is to find the solution in 10 attempts or fewer.")
     print("In doing so, you will become a MasterCode breaker!\n")
     print("A colour may appear more than once in the secret code, so don't forget to consider this!")
     print("The terminal will ONLY accept answers that are 4 characters long, with no commas or spaces.")
     print("Make sure you only use the following characters for their respective colours:\n")
-    print(f"{Colors.red}R  {Colors.green}G  {Colors.yellow}Y  {Colors.blue}B  {Colors.pink}P  {Colors.white}W{Colors.default}\n")
+    print(f"{Colors.red}R  {Colors.green}G  {Colors.blue}B  {Colors.yellow}Y  {Colors.pink}P  {Colors.white}W{Colors.default}\n")
     print(f"{Colors.white}Go forth, hero, and become the MasterCode breaker!{Colors.default}\n")
 
 
@@ -99,6 +99,8 @@ def display_player_guess():
     for item in guess:
         if item == "R":
             output += f" {Colors.red_block} {Colors.default}"
+        elif item == "G":
+            output += output += f" {Colors.green_block} {Colors.default}"
 
 # main game code
 def run_game():
@@ -146,7 +148,7 @@ def player_guess_input(attempt):
             if character not in COLOR_CHOICES:
                 print(f"Error: '{character}' is not a valid character.")
                 print(f"Choose only from the following characters, with no commas or spaces:")
-                print(f"{Colors.red}R  {Colors.green}G  {Colors.yellow}Y  {Colors.blue}B  {Colors.pink}P  {Colors.white}W{Colors.default}\n")
+                print(f"{Colors.red}R  {Colors.green}G  {Colors.blue}B  {Colors.yellow}Y  {Colors.pink}P  {Colors.white}W{Colors.default}\n")
                 break
             invalid_input = False
 
