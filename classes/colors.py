@@ -1,7 +1,7 @@
-# colour class
+# color class
 class Colors:
     """
-    ANSI escape codes to be used with their respective colours
+    ANSI escape codes to be used with their respective colors
     """
     default = "\033[0;37;40m"
     red = "\033[1;31;40m"

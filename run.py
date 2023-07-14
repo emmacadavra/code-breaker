@@ -80,12 +80,12 @@ def instructions():
 def play_again():
     while True:
         try:
-            play_again = (input("Enter choice: \n")).upper().strip()
-            if play_again == "Y":
+            play_again_choice = (input("Enter choice: \n")).upper().strip()
+            if play_again_choice == "Y":
                 clear_screen()
                 run_game()
                 break
-            elif play_again == "N":
+            elif play_again_choice == "N":
                 clear_screen()
                 main_menu()
                 break
@@ -93,10 +93,10 @@ def play_again():
                 raise ValueError
 
         except ValueError:
-                        print("""
-                        Invalid key press.
-                        Please press 'Y' to play the game, or 'N' to return to the main menu.
-                        """)
+            print("""
+            Invalid key press.
+            Please press 'Y' to play the game, or 'N' to return to the main menu.
+            """)
 
 
 # function to generate code
