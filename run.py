@@ -74,6 +74,28 @@ def instructions():
     print(f"{Colors.white}Go forth, hero, and become the MasterCode breaker!{Colors.default}\n")
 
 
+# play again function
+def play_again():
+    while True:
+        try:
+            play_again = (input("Enter choice: \n")).upper()
+            break
+            if play_again == "Y":
+                run_game()
+                break
+            elif play_again == "N":
+                main_menu()
+                break
+            else:
+                raise ValueError
+
+        except ValueError:
+                        print("""
+                        Invalid key press.
+                        Please press 'Y' to play the game, or 'N' to return to the main menu.
+                        """)
+
+
 # function to generate code
 def generate_code():
     """
@@ -112,24 +134,7 @@ def run_game():
             print(game_over())
             print("You couldn't defeat the challenge this time, but do not despair!")
             print("Would you like to try again to become the MasterCode Breaker? (Y/N)")
-            while True:
-                try:
-                    play_again = (input("Press key: \n")).upper()
-                    break
-                    if play_again == "Y":
-                        run_game()
-                        break
-                    elif play_again == "N":
-                        main_menu()
-                        break
-                    else:
-                        raise ValueError
-
-                except ValueError:
-                        print("""
-                        Invalid key press.
-                        Please press 'Y' to play again, or 'N' to return to the main menu.
-                        """)
+            play_again()
         else:
             attempt_number += 1
             print(f"Correct colour and position: {position}")
@@ -211,6 +216,7 @@ def check_result(guess, answer):
     return correct_position, correct_color 
 
 
+# clear screen function
 def clear_screen():
     """
     Clears the terminal screen/window
@@ -220,7 +226,6 @@ def clear_screen():
     else:
         _ = os.system('cls')
     print(header_image())
-
 
 
 # main function 
