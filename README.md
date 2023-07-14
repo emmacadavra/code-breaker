@@ -2,9 +2,9 @@
 
 ## **Application Overview**
 
-MasterCode is a terminal-based, code breaker game based on Hasbro's _Mastermind_.
+MasterCode is a terminal-based, code breaker game based on Mordecai Meirowitz's [_Mastermind_](<https://en.wikipedia.org/wiki/Mastermind_(board_game)>).
 
-The style of the game is inspired by classic text-based adventure role-playing games, and thematically borrows from - and serves as an homage to - Nintendo's magnificent and beloved _The Legend of Zelda_ franchise. I chose the name 'MasterCode' due to its similarity to both _Mastermind_ (by which most people would recognise this game), and of course to the famous _Master Sword_ wielded by the hero of Hyrule himself.
+The style of the game is inspired by classic text-based adventure role-playing games, and thematically borrows from - and serves as an homage to - Nintendo's magnificent and iconic [_The Legend of Zelda_](https://zelda.com/about/) franchise. I chose the name 'MasterCode' due to its similarity to both _Mastermind_ (by which most people would recognise this game), and of course to the famous _Master Sword_ wielded by the hero of Hyrule himself.
 
 When creating this game, I really wanted to focus on recreating the light-hearted, whimsical feel of some older text-based adventure games (for the most part!), as well as beloved classics from _The Legend of Zelda's_ titles such as _Ocarina of Time_, which remains one of my favourite entries in the franchise.
 
@@ -48,6 +48,10 @@ When creating this game, I really wanted to focus on recreating the light-hearte
 ## **Planning Stage**
 
 ### **Target Audience**
+
+This game has been created with a wide target audience in mind. _Mastermind_, and similar games sharing the same core concepts, is a classic that is suitable for all ages. According to Hasbro, who currently hold the trademarks for _Mastermind_, the game is suitable for ages 8 and above. Naturally, this is a terminal-based game and is unlikely to be something children would happen upon organically, however (with adult supervision at a computer), this game would be suitable, as Hasbro indicate, for children aged 8 and above.
+
+The addition of the text-based adventure elements, and inclusion of _The Legend of Zelda_-inspired features, also opens this game up to audiences who are interested in one or both of these things, with a taste for nostalgic or 'retro' gaming formats.
 
 ### **User Stories**
 
