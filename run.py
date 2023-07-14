@@ -41,9 +41,9 @@ def main_menu():
             elif menu_select == 4:
                 graphics.divider_image()
                 print(f"""
-                {Colors.white}Exiting game...
+                   {Colors.white}Exiting game...
 
-                ...Game closed.{Colors.default}
+                   ...Game closed.{Colors.default}
                 """)
                 graphics.divider_image()
                 break
@@ -122,17 +122,12 @@ def run_game():
     """
     clear_screen()
     graphics.header_image()
-    graphics.divider_image()
-    print("""
-    Welcome, Hero, to the ultimate challenge!
-
-    A secret code, unknown to anyone, prevents you from
-    completing your heroic quest to save the world!\n
-    You must solve the puzzle by breaking the secret code,
-    and doing so will earn you the title of MasterCode Breaker!
-
-    Have you the courage to face up to the mighty task...?
-    """)
+    print("     Welcome, Hero, to the ultimate challenge!\n")
+    print("  A secret code, unknown to anyone, prevents you from")
+    print("    completing your heroic quest to save the world!\n")
+    print("   You must solve the puzzle by breaking the secret code,")
+    print(" and doing so will earn you the title of MasterCode Breaker!\n")
+    print("   Have you the courage to face up to the mighty task...?")
     graphics.divider_image()
 
     original_answer = generate_code()
