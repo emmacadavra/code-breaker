@@ -103,6 +103,13 @@ def display_player_guess():
             output += f" {Colors.green_block} {Colors.default}"
         elif item == "B":
             output += f" {Colors.blue_block} {Colors.default}"
+        elif item == "Y":
+            output += f" {Colors.yellow_block} {Colors.default}"
+        elif item == "P":
+            output += f" {Colors.pink_block} {Colors.default}"
+        elif item == "W":
+            output += f" {Colors.white_block} {Colors.default}"
+        return output
 
 # main game code
 def run_game():
