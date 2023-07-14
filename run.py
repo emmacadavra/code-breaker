@@ -46,7 +46,7 @@ def main_menu():
                 break
             else:
                 raise ValueError
-        
+
         except ValueError:
             print("""
         Invalid key press. Please choose from the following:\n
@@ -65,14 +65,18 @@ def instructions():
 
     print("Instructions on how to play MasterCode:\n")
     print(f"""
-    A secret code of four colors will be randomly generated from the following colors:
+    A secret code of four colors will be randomly
+    generated from the following options:
     {Colors.red}R  {Colors.green}G  {Colors.blue}B  {Colors.yellow}Y  {Colors.pink}P  {Colors.white}W{Colors.default}
     {Colors.red_block} {Colors.default}  {Colors.green_block} {Colors.default}  {Colors.blue_block} {Colors.default}  {Colors.yellow_block} {Colors.default}  {Colors.pink_block} {Colors.default}  {Colors.white_block} {Colors.default}
     Your heroic challenge is to find the solution in 10 attempts or fewer.
     In doing so, you will become a MasterCode breaker!\n
-    A color may appear more than once in the secret code, so don't forget to consider this!
-    The terminal will ONLY accept answers that are 4 characters long, with no commas or spaces.
-    Make sure you only use the following characters for their respective colors:
+    A color may appear more than once in the secret
+    code, so don't forget to consider this!
+    The terminal will ONLY accept answers that
+    are 4 characters long, with no commas or spaces.
+    Make sure you only use the following characters
+    for their respective colors:
     {Colors.red}R  {Colors.green}G  {Colors.blue}B  {Colors.yellow}Y  {Colors.pink}P  {Colors.white}W{Colors.default}
     {Colors.white}Go forth, hero, and become the MasterCode breaker!{Colors.default}
     """)
@@ -97,7 +101,7 @@ def play_again():
         except ValueError:
             print("""
             Invalid key press.
-            Please press 'Y' to play the game, or 'N' to return to the main menu.
+            Press 'Y' to play the game, or 'N' to return to the main menu.
             """)
 
 
@@ -129,11 +133,11 @@ def run_game():
         completing your heroic quest to save the world!\n
         You must solve the puzzle by breaking the secret code,
         and doing so will earn you the title of MasterCode Breaker!
-        
+
         Have you the courage to face up to the mighty task...?
         """)
     graphics.divider_image()
-    
+
     original_answer = generate_code()
     print(original_answer)
 
@@ -186,9 +190,8 @@ def player_guess_input(attempt):
             for character in guess_list:
                 if character not in COLOR_CHOICES:
                     raise ValueError(f"Error: '{character}' is not a valid character.\n" +
-                                    f"Choose only from the following characters, with no commas or spaces:\n" +
-                                    f"{Colors.red}R  {Colors.green}G  {Colors.blue}B  {Colors.yellow}Y  {Colors.pink}P  {Colors.white}W{Colors.default}\n")
-            
+                                     f"Choose only from the following characters, with no commas or spaces:\n" +
+                                     f"{Colors.red}R  {Colors.green}G  {Colors.blue}B  {Colors.yellow}Y  {Colors.pink}P  {Colors.white}W{Colors.default}\n")
             break
 
         except ValueError as e:
@@ -239,7 +242,7 @@ def check_result(guess, answer):
             correct_color += 1
             answer.remove(letter)
 
-    return correct_position, correct_color 
+    return correct_position, correct_color
 
 
 # clear screen function
@@ -253,5 +256,5 @@ def clear_screen():
         _ = os.system('cls')
 
 
-# main function 
+# main function
 main_menu()
