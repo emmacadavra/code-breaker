@@ -1,5 +1,5 @@
 """
-MasterCode - a code breaker game in the style of Mastermind.
+MasterCode - a code breaker game in the style of Mastermind, heavily themed around text adventure style games and The Legend of Zelda.
 """
 # imports
 import random
@@ -55,7 +55,7 @@ def main_menu():
         Invalid key press. Please choose from the following:\n
         ~*~ Press '1' to Play   ~*~   Press '2' for Instructions ~*~
         ~*~ Press '3' for the Triforce   ~*~   Press '4' to Exit ~*~
-                """)
+            """)
 
 
 # instructions on how to play
@@ -76,7 +76,7 @@ def instructions():
     print("Make sure you only use the following characters for their respective colors:\n")
     print(f"    {Colors.red}R  {Colors.green}G  {Colors.blue}B  {Colors.yellow}Y  {Colors.purple}P  {Colors.white}W{Colors.default}")
     print(f"    {Colors.red_block} {Colors.default}  {Colors.green_block} {Colors.default}  {Colors.blue_block} {Colors.default}  {Colors.yellow_block} {Colors.default}  {Colors.purple_block} {Colors.default}  {Colors.white_block} {Colors.default}\n")
-    print(f"{Colors.white}Go forth, Hero, and become the MasterCode breaker!{Colors.default}")
+    print(f"{Colors.white}Go forth, Hero, and become the MasterCode Breaker!{Colors.default}")
     print("Are you ready? ('Y' to play, 'N' to return to the menu)")
 
     # call the play_again function to direct player to game/menu depending on their choice
@@ -266,9 +266,9 @@ def clear_screen():
     Clears the terminal screen/window
     """
     if os.name == 'posix':
-        _ = os.system('clear')
+        os.system('clear')
     else:
-        _ = os.system('cls')
+        os.system('cls')
 
 
 # main function
