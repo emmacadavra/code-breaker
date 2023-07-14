@@ -64,14 +64,14 @@ def instructions():
     header_image()
 
     print("Instructions on how to play MasterCode:\n")
-    print("A secret code of four colours will be randomly generated from the following colours:\n")
+    print("A secret code of four colors will be randomly generated from the following colors:\n")
     print(f"{Colors.red}R  {Colors.green}G  {Colors.blue}B  {Colors.yellow}Y  {Colors.pink}P  {Colors.white}W{Colors.default}")
     print(f"{Colors.red_block} {Colors.default}  {Colors.green_block} {Colors.default}  {Colors.blue_block} {Colors.default}  {Colors.yellow_block} {Colors.default}  {Colors.pink_block} {Colors.default}  {Colors.white_block} {Colors.default}\n")
     print("Your heroic challenge is to find the solution in 10 attempts or fewer.")
     print("In doing so, you will become a MasterCode breaker!\n")
-    print("A colour may appear more than once in the secret code, so don't forget to consider this!")
+    print("A color may appear more than once in the secret code, so don't forget to consider this!")
     print("The terminal will ONLY accept answers that are 4 characters long, with no commas or spaces.")
-    print("Make sure you only use the following characters for their respective colours:\n")
+    print("Make sure you only use the following characters for their respective colors:\n")
     print(f"{Colors.red}R  {Colors.green}G  {Colors.blue}B  {Colors.yellow}Y  {Colors.pink}P  {Colors.white}W{Colors.default}\n")
     print(f"{Colors.white}Go forth, hero, and become the MasterCode breaker!{Colors.default}\n")
 
@@ -160,8 +160,8 @@ def run_game():
 
         else:
             attempt_number += 1
-            print(f"Correct colour and position: {position}")
-            print(f"Correct colour, but incorrect position: {color}")
+            print(f"Correct color and position: {position}")
+            print(f"Correct color, but incorrect position: {color}")
             print(f"You have {Colors.white}{MAX_ATTEMPTS - attempt_number + 1}{Colors.default} attempt(s) remaining.\n")
 
 
@@ -194,7 +194,7 @@ def player_guess_input(attempt):
     return guess_list
 
 
-# display the player's guess in colour
+# display the player's guess in color
 def display_player_guess(guess):
     """
     Displays the player's guess as a string of color blocks
