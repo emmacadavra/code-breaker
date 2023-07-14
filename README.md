@@ -10,6 +10,8 @@
    - [**User Stories**](#user-stories)
    - [**Application Aims**](#application-aims)
    - [**UX Flow Chart**](#ux-flow-chart)
+   - [**Technology Used**](#technology-used)
+     - [**_Libraries_**](#libraries)
 1. [**Current Features**](#current-features)
    - [**Main Menu**](#main-menu)
      - [**_Main Logo Graphic_**](#main-logo-graphic)
@@ -18,10 +20,19 @@
      - [**_Exit Game_**](#exit-game)
    - [**Run Game**](#run-game)
      - [**_Generating the Secret Code_**](#generating-the-secret-code)
-     - [**_Player Guess Input with Error Handling_**](#player-guess-input-with-error-handling)
+   - [**Player Guess Input with Error Handling**](#player-guess-input-with-error-handling)
+   - [**Comparing Player Guess to Secret Code**](#comparing-player-guess-to-secret-code)
      - [**_Player Guess Ouput_**](#player-guess-ouput)
-     - [**_Comparing Player Guess to Secret Code_**](#comparing-player-guess-to-secret-code)
-
+   - [**You Win! Graphic and Message**](#you-win-graphic-and-message)
+   - [**Game Over Graphic and Message**](#game-over-graphic-and-message)
+   - [**Play Again Function with Error Handling**](#play-again-function-with-error-handling)
+   - [**Clear Screen Function**()]
+1. [**Considerations for Future Enhancements**](#considerations-for-future-enhancements)
+1. [**Testing**](#testing)
+1. [**Deployment**](#deployment)
+1. [**Credits**](#credits)
+   - [**Honourable Mentions**](#honourable-mentions)
+   - [**Code and Content References**](#code-and-content-references)
 
 ## **Planning Stage**
 
@@ -32,6 +43,10 @@
 ### **Application Aims**
 
 ### **UX Flow Chart**
+
+### **Technology Used**
+
+#### **Libraries**
 
 ## **Current Features**
 
@@ -51,6 +66,26 @@
 
 #### **Player Guess Input with Error Handling**
 
+#### **Comparing Player Guess to Secret Code**
+
 #### **Player Guess Ouput**
 
-#### **Comparing Player Guess to Secret Code**
+#### **You Win! Graphic and Message**
+
+#### **Game Over Graphic and Message**
+
+### **Play Again Function with Error Handling**
+
+### **Clear Screen Function**
+
+## **Considerations for Future Enhancements**
+
+## **Testing**
+
+## **Deployment**
+
+## **Credits**
+
+### **Honourable Mentions**
+
+### **Code and Content References**
