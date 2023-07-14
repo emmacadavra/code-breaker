@@ -91,7 +91,7 @@ def generate_code():
     return color_code
 
 
-def display_player_guess():
+def display_player_guess(guess):
     """
     Displays the player's guess as a string of color blocks
     """
