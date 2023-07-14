@@ -122,12 +122,12 @@ def run_game():
     """
     clear_screen()
     graphics.header_image()
-    print("     Welcome, Hero, to the ultimate challenge!\n")
-    print("  A secret code, unknown to anyone, prevents you from")
+    print("      Welcome, Hero, to the ultimate challenge!\n")
+    print(" A secret code, unknown to anyone, prevents you from")
     print("    completing your heroic quest to save the world!\n")
-    print("   You must solve the puzzle by breaking the secret code,")
-    print(" and doing so will earn you the title of MasterCode Breaker!\n")
-    print("   Have you the courage to face up to the mighty task...?")
+    print(" You must solve the puzzle by breaking the secret code,")
+    print("and doing so will earn you the title of MasterCode Breaker!\n")
+    print("  Have you the courage to face up to the mighty task...?")
     graphics.divider_image()
 
     original_answer = generate_code()
