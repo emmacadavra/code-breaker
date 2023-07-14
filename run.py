@@ -18,14 +18,10 @@ def main_menu():
     Title screen/menu with player options
     """
     print(main_logo())
-    print("Welcome to MasterCode!\n")
-
     print("""
-            Press '1' to Play Game
-            Press '2' for Instructions
-            Press '3' for Triforce
-            Press '4' to Exit
-            """)
+        - Press '1' to Play  -  Press '2' for Instructions -
+        - Press '3' for the Triforce  -  Press '4' to Exit -
+        """)
 
     while True:
         try:
