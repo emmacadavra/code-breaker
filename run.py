@@ -11,7 +11,7 @@ from classes.colors import Colors
 # constants
 COLOR_CHOICES = ["R", "G", "B", "Y", "P", "W"]
 CODE_LENGTH = 4
-MAX_ATTEMPTS = 14
+MAX_ATTEMPTS = 11
 
 
 # menu/title screen
@@ -70,7 +70,7 @@ def instructions():
     # display the game instructions to the player
     print(f"A secret code of 4 colors will be randomly generated from the following colors:\n")
     print(f"    {Colors.red}Red  {Colors.green}Green  {Colors.blue}Blue  {Colors.yellow}Yellow  {Colors.purple}Purple  {Colors.white}White{Colors.default}\n")
-    print("Your heroic challenge is to find the solution in 15 attempts or fewer.")
+    print("Your heroic challenge is to find the solution in 12 attempts or fewer.")
     print("Remember: a color may appear more than once in the secret code!")
     print("Only type guesses that are 4 characters long with no commas or spaces.\n")
     print("Make sure you only use the following characters for their respective colors:\n")

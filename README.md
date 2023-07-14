@@ -55,6 +55,9 @@ The addition of the text-based adventure elements, and inclusion of _The Legend 
 
 ### **User Stories**
 
+As a user, I want to:
+* 
+
 ### **Application Aims**
 
 ### **UX Flow Chart**
