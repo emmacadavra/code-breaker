@@ -2,8 +2,6 @@
 
 ## **Application Overview**
 
-
-
 ## **Table of Contents:**
 
 1. [**Application Overview**](#application-overview)
@@ -25,8 +23,11 @@
    - [**Player Guess Input with Error Handling**](#player-guess-input-with-error-handling)
    - [**Comparing Player Guess to Secret Code**](#comparing-player-guess-to-secret-code)
      - [**_Player Guess Ouput_**](#player-guess-ouput)
-   - [**You Win! Graphic and Message**](#you-win-graphic-and-message)
-   - [**Game Over Graphic and Message**](#game-over-graphic-and-message)
+   - [**Graphics and Messages**](#graphics-and-messages)
+     - [**_Header Graphic_**](#header-graphic)
+     - [**_You Win!_**](#you-win-graphic-and-message)
+     - [**_Game Over_**](#game-over-graphic-and-message)
+     - [**_Divider Graphic_**](#divider-graphic)
    - [**Play Again Function with Error Handling**](#play-again-function-with-error-handling)
    - [**Clear Screen Function**()]
 1. [**Considerations for Future Enhancements**](#considerations-for-future-enhancements)
@@ -66,15 +67,21 @@
 
 #### **Generating the Secret Code**
 
-#### **Player Guess Input with Error Handling**
+### **Player Guess Input with Error Handling**
 
-#### **Comparing Player Guess to Secret Code**
+### **Comparing Player Guess to Secret Code**
 
 #### **Player Guess Ouput**
+
+### **Graphics and Messages**
+
+#### **Header Graphic**
 
 #### **You Win! Graphic and Message**
 
 #### **Game Over Graphic and Message**
+
+#### **Divider Graphic**
 
 ### **Play Again Function with Error Handling**
 
