@@ -5,15 +5,15 @@ def main_logo():
     """
     Displays the main logo for the game
     """
-    print(f"""{Colors.blue}
-     {Colors.pink}(__){Colors.blue}
+    print(f"""
+     {Colors.yellow}(__){Colors.blue}
      [//]
      [\\\]         
      [//]        
-  /\_[\\\]_/\     
- //__{Colors.yellow}<()>{Colors.blue}__\\\    
-/// \[{Colors.cyan}/\{Colors.blue}]/ \\\\\     {Colors.yellow}/\\\,/\\\,               ,{Colors.blue}
-\(   {Colors.cyan}||||{Colors.blue}   )/    {Colors.yellow}/| || ||    _          ||{Colors.cyan}
+  {Colors.pink}/\_{Colors.blue}[\\\]{Colors.pink}_/\     
+ //__{Colors.yellow}<()>{Colors.pink}__\\\    
+/// \[{Colors.cyan}/\{Colors.pink}]/ \\\\\     {Colors.yellow}/\\\,/\\\,               ,{Colors.pink}
+\(   {Colors.cyan}|{Colors.default}|{Colors.cyan}||{Colors.pink}   )/    {Colors.yellow}/| || ||    _          ||{Colors.cyan}
      ||||         {Colors.yellow}|| || ||   < \,  _-_, =||=  _-_  ,._-_{Colors.cyan}
      ||||         {Colors.yellow}||=|= ||   /-|| ||_.   ||  || \\\  ||{Colors.cyan}
      ||||        {Colors.yellow}~|| || ||  (( ||  ~ ||  ||  ||/    ||{Colors.cyan}
