@@ -102,7 +102,7 @@ def run_game():
     while attempt_number <= MAX_ATTEMPTS:
         player_guess = player_guess_input(attempt_number)
         modified_answer = list(original_answer)
-        print(f"{display_player_guess(player_guess)}")
+        print(f"{display_player_guess(player_guess)}\n")
         position, color = check_result(player_guess, modified_answer)
         if position == CODE_LENGTH:
             print("You cracked the code like a true Hero!")
