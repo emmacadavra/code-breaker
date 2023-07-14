@@ -66,7 +66,7 @@ def instructions():
     clear_screen()
     graphics.header_image()
 
-    print(f"A secret code of 4 colors will be randomly generated from the following colors:")
+    print(f"A secret code of 4 colors will be randomly generated from the following colors:\n")
     print(f"    {Colors.red}Red  {Colors.green}Green  {Colors.blue}Blue  {Colors.yellow}Yellow  {Colors.purple}Purple  {Colors.white}White{Colors.default}\n")
     print("Your heroic challenge is to find the solution in 15 attempts or fewer.")
     print("In doing so, you will become a MasterCode breaker!\n")
