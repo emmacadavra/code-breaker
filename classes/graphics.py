@@ -8,24 +8,21 @@ def main_logo():
     """
     print(f"""
      {Colors.blue}(__)
-     [//]
-     [\\\]
-     [//]{Colors.pink}
-  /\_[{Colors.blue}\\/{Colors.pink}]_/\ 
- //__{Colors.yellow}<()>{Colors.pink}__\\\ 
-/// \[{Colors.cyan}/\{Colors.pink}]/ \\\\\     {Colors.yellow}/\\\,/\\\,               ,{Colors.pink}
-\(   {Colors.cyan}||||{Colors.pink}   )/    {Colors.yellow}/| || ||    _          ||{Colors.cyan}
-     ||||         {Colors.yellow}|| || ||   < \,  _-_, =||=  _-_  ,._-_{Colors.cyan}
-     ||||         {Colors.yellow}||=|= ||   /-|| ||_.   ||  || \\\  ||{Colors.cyan}
-     ||||        {Colors.yellow}~|| || ||  (( ||  ~ ||  ||  ||/    ||{Colors.cyan}
+      []
+      []           {Colors.yellow}/\\\,/\\\,               ,{Colors.pink}
+  /\_[{Colors.blue}/\{Colors.pink}]_/\      {Colors.yellow}/| || ||    _          ||{Colors.pink}
+ //__{Colors.yellow}<()>{Colors.pink}__\\\     {Colors.yellow}|| || ||   < \,  _-_, =||=  _-_  ,._-_{Colors.pink}
+/// \[{Colors.cyan}/\{Colors.pink}]/ \\\\\    {Colors.yellow}||=|= ||   /-|| ||_.   ||  || \\\  ||{Colors.pink}
+\(   {Colors.cyan}||||{Colors.pink}   )/   {Colors.yellow}~|| || ||  (( ||  ~ ||  ||  ||/    ||{Colors.cyan}
      ||||         {Colors.yellow}|, \\\,\\\,  \/\\\ ,-_-   \\\, \\\,/   \\\,{Colors.cyan}
      ||||        {Colors.yellow}_-{Colors.cyan}
-     ||||                   {Colors.yellow},- _~.        |\{Colors.cyan}
-     ||||                  {Colors.yellow}(' /|           \\\{Colors.cyan}
-     ||||                 {Colors.yellow}((  ||    /'\\\  / \\\  _-_{Colors.cyan}
-     ||||                 {Colors.yellow}((  ||   || || || || || \\\\{Colors.cyan}
-     ||||                  {Colors.yellow}( / |   || || || || ||/{Colors.cyan}
-     ||||                   {Colors.yellow}-____- \\\,/   \\\/  \\\,/{Colors.cyan}
+     ||||                 {Colors.yellow},- _~.        |\{Colors.cyan}
+     ||||                {Colors.yellow}(' /|           \\\{Colors.cyan}
+     ||||               {Colors.yellow}((  ||    /'\\\  / \\\  _-_{Colors.cyan}
+     ||||               {Colors.yellow}((  ||   || || || || || \\{Colors.cyan}
+     ||||                {Colors.yellow}( / |   || || || || ||/{Colors.cyan}
+     ||||                 {Colors.yellow}-____- \\\,/   \\\/  \\\,/{Colors.cyan}
+     ||||
      \\\//
       \/{Colors.default}
     """)

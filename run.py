@@ -20,12 +20,9 @@ def main_menu():
     Title screen/menu with player options
     """
     clear_screen()
-
     graphics.main_logo()
-    print("""
-        ~*~ Press '1' to Play   ~*~   Press '2' for Instructions ~*~
-        ~*~ Press '3' for the Triforce   ~*~   Press '4' to Exit ~*~
-        """)
+    print("~*~ Press '1' to Play   ~*~   Press '2' for Instructions ~*~")
+    print("~*~ Press '3' for the Triforce   ~*~   Press '4' to Exit ~*~")
 
     while True:
         try:
