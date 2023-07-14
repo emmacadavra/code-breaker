@@ -154,7 +154,7 @@ def run_game():
 
         elif attempt_number == MAX_ATTEMPTS and position != CODE_LENGTH:
             graphics.game_over()
-            print(f"The code was: {display_player_guess(original_answer)}")
+            print(f"The secret code was: {display_player_guess(original_answer)}\n")
             print("You couldn't defeat the challenge this time, but do not despair!")
             print("Would you like to try again to become the MasterCode Breaker? (Y/N)")
             play_again()
