@@ -75,7 +75,6 @@ def instructions():
     print(f"{Colors.white}Go forth, Hero, and become the MasterCode breaker!{Colors.default}\n")
     print("Are you ready? ('Y' to play, 'N' to return to the menu)")
     play_again()
-    break
 
 
 # play again function
