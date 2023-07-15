@@ -103,6 +103,22 @@ Two libraries were imported for this code:
 
 #### **Main Logo Graphic**
 
+![Screenshot of the main logo graphic in VSCode](docs/images/mastercode-main-logo-vscode.png)
+
+The main logo for this game is something I put together by using and tweaking existing ASCII art resources. I used the following sword by 'Krogg' from the [ASCII Art Archives](https://www.asciiart.eu/weapons/swords):
+
+![original ASCII sword created by Krogg for the ASCII Art Archives](docs/images/original-sword-by-krogg.png)
+
+...and then the following text in 'Gothic' from [patorjk.com's ASCII Text Generator](https://patorjk.com/software/taag/#p=display&f=Gothic&t=Master%0ACode):
+
+![ASCII text in 'Gothic'](docs/images/ascii-mastercode-text.png)
+
+...and simple combined them together, finally adding colours by importing them from my 'Colors' class, containing the ANSI escape codes to be used with their respective colors.
+
+Unfortunately, I have found that the graphic displays in an odd fashion on Heroku - unlike other graphics which make the background colour uniform, for some reason this particular one creates a notable difference between the terminal background and the background of the characters that make up the graphic. However, as one can never assume that all terminals will respond in the same way, this didn't come as a huge surprise and I don't think it takes away from the experience.
+
+![Screenshot of main logo on Heroku](docs/images/mastercode-main-logo-heroku.png)
+
 #### **Instructions**
 
 #### **Bonus Triforce!**
