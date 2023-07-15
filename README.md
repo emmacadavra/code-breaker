@@ -149,6 +149,12 @@ Below the Triforce graphic and cyan text, the play_again() function is called, w
 
 #### **Exit Game**
 
+If the player wishes to exit the game from the menu, they can press 4, and the following graphic will display before the program will close and no further input can be entered into the terminal:
+
+![Screenshot of exit game graphic](docs/images/exit-game.png)
+
+The sword pattern used as a divider for the text is taken directly from the [ASCII Art Archives](https://www.asciiart.eu/weapons/swords).
+
 ### **Run Game**
 
 #### **Generating the Secret Code**
