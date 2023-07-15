@@ -257,11 +257,16 @@ I have a lot of grand ideas that, if time were not a factor, I would see impleme
 
 ### Difficulty Levels
 
+One of the reasonably simple improvements I think this game would benefit from is the introducton of difficulty levels. If I could go back to the project inception stage, I think I would include this from the start. However, it was too late a consideration to begin implementing in the way I would want to. After thinking about it, I decided I didn't want to introduce difficult settings that were based on number of attempts alone, but also on factors such as whether the generated code can repeat colours, how many repetitions are allowed, how many choices, etc. This would make for a much more interesting player experience. Unfortunately I did not feel like I had the time to sit down and really work out what I wanted the parameters of the difficulty settings to be, and how I wanted them to be implemented.
 
 ### Story-Based Levels
 
+In relation to the above point about difficult settings, ideally I would love to be able to make different levels, perhaps starting at easy and then ramping up in difficulty as the player progresses. I would like to tie these increases in difficulty into story elements, somehow.
+
+Originally, my first thought for what I wanted to make for this project was an actual text-based adventure game, but time contraints and self-confessed limits in my story-writing capability made me realise that it was an impractical and likely unachievable goal. This was what led me to the idea of creating a game that borrows from the style and character of those games instead. I think it would be so fun and unique to have an adventurer's story that progresses further the more puzzles the player can solve. Of course, this would be an enormous job in terms of writing the story alone, to say nothing of the logic, but it is definitely high up on my list of enhancements I would make if I could.
 
 ### Improved UI
+
 (single line input + feedback)
 
 ### Accessibility Features
