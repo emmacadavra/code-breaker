@@ -16,7 +16,8 @@
 
 ### **Manual Testing Methods**
 
-During the development
+During the development of this project, I used a number of methods to manually test my code as I went.
+
 (print statements)
 
 (python3)
@@ -42,6 +43,8 @@ During the development
 (where logic relied on input, but input not possible due to bugs/not being defined yet: [Python Tutor](https://pythontutor.com/python-debugger.html#mode=edit))
 
 ## **Notable Bugs and Fixes**
+
+Encountering bugs when developing a program in a language such as Python is certainly to be expected, and I encountered a great many of them during the development of this game. Most of the time, these bugs were due to indentation errors, spelling errors, trying to import functions from other files (such as graphics.py) incorrectly, giving functions the wrong arguments (or none at all, when there should have been one), etc. I considered these as to be expected during the development process, so did not make note of them. However, below I have listed some bugs that I did keep record of, because I felt that they all served as noteworthy learning opportunities!
 
 (incorrectly placed print statement)
 
