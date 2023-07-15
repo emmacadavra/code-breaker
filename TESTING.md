@@ -90,7 +90,13 @@ Although this bug comes under the category of 'indentation bugs', I considered t
 
 ### Python's Bane: Backslashes in ASCII Art
 
-(graphics displaying weirdly due to backslashes)
+When I first began experimenting with ASCII text, I experienced the following bug:
+
+![Screenshot of broken ASCII art](docs/images/pythons-bane-backslash.png)
+
+A quick Google search led me immediately to the answer for this, which is that Python ignores backslashes as it's an escape character. This is a common feature in most, if not all, programming languages, but I had not considered this when including the graphics.
+
+To fix this, as will be evident in the functions within graphics.py, I needed to add many, many additional backslashes so that the output matched what was intended. Unfotunately, as a result, the code itself looks quite messy at times. I will be interested to learn whether there are neater ways of fixing this issue for future projects.
 
 ### "None" Shall Follow
 
@@ -108,11 +114,11 @@ Although this bug comes under the category of 'indentation bugs', I considered t
 
 ### **Validation**
 
-(code linter)
+(code linter - whitespace etc removed)
 
 ### **Unresolved Bugs**
 
-(linter issues due to line length, unavoidable due to most of it being code rather than output)
+(code linter - multiple issues with line length in code due to indentation/inclusion of f strings for colour classes, but not in output)
 
 ### **Testing Final Deployed Version**
 
