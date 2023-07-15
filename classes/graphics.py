@@ -38,7 +38,7 @@ def header_image():
          />  {Colors.yellow}║║║╠═╣╚═╗ ║ ║╣ ╠╦╝  ║  ║ ║ ║║║╣{Colors.purple}
         //   {Colors.yellow}╩ ╩╩ ╩╚═╝ ╩ ╚═╝╩╚═  ╚═╝╚═╝═╩╝╚═╝{Colors.blue}
 [//////{Colors.purple}<*>|||<{Colors.cyan}==========================================-----------{Colors.purple}
-        \\\ 
+        \\\\
          \>{Colors.default}
     """)
 

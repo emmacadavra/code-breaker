@@ -141,11 +141,11 @@ Whereas the prevous issue had been that I had too many wrongly places break stat
 
 ### **Validation**
 
-(code linter - whitespace etc removed)
+Once I was happy with my code overall, I entered the code from each of my files into the [CI Python Linter](https://pep8ci.herokuapp.com/) to validate it. Initially, there were a few issues such as trailing whitespace, or the accidental inclusion of white space on what should have been a blank line. This was very quickly tidied up. All significant issues such as this were removed, though if you run my 'run.py' and 'graphics.py' files through the linter you will see that many issues remain, which I have detailed in the [Unresolved Bugs](#unresolved-bugs) sections below.
 
 ### **Unresolved Bugs**
 
-(code linter - multiple issues with line length in code due to indentation/inclusion of f strings for colour classes, but not in output)
+(code linter - multiple issues with line length (22 issues) in code due to indentation/inclusion of f strings for colour classes, but not in output)
 
 ### **Testing Final Deployed Version**
 
