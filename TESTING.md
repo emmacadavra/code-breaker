@@ -16,6 +16,7 @@
 
 ### **Manual Testing Methods**
 
+During the development
 (print statements)
 
 (python3)

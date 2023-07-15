@@ -1,5 +1,6 @@
 """
-MasterCode - a code breaker game in the style of Mastermind, heavily themed around text adventure style games and The Legend of Zelda.
+MasterCode - a code breaker game in the style of Mastermind,
+heavily themed around text adventure style games and The Legend of Zelda.
 """
 # imports
 import random
@@ -79,14 +80,15 @@ def instructions():
     print(f"{Colors.white}Go forth, Hero, and become the MasterCode Breaker!{Colors.default}")
     print("Are you ready? ('Y' to play, 'N' to return to the menu)")
 
-    # call the play_again function to direct player to game/menu depending on their choice
+    # call the play_again function to direct player to game/menu
     play_again()
 
 
 # play again function
 def play_again():
     """
-    Checks if the player has entered 'Y' or 'N' correctly, and directs them to game/menu.
+    Checks if the player has entered 'Y' or 'N' correctly,
+    and directs them to game/menu.
     Outputs ValueError if user key press is invalid.
     """
     while True:
@@ -145,13 +147,13 @@ def run_game():
 
     while attempt_number <= MAX_ATTEMPTS:
         player_guess = player_guess_input(attempt_number)
-        # creates a modified list variable that can be amended without changing original secret code
+        # creates a new list that can be amended without changing original code
         modified_answer = list(original_answer)
 
         # displays the player's guess as coloured blocks for visual clarity
         print(f"{display_player_guess(player_guess)}\n")
 
-        # checks the player's guess against the modified list and outputs appropriately
+        # checks the player guess against modified list, outputs appropriately
         position, color = check_result(player_guess, modified_answer)
         if position == CODE_LENGTH:
             graphics.you_win()
@@ -233,14 +235,14 @@ def display_player_guess(guess):
 def check_result(guess, answer):
     """
     Checks the player's guess against the secret code.
-    Outputs number in correct position and number correct but in wrong position.
+    Outputs number in correct position, number correct but in wrong position.
     Removes any matches from the code list to prevent double counting.
     Feeds correct position/correct but in wrong position to run_game.
     """
     correct_position = 0
     correct_color = 0
 
-    # iterates through guess and answer to find correct letters in correct position
+    # iterates through guess, answer to find colors in correct position
     for i in range(CODE_LENGTH):
         if guess[i] == answer[i]:
             correct_position += 1
@@ -252,6 +254,7 @@ def check_result(guess, answer):
         guess.remove(0)
         index_count = guess.count(0)
 
+    # iterates through guess, answer to find colors in incorrect position
     for i, letter in enumerate(guess):
         if letter in answer:
             correct_color += 1
