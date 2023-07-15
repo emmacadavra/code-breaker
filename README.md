@@ -169,7 +169,9 @@ The sword pattern used as a divider for the text is taken directly from the [ASC
 
 ### **Run Game**
 
-When the user either enters '1' from the main menu, or enters 'Y' in the play_again function (detailed in a later section), 
+When the user either enters '1' from the main menu, or enters 'Y' in the play_again() function (detailed in a later section), the run_game() function is called and the game begins and the player is met with the following screen:
+
+
 
 #### **Generating the Secret Code**
 

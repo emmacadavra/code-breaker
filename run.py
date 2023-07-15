@@ -184,7 +184,7 @@ def player_guess_input(attempt):
     """
     while True:
         try:
-            guess = input(f"Enter your prediction: ({Colors.red}Red {Colors.green}Green {Colors.blue}Blue {Colors.yellow}Yellow {Colors.purple}Purple {Colors.white}White{Colors.default})\n").upper()
+            guess = input(f"Enter your prediction: ({Colors.red}R {Colors.green}G {Colors.blue}B {Colors.yellow}Y {Colors.purple}P {Colors.white}W{Colors.default})\n").upper()
             print("")
             guess_list = [g for g in guess]
 
