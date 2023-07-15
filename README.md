@@ -41,6 +41,8 @@ When creating this game, I really wanted to focus on recreating the light-hearte
 1. [**Considerations for Future Enhancements**](#considerations-for-future-enhancements)
 1. [**Testing**](#testing)
 1. [**Deployment**](#deployment)
+   - [**Cloning/Forking to Local Environments**](#cloningforking-to-local-environments)
+   - [**Final Deployment (Heroku)**](#final-deployment-heroku)
 1. [**Credits**](#credits)
    - [**Honourable Mentions**](#honourable-mentions)
    - [**Code and Content References**](#code-and-content-references)
@@ -252,6 +254,14 @@ The clear_screen() function exists to clear the terminal before running the code
 A separate file has been created for information about testing. Please click the following link to access it: [**TESTING.md**](TESTING.md)
 
 ## **Deployment**
+
+### Cloning/Forking to Local Environments
+
+_Disclaimer: This project was created using a specially tailored template, which was forked from [Code Institute's original one](https://github.com/Code-Institute-Org/python-essentials-template). This template has been specifically designed to support the project's final deployment to Heroku's virtual environment, and comes with many add-ons included. Please take care to look through the extra files included in this template before cloning/forking, to prevent any potential conflicts._
+
+If you wish to create a clone of this project in order to play it on your local machine or virtual IDE environment such as Gitpod,
+
+### Final Deployment (Heroku)
 
 ## **Credits**
 
