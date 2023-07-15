@@ -100,7 +100,13 @@ To fix this, as will be evident in the functions within graphics.py, I needed to
 
 ### "None" Shall Follow
 
-('None' after graphics due to wrapping functions in print())
+Once I had fixed the backslash issue with my graphics, I noticed a new problem had arisen, which is that immediately after every single one, the text "None" was appearing before the text that followed the graphic.
+
+![Screenshot of main logo, followed by "None"](docs/images/none-shall-follow-1.png)
+
+![Screenshot of banner image, followed by "None"](docs/images/none-shall-follow-2.png)
+
+Despite my previous issue with incorrectly attempting to call functions within print statements, I realised that I had made the same mistake again, this time with the graphics functions. Each of the functions in graphics.py includes a print statement that prints the graphic to the terminal. However, instead of calling the functions from the graphics.py file by name, I was wrapping them in the print statement, meaning that I was creating a duplicate print request that was returning the value "None", as the duplicate print request was returning empty. I fixed this by removing the print statement and just calling the functions as normal.
 
 ### The Curse of the Infinite Loop
 
