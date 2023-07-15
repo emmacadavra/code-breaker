@@ -72,6 +72,13 @@ As a user:
 
 ### **Application Aims**
 
+This application aims to:
+
+- Provide a fun and engaging, text adventure style, code breaking game that - as mentioned previously - wishes to be treated with a whimsical sense of humour.
+- Make clear to the player that they are able to play the game, read the instructions, exit the game and even see the legendary Triforce directly from the main menu.
+- Provide the user with an attractive but simple user interface that is clear, and provides easy to understand feedback.
+- Run successfully as a continuous loop for as long as the player needs, without crashing due to errors in either the logic or in the player's input.
+
 ### **UX Flow Chart**
 
 ### **Technology Used**
