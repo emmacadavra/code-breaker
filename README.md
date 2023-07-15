@@ -81,8 +81,6 @@ This application aims to:
 
 ### **UX Flow Chart**
 
-
-
 ### **Technology Used**
 
 This project has been written entirely in Python (version 3.11.4, which is the latest version at the time of making this game).
@@ -109,7 +107,13 @@ The main menu screen is the first thing the player sees upon starting the progra
 
 ![Screenshot of main menu options](docs/images/main-menu-options.png)
 
+In order to progress away from the main menu, the player is required to press one of these four options to take them to their required destination in the program.
 
+As Python automatically converts input into strings, the user input is first converted to an integer using the built-in 'int()' function. The int(input()) function sits within a try statement, that assumes there will be no error in the code and directs the player to the appropriate part of the program if they enter 1, 2, 3, or 4. A ValueError is then raised in an except statement that acts as a catch-all for any input that is not a 1, 2, 3, or 4. Shown below are a number of examples, including entering an invalid number, a letter, a special character, multiples of valid numbers (therefore becoming invalid numbers), and the text version of a number:
+
+![Screenshot of ValueError for invalid number and letter](docs/images/main-menu-invalid-key.png)
+
+![Screenshot of ValueError for special character, multiples of a valid number (which becomes an invalid number) and the text version of a number](docs/images/main-menu-invalid-key-continued.png)
 
 #### **Main Logo Graphic**
 
@@ -165,7 +169,7 @@ The sword pattern used as a divider for the text is taken directly from the [ASC
 
 ### **Run Game**
 
-When 
+When
 
 #### **Generating the Secret Code**
 
