@@ -251,6 +251,8 @@ The clear_screen() function exists to clear the terminal before running the code
 
 (single line input + feedback)
 
+(levels)
+
 ## **Testing**
 
 A separate file has been created for information about testing. Please click the following link to access it: [**TESTING.md**](TESTING.md)
@@ -300,6 +302,8 @@ To deploy this project to Heroku, the following procedure was followed:
 - [**Richard Wells**](https://github.com/D0nni387) - I cannot express enough how grateful I am to have you as my mentor. I went into this project feeling very uncertain about what I was going to do, and feeling a lot less than confident I even had the ability and knowledge to complete it. In the space of one project inception meeting, you helped me turn my worries around completely, and and have been nothing but supportive and attentive from day one. Thank you so much.
 
 - Thank you to my friends **Riley** and **Bobby** who were really enthused by my somewhat silly idea to make a ridiculously cheesy text-adventure, Legend of Zelda themed game of Mastermind..! Your feedback really made me smile and it felt good to see the game approached with the same mindset I hold about it - which is really just that it's a bit of gimmicky fun!
+
+- Thank you also to [Farrell](https://github.com/captf), for really helping me feel like I'm getting there with my learning journey by saying the magic words: "I tried to break it. I could not :)"!
 
 - A special thank you to the past and present **Code Institute Students** and members of the **Code Institute Slack Community**. This project initially came with a steep learning curve that was, at times, baffling and bewildering, and left me doubting my ability somewhat. However, the community is so helpful and really looks out for one another. It was reassuring to see that many people had been stuck on the same things I was in the past, and even more reassuring to see how many people were willing to offer help in the form of different perspectives, or even just wording things slightly differently, so that concepts made sense and began to stick. I'm very grateful to everyone for creating such a collaborative learning environment.
 
