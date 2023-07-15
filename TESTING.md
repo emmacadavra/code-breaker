@@ -47,11 +47,11 @@ Python Tutor was also especially helpful in testing functions that required inpu
 
 #### **Input Testing**
 
-(python3 run.py)
+Input testing was a crucial during development, as I needed to make absolutely certain that wherever player input is required, there could be no circumstances under which the game could crash or cause bugs if incorrect input was entered.
 
-(ValueErrors - entering everything wrong on purpose)
+As such, I used the 'python3 run.py' terminal command almost non-stop whilst testing that my ValueErrors were being raised correctly. Essentially, in order to successfully do the input testing, I needed to go out of my way to enter everything wrong on purpose, in as many different ways as I could think of, to make sure that the correct errors were being raised and that the inputs were not being accepted if they were invalid.
 
-(attempt at using getpass)
+At one stage during input testing, I did attempt to implement the 'getpass' input function, as I had hoped to take the player's's input and then convert it to the coloured blocks output, without printing their guess to the terminal. However, after importing 'getpass' and testing it out, I found that it was generally unsuitable for what I had in mind and decided against using it.
 
 ## **Notable Bugs and Fixes**
 
