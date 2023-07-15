@@ -126,6 +126,12 @@ The culprit for this issue was a series of wrongly placed, and ultimately unnece
 
 My investigation led me almost immediately to a different kind of infinite loop that was being caused by a similar, though technically opposite issue:
 
+![Screenshot of infinite loop that made exiting the game impossible](docs/images/no-escape.png)
+
+In this instance, the problem was that pressing '4' to exit the game was creating a similar infinite gameplay loop to the one seen in the previous bug. The reason I was able to identify where the issue was coming from so quickly was that this bug only occurred AFTER playing the main game/visiting the instructions or Triforce pages once. If you ran the program and pressed '4' straight away, the program would close as expected. This meant the issue had to be with the play_game() function.
+
+Whereas the prevous issue had been that I had too many wrongly places break statements, in this case the problem was that I _hadn't_ included break statements after calling the play_game() function in the main menu options. This was leading to two separate instanced of the game trying to run side-by-side, resulting in the bug pictured above. Adding break statements under each option fixed this bug.
+
 ## **Post Development Testing**
 
 ### **Validation**
