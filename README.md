@@ -295,13 +295,13 @@ To deploy this project to Heroku, the following procedure was followed:
 
 ### **Honourable Mentions**
 
-- [**Damon Kreft**](https://github.com/damon-kreft)
+- [**Damon Kreft**](https://github.com/damon-kreft) - As always, thank you for being my rock and for always being so excited and encouraging about my learning journey. Thank you also for always doing your best to help me feel more confident about the skills I am learning on this course, and for always being there to help when I need it, be it for unravelling coding bugs that left me completely puzzled, or just for emotional support when I need it. Your love and support means the world to me. You're the best ♥️
 
-- [**Richard Wells**](https://github.com/D0nni387)
+- [**Richard Wells**](https://github.com/D0nni387) - I cannot express enough how grateful I am to have you as my mentor. I went into this project feeling very uncertain about what I was going to do, and feeling a lot less than confident I even had the ability and knowledge to complete it. In the space of one project inception meeting, you helped me turn my worries around completely, and and have been nothing but supportive and attentive from day one. Thank you so much.
 
-- **Riley** and **Bobby**
+- Thank you to my friends **Riley** and **Bobby** who were really enthused by my somewhat silly idea to make a ridiculously cheesy text-adventure, Legend of Zelda themed game of Mastermind..! Your feedback really made me smile and it felt good to see the game approached with the same mindset I hold about it - which is really just that it's a bit of gimmicky fun!
 
-- **CI Students**
+- A special thank you to the past and present **Code Institute Students** and members of the **Code Institute Slack Community**. This project initially came with a steep learning curve that was, at times, baffling and bewildering, and left me doubting my ability somewhat. However, the community is so helpful and really looks out for one another. It was reassuring to see that many people had been stuck on the same things I was in the past, and even more reassuring to see how many people were willing to offer help in the form of different perspectives, or even just wording things slightly differently, so that concepts made sense and began to stick. I'm very grateful to everyone for creating such a collaborative learning environment.
 
 ### **Code and Content References**
 
