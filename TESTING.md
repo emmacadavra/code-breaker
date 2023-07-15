@@ -4,8 +4,11 @@
 
 1. [**Testing Throughout Development**]
    - [**Manual Testing Methods**](#manual-testing-methods)
-   - [**Input Testing**](#input-testing)
-   - [**Game Logic Testing**](#game-logic-testing)
+     - [**Print Statements**](#print-statements)
+     - [**python3 run.py**](#python3-runpy)
+     - [**python3**](#python3)
+     - [**Python Tutor**](#python-tutor)
+     - [**Input Testing**](#input-testing)
 1. [**Notable Bugs and Fixes**](#notable-bugs-and-fixes)
    - [**_Print Statement Sabotage_**](#print-statement-sabotage)
    - [**_Player Guess Output Predicament_**](#player-guess-output-predicament)
@@ -24,29 +27,31 @@
 
 During the development of this project, I used a number of methods to manually test my code as I went.
 
-(print statement that displayed secret code)
+#### Print Statements
 
-(python3)
+The use of print statements to test my code as I went along was absolutely critical for the development of this project. Not only because they are useful to add into functions to test whether individual parts are working as intended, but also - crucially - using them meant that I was able to print the randomly generated secret code to the console at the start of each game. Being able to see the code that had been generated meant that I was able to test whether the functions that handled the player input, the comparison between the player guess and the code, and the output to the player were not only working as intended but also raising the correct errors at the correct times.
 
-(python3 run.py)
+#### python3 run.py
 
-([Python Tutor](https://pythontutor.com/python-debugger.html#mode=edit))
+I used the 'python3 run.py' terminal command countless times during the development of this game, so that I could see the output in the desired terminal setting. It is how I tested the functionality of every single feature, and the interactions between each of them.
 
-([Replit](https://replit.com/~))
+#### python3
 
-### **Input Testing**
+Occasionally, I would use the 'python3' terminal command in order to test code that I wasn't 100% certain about, that I worried might interfere with the existing functionality of the game if I tried to test it in my code directly. This was extremely useful to do on several occasions, not least because it helped me realise where I might have either misunderstood how something works, or used the wrong terms/syntax.
+
+#### Python Tutor
+
+There were a few occasions during development (which I elaborate on in the [Notable Bugs and Fixes](#notable-bugs-and-fixes) section) where ([Python Tutor](https://pythontutor.com/python-debugger.html#mode=edit)) was an absolutely invaluable tool, not just for testing the funtionality of my code (and indentifying bugs created by poorly placed 'print' and 'break' statements), but also for testing my understanding of how the functions were interacting with one another. This helped develop my knowledge by solidifying my understanding of the arguments needed for certain functions, where those arguments needed to come from and how, and in general it helped me test the overall game logic to make sure I was doing things in the right order.
+
+Python Tutor was also especially helpful in testing functions that required input to work, but I had not yet defined the functions that would take in the required input. By running them through Python Tutor, I could at least be reassured that my logic was sound, and that I could move onto the next step which was creating the functions to provide the input arguments needed.
+
+#### **Input Testing**
 
 (python3 run.py)
 
 (ValueErrors - entering everything wrong on purpose)
 
 (attempt at using getpass)
-
-### **Game Logic Testing**
-
-(print statements)
-
-(where logic relied on input, but input not possible due to bugs/not being defined yet: [Python Tutor](https://pythontutor.com/python-debugger.html#mode=edit))
 
 ## **Notable Bugs and Fixes**
 
@@ -62,7 +67,7 @@ The first major bug I encountered during testing was actually the result of test
 
 ![Screenshot of 3 out of 4 characters correct, but result showing 0 correct position, and 0 correct in wrong position](docs/images/print-statement-sabotage-2.png)
 
-The reason it took me so long to identify where this bug was coming from was because I was approaching it from the wrong angle entirely. I was convinced that the issue was in the functions themselves, and so I was taking the functions - _without_ the print statement included - and running them through Python Tutor where I found no issues. Eventually I realised that what I had done was this:
+The reason it took me so long to identify where this bug was coming from was because I was approaching it from the wrong angle entirely. I was convinced that the issue was in the functions themselves, and so I was taking the functions - _without_ the print statement included - and running them through Python Tutor where I found no issues. Eventually I ran everything through Python Tutor together (including the infamous print statement), where I finally realised that what I had done was this:
 
 ![Screenshot showing that I had incorrectly called the function INSIDE the print statement](docs/images/print-statement-sabotage-3.png)
 
