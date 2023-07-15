@@ -39,6 +39,10 @@ When creating this game, I really wanted to focus on recreating the light-hearte
    - [**Play Again Function with Error Handling**](#play-again-function-with-error-handling)
    - [**Clear Screen Function**](#clear-screen-function)
 1. [**Considerations for Future Enhancements**](#considerations-for-future-enhancements)
+   - [**Difficulty Levels**](#difficulty-levels)
+   - [**Story-Based Levels**](#story-based-levels)
+   - [**Improved UI**](#improved-ui)
+   - [**Accessibility Features**](#accessibility-features)
 1. [**Testing**](#testing)
 1. [**Deployment**](#deployment)
    - [**Cloning/Forking to Local Environments**](#cloningforking-to-local-environments)
@@ -249,9 +253,18 @@ The clear_screen() function exists to clear the terminal before running the code
 
 ## **Considerations for Future Enhancements**
 
+I have a lot of grand ideas that, if time were not a factor, I would see implemented into this game. Some of those ideas are reasonably simple, but others much more complex that would involve a great deal of time and consideration in order to implement them well.
+
+### Difficulty Levels
+
+
+### Story-Based Levels
+
+
+### Improved UI
 (single line input + feedback)
 
-(levels)
+### Accessibility Features
 
 ## **Testing**
 
@@ -317,7 +330,7 @@ To deploy this project to Heroku, the following procedure was followed:
 
 - It is also thanks to [Amanda's GitHub Repository](https://github.com/Amanda-Fl/CODEMASTER/blob/main/codemaster.py) that I learned about the os.system("clear"/"cls") method that can be used in Python, also reinforced by [Rajar Agrawal's "How to Clear Screen in Python?"](https://www.codingninjas.com/studio/library/how-to-clear-a-screen-in-python) tutorial.
 
-- The fantastic script used to generate the Triforce graphic was made by [John Cartwright and posted on Securitron Linux blog](https://www.securitronlinux.com/bejiitaswrath/lovely-python-script-to-generate-a-nice-triforce/?utm_content=cmp-true).
+- The fantastic script used to generate the Triforce graphic was made by [John Cartwright and posted on Securitron Linux blog](https://www.securitronlinux.com/bejiitaswrath/lovely-python-script-to-generate-a-nice-triforce/?utm_content=cmp-true):
 
 ![Screenshot of John Cartwright's code](docs/images/triforce-script.png)
 
