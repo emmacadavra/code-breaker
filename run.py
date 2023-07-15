@@ -184,7 +184,7 @@ def player_guess_input(attempt):
     """
     while True:
         try:
-            guess = input(f"Enter your prediction ( {Colors.red}R {Colors.green}G {Colors.blue}B {Colors.yellow}Y {Colors.purple}P {Colors.white}W{Colors.default} ) :\n").upper()
+            guess = input(f"Enter your prediction ( {Colors.red}R {Colors.green}G {Colors.blue}B {Colors.yellow}Y {Colors.purple}P {Colors.white}W{Colors.default} ):\n").upper()
             print("")
             guess_list = [g for g in guess]
 
@@ -239,6 +239,8 @@ def check_result(guess, answer):
     """
     correct_position = 0
     correct_color = 0
+
+    # iterates through guess and answer to find correct letters in correct position
     for i in range(CODE_LENGTH):
         if guess[i] == answer[i]:
             correct_position += 1

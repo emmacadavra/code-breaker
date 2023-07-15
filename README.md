@@ -187,7 +187,19 @@ As with the main menu input, ValueErrors have been used to make sure that the us
 
 Once again, the constants 'COLOR_CHOICES' and 'CODE_LENGTH' are used here so that the ValueError outputs the correct information to the user in the event that either constant is updated.
 
+To prevent any issues that could be caused by players entering the correct characters, but in lower case, Python's built-in upper() function has been used to automatically convert all inputs to upper case.
+
 ### **Comparing Player Guess to Secret Code**
+
+The method used to compare the player's guess with the secret code involves iterating through the guess (returned as a list), and iterating through the generated code (also returned as a list) to check for two things.
+
+Firstly, the characters are compared specifically against their index numbers on the list. For example, if the first character the player has entered in their guess (index[0]) is an exact match to the generated code's first character (index[0]), the 'correct_position' variable is increased.
+
+The remaining characters in the user's guess are then iterated through using Python's built-in enumerate() function, and any matching characters with an incorrect index position increase the value of the 'correct_color' variable before also being removed.
+
+The 'correct_position' and 'correct_color' variables are then returned to be used in the run_game() function.
+
+Care was taken to make sure that characters in the correct position are searched for and removed before the program looks for characters in the correct position, and that correct colours in the wrong place are also removed. This is to prevent a number of issues that could arise from double counting - mainly that it could either be extremely miseleading to the player and make the game unwinnable, or give clues to the player as to whether there are duplicates in the code.
 
 #### **Player Guess Ouput**
 
