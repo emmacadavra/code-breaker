@@ -265,10 +265,10 @@ def clear_screen():
     """
     Clears the terminal screen/window
     """
-    if os.name == 'posix':
-        os.system('clear')
+    if os.name == "posix":
+        os.system("clear")
     else:
-        os.system('cls')
+        os.system("cls")
 
 
 # main function

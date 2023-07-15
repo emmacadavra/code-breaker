@@ -83,7 +83,19 @@ This application aims to:
 
 ### **Technology Used**
 
+This project has been written entirely in Python (version 3.11.4, which is the latest version at the time of making this game).
+
 #### **Libraries**
+
+Two libraries were imported for this code:
+
+**_random_**:
+
+- random.choice() was utilised in the generate_code() function for the game, and is necessary in order to create a randomly generated code of 4 colours from the 6 possible colour options.
+
+**_os_**:
+
+- os.name and os.system() were used in the clear_screen() function, which checks to see if the os.name == "posix", and if to clear the screen using os.system("clear"). Otherwise, the screen is cleared by used os.system("cls").
 
 ## **Current Features**
 
