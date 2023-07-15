@@ -32,7 +32,7 @@ When creating this game, I really wanted to focus on recreating the light-hearte
      - [**_Generating the Secret Code_**](#generating-the-secret-code)
    - [**Player Guess Input with Error Handling**](#player-guess-input-with-error-handling)
    - [**Comparing Player Guess to Secret Code**](#comparing-player-guess-to-secret-code)
-     - [**_Player Guess Ouput_**](#player-guess-ouput)
+     - [**_Player Guess Output_**](#player-guess-ouput)
    - [**Game Graphics and Messages**](#game-graphics-and-messages)
      - [**_You Win!_**](#you-win-graphic-and-message)
      - [**_Game Over_**](#game-over-graphic-and-message)
@@ -55,7 +55,7 @@ When creating this game, I really wanted to focus on recreating the light-hearte
 
 ### **Target Audience**
 
-This game has been created with a wide target audience in mind. _Mastermind_, and similar games sharing the same core concepts, is a classic that is suitable for all ages. According to Hasbro, who currently hold the trademarks for _Mastermind_, the game is suitable for ages 8 and above. Naturally, this is a terminal-based game and is unlikely to be something children would happen upon organically, however (with adult supervision at a computer), this game would be suitable, as Hasbro indicate, for children aged 8 and above.
+This game has been created with a wide target audience in mind. _Mastermind_, and similar games sharing the same core concepts, is a classic that is suitable for all ages. According to Hasbro, who currently hold the trademarks for _Mastermind_, the game is suitable for ages 8 and above. Naturally, this is a terminal-based game and is unlikely to be something children would happen upon organically, however (with adult supervision at a computer), this game would be suitable, as Hasbro indicates, for children aged 8 and above.
 
 The addition of the text-based adventure elements, and inclusion of _The Legend of Zelda_-inspired features, also opens this game up to audiences who are interested in one or both of these things, with a taste for nostalgic or 'retro' gaming formats.
 
@@ -99,7 +99,7 @@ Two libraries were imported for this code:
 
 **_os_**:
 
-- os.name and os.system() were used in the clear_screen() function, which checks to see if the os.name == "posix", and if to clear the screen using os.system("clear"). Otherwise, the screen is cleared by used os.system("cls").
+- os.name and os.system() were used in the clear_screen() function, which checks to see if the os.name == "posix", and if to clear the screen using os.system("clear"). Otherwise, the screen is cleared by using os.system("cls").
 
 ## **Current Features**
 
@@ -113,7 +113,7 @@ The main menu screen is the first thing the player sees upon starting the progra
 
 In order to progress away from the main menu, the player is required to press one of these four options to take them to their required destination in the program.
 
-As Python automatically converts input into strings, the user input is first converted to an integer using the built-in 'int()' function. The int(input()) function sits within a try statement, that assumes there will be no error in the code and directs the player to the appropriate part of the program if they enter 1, 2, 3, or 4. A ValueError is then raised in an except statement that acts as a catch-all for any input that is not a 1, 2, 3, or 4. Shown below are a number of examples, including entering an invalid number, a letter, a special character, multiples of valid numbers (therefore becoming invalid numbers), and the text version of a number:
+As Python automatically converts input into strings, the user input is first converted to an integer using the built-in 'int()' function. The int(input()) function sits within a try statement that assumes there will be no error in the code and directs the player to the appropriate part of the program if they enter 1, 2, 3, or 4. A ValueError is then raised in an except statement that acts as a catch-all for any input that is not a 1, 2, 3, or 4. Shown below are a number of examples, including entering an invalid number, a letter, a special character, multiples of valid numbers (therefore becoming invalid numbers), and the text version of a number:
 
 ![Screenshot of ValueError for invalid number and letter](docs/images/main-menu-invalid-key.png)
 
@@ -177,11 +177,11 @@ When the user either enters '1' from the main menu, or enters 'Y' in the play_ag
 
 ![Screenshot of the main game page](docs/images/run-game-start.png)
 
-The same header/banner graphic seen on the instructions sits at the top of the page, which creates a sense of famliarity for the user, and a short summary of the game in a playful and entertaining way that befits the overall theme of the game.
+The same header/banner graphic seen on the instructions sits at the top of the page, which creates a sense of familiarity for the user, and a short summary of the game in a playful and entertaining way that befits the overall theme of the game.
 
 #### **Generating the Secret Code**
 
-The secret code is randomly generated using the Python's random library. Two costants have been declared that are crucial for the creation of this random secret code: 'COLOR_CHOICES', which is a list of the 6 accepted characters for the colour choices as strings, and 'CODE_LENGTH' which determined how long the code is. The generate_code() function contains an empty list, and a while loop that tells the program that so long as the length of this empty list is less than the length of 'CODE_LENGTH', the following code needs to be run: random.choice(COLOR_CHOICES) and the result is then appended to the empty list. By using this method, the function is still valid if one or both of the 'COLOR_CHOICES' and 'CODE_LENGTH' constants are updated to include different values or lengths.
+The secret code is randomly generated using Python's 'random' library. Two constants have been declared that are crucial for the creation of this random secret code: 'COLOR_CHOICES', which is a list of the 6 accepted characters for the colour choices as strings, and 'CODE_LENGTH' which determines how long the code is. The generate_code() function contains an empty list, and a while loop that tells the program that so long as the length of this empty list is less than the length of 'CODE_LENGTH', the following code needs to be run: 'random.choice(COLOR_CHOICES)' and the result is then appended to the empty list. By using this method, the function is still valid if one or both of the 'COLOR_CHOICES' and 'CODE_LENGTH' constants are updated to include different values or lengths.
 
 ### **Player Guess Input with Error Handling**
 
@@ -203,9 +203,9 @@ The remaining characters in the user's guess are then iterated through using Pyt
 
 The 'correct_position' and 'correct_color' variables are then returned to be used in the run_game() function.
 
-Care was taken to make sure that characters in the correct position are searched for and removed before the program looks for characters in the correct position, and that correct colours in the wrong place are also removed. This is to prevent a number of issues that could arise from double counting - mainly that it could either be extremely miseleading to the player and make the game unwinnable, or give clues to the player as to whether there are duplicates in the code.
+Care was taken to make sure that characters in the correct position are searched for and removed before the program looks for characters in the correct position, and that correct colours in the wrong place are also removed. This is to prevent a number of issues that could arise from double counting - mainly that it could either be extremely misleading to the player and make the game unwinnable, or give clues to the player as to whether there are duplicates in the code.
 
-#### **Player Guess Ouput**
+#### **Player Guess Output**
 
 The display_player_guess() function takes the player's guess as an argument, and converts each character into their matching block colour, to give the player a visual reminder of what they have guessed so far. Below this, they are told how many characters are in the correct position, how many colours they have correct which are in the wrong position, and how many attempts they have remaining.
 
@@ -257,13 +257,13 @@ I have a lot of grand ideas that, if time were not a factor, I would see impleme
 
 ### Difficulty Levels
 
-One of the reasonably simple improvements I think this game would benefit from is the introducton of difficulty levels. If I could go back to the project inception stage, I think I would include this from the start. However, it was too late a consideration to begin implementing in the way I would want to. After thinking about it, I decided I didn't want to introduce difficult settings that were based on number of attempts alone, but also on factors such as whether the generated code can repeat colours, how many repetitions are allowed, how many choices, etc. This would make for a much more interesting player experience. Unfortunately I did not feel like I had the time to sit down and really work out what I wanted the parameters of the difficulty settings to be, and how I wanted them to be implemented.
+One of the reasonably simple improvements I think this game would benefit from is the introduction of difficulty levels. If I could go back to the project inception stage, I think I would include this from the start. However, it was too late a consideration to begin implementing in the way I would want to. After thinking about it, I decided I didn't want to introduce difficult settings that were based on number of attempts alone, but also on factors such as whether the generated code can repeat colours, how many repetitions are allowed, how many choices, etc. This would make for a much more interesting player experience. Unfortunately I did not feel like I had the time to sit down and really work out what I wanted the parameters of the difficulty settings to be, and how I wanted them to be implemented.
 
 ### Story-Based Levels
 
 In relation to the above point about difficult settings, ideally I would love to be able to make different levels, perhaps starting at easy and then ramping up in difficulty as the player progresses. I would like to tie these increases in difficulty into story elements, somehow.
 
-Originally, my first thought for what I wanted to make for this project was an actual text-based adventure game, but time contraints and self-confessed limits in my story-writing capability made me realise that it was an impractical and likely unachievable goal. This was what led me to the idea of creating a game that borrows from the style and character of those games instead. I think it would be so fun and unique to have an adventurer's story that progresses further the more puzzles the player can solve. Of course, this would be an enormous job in terms of writing the story alone, to say nothing of the logic, but it is definitely high up on my list of enhancements I would make if I could.
+Originally, my first thought for what I wanted to make for this project was an actual text-based adventure game, but time constraints and self-confessed limits in my story-writing capability made me realise that it was an impractical and likely unachievable goal. This was what led me to the idea of creating a game that borrows from the style and character of those games instead. I think it would be so fun and unique to have an adventurer's story that progresses further the more puzzles the player can solve. Of course, this would be an enormous job in terms of writing the story alone, to say nothing of the logic, but it is definitely high up on my list of enhancements I would make if I could.
 
 ### Improved UI
 
@@ -279,7 +279,7 @@ Here she cleverly appends each user guess and their correct positions/colours to
 
 ### Accessibility Features
 
-Another feature Amanda uses in her project is speech recognition, which I found very impressive. In the terminal, it is much harder to include accessibility options as the contraints are very limiting. However, I did feel that this was a fantastic idea.
+Another feature Amanda uses in her project is speech recognition, which I found very impressive. In the terminal, it is much harder to include accessibility options as the constraints are very limiting. However, I did feel that this was a fantastic idea.
 
 I would also like to explore different options to assist with things such as colour blindness, for instance adding the option for full words rather than just the initials of the letter, as a game setting rather than just in the instructions. This would also benefit people who do not speak English as a first language, who might expect different characters for different colours.
 
@@ -331,7 +331,7 @@ To deploy this project to Heroku, the following procedure was followed:
 
 - [**Damon Kreft**](https://github.com/damon-kreft) - As always, thank you for being my rock and for always being so excited and encouraging about my learning journey. Thank you also for always doing your best to help me feel more confident about the skills I am learning on this course, and for always being there to help when I need it, be it for unravelling coding bugs that left me completely puzzled, or just for emotional support when I need it. Your love and support means the world to me. You're the best ♥️
 
-- [**Richard Wells**](https://github.com/D0nni387) - I cannot express enough how grateful I am to have you as my mentor. I went into this project feeling very uncertain about what I was going to do, and feeling a lot less than confident I even had the ability and knowledge to complete it. In the space of one project inception meeting, you helped me turn my worries around completely, and and have been nothing but supportive and attentive from day one. Thank you so much.
+- [**Richard Wells**](https://github.com/D0nni387) - I cannot express enough how grateful I am to have you as my mentor. I went into this project feeling very uncertain about what I was going to do, and feeling a lot less than confident I even had the ability and knowledge to complete it. In the space of one project inception meeting, you helped me turn my worries around completely, and have been nothing but supportive and attentive from day one. Thank you so much.
 
 - Thank you to my friends **Riley** and **Bobby** who were really enthused by my somewhat silly idea to make a ridiculously cheesy text-adventure, Legend of Zelda themed game of Mastermind..! Your feedback really made me smile and it felt good to see the game approached with the same mindset I hold about it - which is really just that it's a bit of gimmicky fun!
 
@@ -345,7 +345,7 @@ To deploy this project to Heroku, the following procedure was followed:
 
 - To help me gain a broader view of the multitude of ways in which a project like this one could be approached, I watched many video tutorials on YouTube, and of those two in particular helped shape the way I went about creating this project. The first is [Sith Senz's "Python 010 Mastermind Game" (YouTube Video)](https://www.youtube.com/watch?v=uidPEAAiz0s) and the [accompanying code on Colab Notebook](https://colab.research.google.com/drive/11Uy7FmxBC-6gAM6JTu5zcyeeAVyQO_zC?usp=sharing#scrollTo=ySDdGEQEe5In). I was so impressed by this particular tutorial in comparison to the others that I watched, as I felt it really effectively covered what I wanted this game to do. As such, a lot of my code will resemble the code used in this tutorial, as I initially used much of it as a template of sorts, I am very grateful for happening across the video and channel.
 
-- The second video that really impressed me was [Amanda Flood's "CS50 Python Final Project - 'Mastermind' Game with Speech Recognition" (YouTube)](https://www.youtube.com/watch?v=UyTX0SFHd4I) and her project's accompanying [GitHub Repository](https://github.com/Amanda-Fl/CODEMASTER/blob/main/codemaster.py). Many of the things that Amanda achieves in this project are far beyond my knowledge and understanding, but looking through the code helped me learn all sorts of things that are possible, even in simple terminal-based applications, that I wasn't previously aware of. It also helped me by introducing me to the kinds o libraries that are available in Python, such as 're'/'RegEx', which I aim to begin learning to understand in my own free time alongside this course. As mentioned in my [Considerations for Future Enhancements](#considerations-for-future-enhancements) section, I am inspired by the methods used to display the user input and feedback in a single line, as well as the accessibility possibilities in speech recognition.
+- The second video that really impressed me was [Amanda Flood's "CS50 Python Final Project - 'Mastermind' Game with Speech Recognition" (YouTube)](https://www.youtube.com/watch?v=UyTX0SFHd4I) and her project's accompanying [GitHub Repository](https://github.com/Amanda-Fl/CODEMASTER/blob/main/codemaster.py). Many of the things that Amanda achieves in this project are far beyond my knowledge and understanding, but looking through the code helped me learn all sorts of things that are possible, even in simple terminal-based applications, that I wasn't previously aware of. It also helped me by introducing me to the kinds of libraries that are available in Python, such as 're'/'RegEx', which I aim to begin learning to understand in my own free time alongside this course. As mentioned in my [Considerations for Future Enhancements](#considerations-for-future-enhancements) section, I am inspired by the methods used to display the user input and feedback in a single line, as well as the accessibility possibilities in speech recognition.
 
 - It is also thanks to [Amanda's GitHub Repository](https://github.com/Amanda-Fl/CODEMASTER/blob/main/codemaster.py) that I learned about the os.system("clear"/"cls") method that can be used in Python, also reinforced by [Rajar Agrawal's "How to Clear Screen in Python?"](https://www.codingninjas.com/studio/library/how-to-clear-a-screen-in-python) tutorial.
 
@@ -359,7 +359,7 @@ To deploy this project to Heroku, the following procedure was followed:
 
 - All ASCII text for the graphics was created using [patorjk.com's ASCII Text Generator](https://patorjk.com/software/taag/#p=display&f=Gothic&t=Master%0ACode).
 
-- The specific style and text for the 'Game Over' graphic was originally done by [PeterQ93](https://github.com/PeterQ93/hangman), and I thought it was so fantastic that couldn't resist using it myself!
+- The specific style and text for the 'Game Over' graphic was originally done by [PeterQ93](https://github.com/PeterQ93/hangman), and I thought it was so fantastic that I couldn't resist using it myself!
 
 - Although the image itself is not subject to copyright, [the word "Triforce" is trademarked by Nintendo](https://trademarks.justia.com/792/40/triforce-79240030.html#:~:text=TRIFORCE%20Trademark%20of%20Nintendo%20of,Number%2079240030%20%3A%3A%20Justia%20Trademarks), and all rights belong to them. It also wouldn't feel right for me not to include them in these credits for being the minds behind [_The Legend of Zelda_](https://zelda.com/about/), one of my favourite video game franchises of all time.
 
