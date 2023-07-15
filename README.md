@@ -15,7 +15,7 @@ When creating this game, I really wanted to focus on recreating the light-hearte
 ## **Table of Contents:**
 
 1. [**Application Overview**](#application-overview)
-1. [**Planning Stage**](#planning-stage)
+1. [**Planning Stages**](#planning-stages)
    - [**Target Audience**](#target-audience)
    - [**User Stories**](#user-stories)
    - [**Application Aims**](#application-aims)
@@ -39,7 +39,7 @@ When creating this game, I really wanted to focus on recreating the light-hearte
      - [**_Game Over_**](#game-over-graphic-and-message)
      - [**_Divider Graphic_**](#divider-graphic)
    - [**Play Again Function with Error Handling**](#play-again-function-with-error-handling)
-   - [**Clear Screen Function**()]
+   - [**Clear Screen Function**](#clear-screen-function)
 1. [**Considerations for Future Enhancements**](#considerations-for-future-enhancements)
 1. [**Testing**](#testing)
 1. [**Deployment**](#deployment)
@@ -47,7 +47,7 @@ When creating this game, I really wanted to focus on recreating the light-hearte
    - [**Honourable Mentions**](#honourable-mentions)
    - [**Code and Content References**](#code-and-content-references)
 
-## **Planning Stage**
+## **Planning Stages**
 
 ### **Target Audience**
 
@@ -106,6 +106,12 @@ Two libraries were imported for this code:
 #### **Instructions**
 
 #### **Bonus Triforce!**
+
+During the making of this game, I found it harder and harder to resist the urge to include an "easter egg" of sorts (though it can hardly be called as such, due to not being very hidden!), in the form of "Press '3' for the Triforce!"
+
+I was pleased to discover that there is no shortage of options when it comes to including the Triforce in Python code, but of all the ones I came across, I thought this one (created by John Cartwright as mentioned in the [Credits](#credits) section) was not only the most visually appealing, but also the most interesting as it involves actual code, rather than being an ASCII graphic.
+
+Really this is just a fun gimmick, with a nod to both _Ocarina of Time_ in the form of Navi's infamous "Hey! Listen!" and a description of the Triforce from the [_The Legend of Zelda Instruction Booklet_](https://www.nintendo.co.jp/clv/manuals/en/pdf/CLV-P-NAANE.pdf) which was released alongside the original _The Legend of Zelda_ game in 1986.
 
 #### **Exit Game**
 
