@@ -249,6 +249,8 @@ The clear_screen() function exists to clear the terminal before running the code
 
 ## **Considerations for Future Enhancements**
 
+(single line input + feedback)
+
 ## **Testing**
 
 A separate file has been created for information about testing. Please click the following link to access it: [**TESTING.md**](TESTING.md)
@@ -267,10 +269,28 @@ As this game has no dependencies on external libraries (only Python's own 'rando
 
 ### Final Deployment (Heroku)
 
-
-
 ## **Credits**
 
 ### **Honourable Mentions**
 
+- [**Damon Kreft**](https://github.com/damon-kreft)
+
+- [**Richard Wells**](https://github.com/D0nni387)
+
+- **Riley** and **Bobby**
+
 ### **Code and Content References**
+
+- This project follows the Code Institute 'Love Sandwiches' code-along project, and although the type of project is vastly different from this one, it no doubt will show some similarity in regards to how certain parts of the code are laid out.
+
+- To help me gain a broader view of the multitude of ways in which a project like this one could be approached, I watched many video tutorials on YouTube, and of those two in particular helped shape the way I went about creating this project. The first is [Sith Senz's "Python 010 Mastermind Game" (YouTube Video)](https://www.youtube.com/watch?v=uidPEAAiz0s) and the [accompanying code on Colab Notebook](https://colab.research.google.com/drive/11Uy7FmxBC-6gAM6JTu5zcyeeAVyQO_zC?usp=sharing#scrollTo=ySDdGEQEe5In). I was so impressed by this particular tutorial in comparison to the others that I watched, as I felt it really effectively covered what I wanted this game to do. As such, a lot of my code will resemble the code used in this tutorial, as I initially used much of it as a template of sorts, I am very grateful for happening across the video and channel.
+
+- The second video that really impressed me was [Amanda Flood's "CS50 Python Final Project - 'Mastermind' Game with Speech Recognition" (YouTube)](https://www.youtube.com/watch?v=UyTX0SFHd4I) and her project's accompanying [GitHub Repository](https://github.com/Amanda-Fl/CODEMASTER/blob/main/codemaster.py). Many of the things that Amanda achieves in this project are far beyond my knowledge and understanding, but looking through the code helped me learn all sorts of things that are possible, even in simple terminal-based applications, that I wasn't previously aware of. It also helped me by introducing me to the kinds o libraries that are available in Python, such as 're'/'RegEx', which I aim to begin learning to understand in my own free time alongside this course. As mentioned in my [Considerations for Future Enhancements](#considerations-for-future-enhancements) section, I am inspired by the methods used to display the user input and feedback in a single line, underneath each other for a better user experience.
+
+- It is also thanks to [Amanda's GitHub Repository](https://github.com/Amanda-Fl/CODEMASTER/blob/main/codemaster.py) that I learned about the os.system("clear"/"cls") method that can be used in Python, also reinforced by [Rajar Agrawal's "How to Clear Screen in Python?"](https://www.codingninjas.com/studio/library/how-to-clear-a-screen-in-python) tutorial.
+
+- The fantastic script used to generate the Triforce graphic was made by [John Cartwright and posted on Securitron Linux blog](https://www.securitronlinux.com/bejiitaswrath/lovely-python-script-to-generate-a-nice-triforce/?utm_content=cmp-true).
+
+![Screenshot of John Cartwright's code](docs/images/triforce-script.png)
+
+-
