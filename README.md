@@ -267,9 +267,23 @@ Originally, my first thought for what I wanted to make for this project was an a
 
 ### Improved UI
 
-(single line input + feedback)
+Obviously, in a command line application that doesn't utilise graphical libraries such as Pygame, it can be expected that the UI will not be as polished as, for instance, front-end applications. However, inspired by [Amanda Flood's "CS50 Python Final Project - 'Mastermind' Game with Speech Recognition" (YouTube)](https://www.youtube.com/watch?v=UyTX0SFHd4I) (mentioned in the [Credits](#credits) section), I would like to experiment with finding cleaner and more visually pleasing UI options, such as the one Amanda has used in her own project:
+
+![Screenshot of Amanda Flood's UI for each guess (1/3)](docs/images/codemaster-single-line-feedback-1.png)
+
+![Screenshot of Amanda Flood's UI for each guess (2/3)](docs/images/codemaster-single-line-feedback-2.png)
+
+![Screenshot of Amanda Flood's UI for each guess (3/3)](docs/images/codemaster-single-line-feedback-3.png)
+
+Here she cleverly appends each user guess and their correct positions/colours to a list that is updated as the game progresses, and refreshes the screen each time giving the illusion that the scores are being added as they go. How she did this eluded me for a long time until I went through it with my mentor, and I would like to learn how to do this myself in the future.
 
 ### Accessibility Features
+
+Another feature Amanda uses in her project is speech recognition, which I found very impressive. In the terminal, it is much harder to include accessibility options as the contraints are very limiting. However, I did feel that this was a fantastic idea.
+
+I would also like to explore different options to assist with things such as colour blindness, for instance adding the option for full words rather than just the initials of the letter, as a game setting rather than just in the instructions. This would also benefit people who do not speak English as a first language, who might expect different characters for different colours.
+
+I tried to take accessibility into consideration as much as I could (for instance, not including Cyan as a colour choice, due to it technically being blue to many people), but would really like to explore more options in the future.
 
 ## **Testing**
 
@@ -331,7 +345,7 @@ To deploy this project to Heroku, the following procedure was followed:
 
 - To help me gain a broader view of the multitude of ways in which a project like this one could be approached, I watched many video tutorials on YouTube, and of those two in particular helped shape the way I went about creating this project. The first is [Sith Senz's "Python 010 Mastermind Game" (YouTube Video)](https://www.youtube.com/watch?v=uidPEAAiz0s) and the [accompanying code on Colab Notebook](https://colab.research.google.com/drive/11Uy7FmxBC-6gAM6JTu5zcyeeAVyQO_zC?usp=sharing#scrollTo=ySDdGEQEe5In). I was so impressed by this particular tutorial in comparison to the others that I watched, as I felt it really effectively covered what I wanted this game to do. As such, a lot of my code will resemble the code used in this tutorial, as I initially used much of it as a template of sorts, I am very grateful for happening across the video and channel.
 
-- The second video that really impressed me was [Amanda Flood's "CS50 Python Final Project - 'Mastermind' Game with Speech Recognition" (YouTube)](https://www.youtube.com/watch?v=UyTX0SFHd4I) and her project's accompanying [GitHub Repository](https://github.com/Amanda-Fl/CODEMASTER/blob/main/codemaster.py). Many of the things that Amanda achieves in this project are far beyond my knowledge and understanding, but looking through the code helped me learn all sorts of things that are possible, even in simple terminal-based applications, that I wasn't previously aware of. It also helped me by introducing me to the kinds o libraries that are available in Python, such as 're'/'RegEx', which I aim to begin learning to understand in my own free time alongside this course. As mentioned in my [Considerations for Future Enhancements](#considerations-for-future-enhancements) section, I am inspired by the methods used to display the user input and feedback in a single line, underneath each other for a better user experience.
+- The second video that really impressed me was [Amanda Flood's "CS50 Python Final Project - 'Mastermind' Game with Speech Recognition" (YouTube)](https://www.youtube.com/watch?v=UyTX0SFHd4I) and her project's accompanying [GitHub Repository](https://github.com/Amanda-Fl/CODEMASTER/blob/main/codemaster.py). Many of the things that Amanda achieves in this project are far beyond my knowledge and understanding, but looking through the code helped me learn all sorts of things that are possible, even in simple terminal-based applications, that I wasn't previously aware of. It also helped me by introducing me to the kinds o libraries that are available in Python, such as 're'/'RegEx', which I aim to begin learning to understand in my own free time alongside this course. As mentioned in my [Considerations for Future Enhancements](#considerations-for-future-enhancements) section, I am inspired by the methods used to display the user input and feedback in a single line, as well as the accessibility possibilities in speech recognition.
 
 - It is also thanks to [Amanda's GitHub Repository](https://github.com/Amanda-Fl/CODEMASTER/blob/main/codemaster.py) that I learned about the os.system("clear"/"cls") method that can be used in Python, also reinforced by [Rajar Agrawal's "How to Clear Screen in Python?"](https://www.codingninjas.com/studio/library/how-to-clear-a-screen-in-python) tutorial.
 
