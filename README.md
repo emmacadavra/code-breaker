@@ -111,11 +111,11 @@ The main logo for this game is something I put together by using and tweaking ex
 
 ![original ASCII sword created by Krogg for the ASCII Art Archives](docs/images/original-sword-by-krogg.png)
 
-...and then the following text in 'Gothic' from [patorjk.com's ASCII Text Generator](https://patorjk.com/software/taag/#p=display&f=Gothic&t=Master%0ACode):
+...which I then edited to be the opposite way round, and reshaped it slightly. I then added the following text in 'Gothic' from [patorjk.com's ASCII Text Generator](https://patorjk.com/software/taag/#p=display&f=Gothic&t=Master%0ACode):
 
 ![ASCII text in 'Gothic'](docs/images/ascii-mastercode-text.png)
 
-...and simple combined them together, finally adding colours by importing them from my 'Colors' class, containing the ANSI escape codes to be used with their respective colors.
+...and simply combined them before finally adding colours by importing them from my 'Colors' class, which contains the ANSI escape codes to be used with their respective colors.
 
 Unfortunately, I have found that the graphic displays in an odd fashion on Heroku, but only for the first time the menu is shown to the player. Unlike other graphics which make the background colour uniform, for some reason this particular one creates a notable difference between the terminal background and the background of the characters that make up the graphic. However, as one can never assume that all terminals will respond in the same way, this didn't come as a huge surprise and I don't think it takes away from the experience.
 
