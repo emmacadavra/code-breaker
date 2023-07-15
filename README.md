@@ -101,6 +101,8 @@ Two libraries were imported for this code:
 
 ### **Main Menu**
 
+![Screenshot of the Main Menu on Heroku](docs/images/main-menu-heroku.png)
+
 #### **Main Logo Graphic**
 
 ![Screenshot of the main logo graphic in VSCode](docs/images/mastercode-main-logo-vscode.png)
@@ -115,11 +117,21 @@ The main logo for this game is something I put together by using and tweaking ex
 
 ...and simple combined them together, finally adding colours by importing them from my 'Colors' class, containing the ANSI escape codes to be used with their respective colors.
 
-Unfortunately, I have found that the graphic displays in an odd fashion on Heroku - unlike other graphics which make the background colour uniform, for some reason this particular one creates a notable difference between the terminal background and the background of the characters that make up the graphic. However, as one can never assume that all terminals will respond in the same way, this didn't come as a huge surprise and I don't think it takes away from the experience.
+Unfortunately, I have found that the graphic displays in an odd fashion on Heroku, but only for the first time the menu is shown to the player. Unlike other graphics which make the background colour uniform, for some reason this particular one creates a notable difference between the terminal background and the background of the characters that make up the graphic. However, as one can never assume that all terminals will respond in the same way, this didn't come as a huge surprise and I don't think it takes away from the experience.
 
 ![Screenshot of main logo on Heroku](docs/images/mastercode-main-logo-heroku.png)
 
 #### **Instructions**
+
+Atop the instructions page, there is a banner graphic that features the name of the game, and a different sword that is similarly coloured to the main logo sword, and acts as a divider. This is detailed further in a later section.
+
+This is what the player will see if they press '2' to read the instructions before playing the game:
+
+![Screenshot of the instructions page](docs/images/instructions-screenshot.png)
+
+They have been stylised for a more pleasant user experience, and colours have been used to clearly indicate the choices the player has when making their guesses. A fun message of encouragement has been added to the bottom to help players feel ready to set out on their heroic adventure!
+
+Below the instructions, the play_again() function is called, which is detailed in a later section.
 
 #### **Bonus Triforce!**
 
@@ -132,6 +144,8 @@ Really this is just a fun gimmick, with a nod to both _Ocarina of Time_ in the f
 ![screenshot of Triforce graphic/page on VSCode](docs/images/triforce-vscode.png)
 
 ![screenshot of Triforce graphic/page on Heroku](docs/images/triforce-heroku.png)
+
+Below the Triforce graphic and cyan text, the play_again() function is called, which is detailed in a later section.
 
 #### **Exit Game**
 
