@@ -33,11 +33,9 @@ When creating this game, I really wanted to focus on recreating the light-hearte
    - [**Player Guess Input with Error Handling**](#player-guess-input-with-error-handling)
    - [**Comparing Player Guess to Secret Code**](#comparing-player-guess-to-secret-code)
      - [**_Player Guess Ouput_**](#player-guess-ouput)
-   - [**Graphics and Messages**](#graphics-and-messages)
-     - [**_Header Graphic_**](#header-graphic)
+   - [**Game Graphics and Messages**](#game-graphics-and-messages)
      - [**_You Win!_**](#you-win-graphic-and-message)
      - [**_Game Over_**](#game-over-graphic-and-message)
-     - [**_Divider Graphic_**](#divider-graphic)
    - [**Play Again Function with Error Handling**](#play-again-function-with-error-handling)
    - [**Clear Screen Function**](#clear-screen-function)
 1. [**Considerations for Future Enhancements**](#considerations-for-future-enhancements)
@@ -135,7 +133,7 @@ Unfortunately, I have found that the graphic displays in an odd fashion on Herok
 
 #### **Instructions**
 
-Atop the instructions page, there is a banner graphic that features the name of the game, and a different sword that is similarly coloured to the main logo sword, and acts as a divider. This is detailed further in a later section.
+Atop the instructions page, there is a banner graphic that features the name of the game, and a different sword that is similarly coloured to the main logo sword, and acts as a visual reminder to the user what they are playing, and creates a sense of familiarity.
 
 This is what the player will see if they press '2' to read the instructions before playing the game:
 
@@ -203,15 +201,15 @@ Care was taken to make sure that characters in the correct position are searched
 
 #### **Player Guess Ouput**
 
-### **Graphics and Messages**
+The display_player_guess() function takes the player's guess as an argument, and converts each character into their matching block colour, to give the player a visual reminder of what they have guessed so far. Below this, they are told how many characters are in the correct position, how many colours they have correct which are in the wrong position, and how many attempts they have remaining.
 
-#### **Header Graphic**
+![Screenshot of output after user guesses](docs/images/user-output.png)
+
+### **Game Graphics and Messages**
 
 #### **You Win! Graphic and Message**
 
 #### **Game Over Graphic and Message**
-
-#### **Divider Graphic**
 
 ### **Play Again Function with Error Handling**
 
