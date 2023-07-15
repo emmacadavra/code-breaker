@@ -129,7 +129,7 @@ The main logo for this game is something I put together by using and tweaking ex
 
 ...and simply combined them before finally adding colours by importing them from my 'Colors' class, which contains the ANSI escape codes to be used with their respective colors.
 
-Unfortunately, I have found that the graphic displays in an odd fashion on Heroku, but only for the first time the menu is shown to the player. Unlike other graphics which make the background colour uniform, for some reason this particular one creates a notable difference between the terminal background and the background of the characters that make up the graphic. However, as one can never assume that all terminals will respond in the same way, this didn't come as a huge surprise and I don't think it takes away from the experience.
+Unfortunately, I have found that the graphic displays in an odd fashion on Heroku, but only for the first time the menu is shown to the player. Unlike other graphics which make the background colour uniform, for some reason this particular one creates a notable difference between the terminal background and the background of the characters that make up the graphic. However, as one can never assume that all terminals will respond in the same way, this didn't come as a huge surprise and I don't think it takes away from the experience as it only happens the very first time the program is started.
 
 ![Screenshot of main logo on Heroku](docs/images/mastercode-main-logo-heroku.png)
 
@@ -171,11 +171,21 @@ The sword pattern used as a divider for the text is taken directly from the [ASC
 
 When the user either enters '1' from the main menu, or enters 'Y' in the play_again() function (detailed in a later section), the run_game() function is called and the game begins and the player is met with the following screen:
 
+![Screenshot of the main game page](docs/images/run-game-start.png)
+
 The same header/banner graphic seen on the instructions sits at the top of the page, which creates a sense of famliarity for the user, and a short summary of the game in a playful and entertaining way that befits the overall theme of the game.
 
 #### **Generating the Secret Code**
 
+The secret code is randomly generated using the Python's random library. Two costants have been declared that are crucial for the creation of this random secret code: 'COLOR_CHOICES', which is a list of the 6 accepted characters for the colour choices as strings, and 'CODE_LENGTH' which determined how long the code is. The generate_code() function contains an empty list, and a while loop that tells the program that so long as the length of this empty list is less than the length of 'CODE_LENGTH', the following code needs to be run: random.choice(COLOR_CHOICES) and the result is then appended to the empty list. By using this method, the function is still valid if one or both of the 'COLOR_CHOICES' and 'CODE_LENGTH' constants are updated to include different values or lengths.
+
 ### **Player Guess Input with Error Handling**
+
+As with the main menu input, ValueErrors have been used to make sure that the user can only input one of the specified valid character options, and that the program doesn't crash or cause bugs if invalid characters are entered. If they enter anything other than the valid options, they receive an error that tells them they have entered one or more invalid characters, and reminds them of the valid characters. If they enter a guess that is not equal to the specified code length, using valid or invalid characters, they receive an error telling them so and reminding them of the valid characters.
+
+![Screenshot of ValueError examples if player inputs invalid characters and/or length](docs/images/user-input-error-handling.png)
+
+Once again, the constants 'COLOR_CHOICES' and 'CODE_LENGTH' are used here so that the ValueError outputs the correct information to the user in the event that either constant is updated.
 
 ### **Comparing Player Guess to Secret Code**
 
