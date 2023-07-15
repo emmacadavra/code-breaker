@@ -207,9 +207,15 @@ The display_player_guess() function takes the player's guess as an argument, and
 
 ### **Game Graphics and Messages**
 
+Depending on whether the player is able to correctly guess the code within the specified number of attempts and win the game, or whether they are unable to do so and lose the game, they will see a different graphic.
+
 #### **You Win! Graphic and Message**
 
+![Screenshot of 'You Win!' graphic and message](docs/images/you-win-graphic-message.png)
+
 #### **Game Over Graphic and Message**
+
+![Screenshot of 'Game Over' graphic and message](docs/images/game-over-graphic-message.png)
 
 ### **Play Again Function with Error Handling**
 
