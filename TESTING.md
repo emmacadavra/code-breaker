@@ -110,11 +110,21 @@ Despite my previous issue with incorrectly attempting to call functions within p
 
 ### The Curse of the Infinite Loop
 
-(play_again() bug where any input led to 'Enter Your Prediction:')
+The play_again() function was created much later in development than most other functions, as I wanted to make sure the core functions were working correctly before introducing it. After doing so, two major bugs appeared in my code (this bug, and the following bug listed).
+
+This first bug was creating an infinite gameplay loop that was impossible to break out of unless the terminal was forced to close. When the game ended, and the play_again() function was called, it didn't matter whether the player entered 'Y', 'N', or any other character - the same thing happened each time:
+
+![Screenshot of infinite loop after answering 'Y' to play_again()](docs/images/infinite-loop-1.png)
+
+![Screenshot of infinite loop after answering 'N' to play_again()](docs/images/infinite-loop-2.png)
+
+![Screenshot of infinite loop after answering 'f' to play_again()](docs/images/infinite-loop-3.png)
+
+The culprit for this issue was a series of wrongly placed, and ultimately unnecessary, 'break' statements within the function itself that were interfering its functionality. They were also causing the game to skip some parts of the run_game() function (such as clearing the screen, displaying the banner image, etc). The bug was fixed by removing these break statements, and more care was taken to investigate whether any similar issues had arisen from issues like this.
 
 ### Not Even A Hero Can Escape
 
-(similar bug with exit game where break was not added)
+My investigation led me almost immediately to a different kind of infinite loop that was being caused by a similar, though technically opposite issue:
 
 ## **Post Development Testing**
 
