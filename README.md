@@ -259,9 +259,15 @@ A separate file has been created for information about testing. Please click the
 
 _Disclaimer: This project was created using a specially tailored template, which was forked from [Code Institute's original one](https://github.com/Code-Institute-Org/python-essentials-template). This template has been specifically designed to support the project's final deployment to Heroku's virtual environment, and comes with many add-ons included. Please take care to look through the extra files included in this template before cloning/forking, to prevent any potential conflicts._
 
-If you wish to create a clone of this project in order to play it on your local machine or virtual IDE environment such as Gitpod,
+If you wish to create a clone of this project in order to play it on your local machine or virtual IDE environment such as Gitpod, first navigate to [this project's GitHub Repository](https://github.com/emmacadavra/code-breaker), and follow [GitHub's instructions on how to clone a repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository). If you are using Gitpod, once you have cloned the repo, you will be able to click the green button (shown below) to open the code into a new workspace provided you have the Gitpod browser extension installed.
+
+![Gitpod button on repo](docs/images/gitpod-button.png)
+
+As this game has no dependencies on external libraries (only Python's own 'random' and 'os' libraries), there are no additional requirements to running this game. It works just as well on local machines as it does on Heroku.
 
 ### Final Deployment (Heroku)
+
+
 
 ## **Credits**
 
