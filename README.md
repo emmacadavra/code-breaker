@@ -147,7 +147,7 @@ Below the instructions, the play_again() function is called, which is detailed i
 
 #### **Bonus Triforce!**
 
-During the making of this game, I found it harder and harder to resist the urge to include an "easter egg" of sorts (though it can hardly be called as such, due to not being very hidden!), in the form of "Press '3' for the Triforce!"
+During the making of this game, I found it harder and harder to resist the urge to include an "easter egg" of sorts (though it can hardly be described as such, due to not being very hidden!), in the form of "Press '3' for the Triforce!"
 
 I was pleased to discover that there is no shortage of options when it comes to including the Triforce in Python code, but of all the ones I came across, I thought this one (created by John Cartwright as mentioned in the [Credits](#credits) section) was not only the most visually appealing, but also the most interesting as it involves actual code, rather than being an ASCII graphic.
 
@@ -171,7 +171,7 @@ The sword pattern used as a divider for the text is taken directly from the [ASC
 
 When the user either enters '1' from the main menu, or enters 'Y' in the play_again() function (detailed in a later section), the run_game() function is called and the game begins and the player is met with the following screen:
 
-
+The same header/banner graphic seen on the instructions sits at the top of the page, which creates a sense of famliarity for the user, and a short summary of the game in a playful and entertaining way that befits the overall theme of the game.
 
 #### **Generating the Secret Code**
 
