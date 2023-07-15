@@ -72,7 +72,21 @@ By calling the function inside the print statement, I was asking the program to 
 
 ### Player Guess Output Predicament
 
-(incorrectly placed return statement)
+Initially, I had not included any kind of visual feedback of the player's guess - the only thing that was output after their guess was the text explaining how many correct answers they had (as shown above in the previous bug's screenshots). Eventually I realised that having the colours displayed to the user as well would vastly improve the overall user experience, and set out to implement it. However, when testing, I came across the following bug:
+
+![Screenshot of player input as "RRRR", but output displays only 1 red block](docs/images/player-guess-output-predicament-1.png)
+
+_Technically_, this output is correct, because the player input is only the colour red. However, I wanted the output to show each individual entry, even if they were all the same colour.
+
+I soon realised that I had incorrectly included the 'return output' statement _inside_ the if/elif statement within the display_player_guess() function's for loop.
+
+![Screenshot of incorrectly places return statement](docs/images/player-guess-output-predicament-2.png)
+
+I fixed this by correcting the indentation and putting the 'return output' statement at the bottom of the for loop, outside of the if/elif statements.
+
+![Screenshot of correctly placed return statement](docs/images/player-guess-output-predicament-3.png)
+
+Although this bug comes under the category of 'indentation bugs', I considered this one to be significant as it made me really consider what I was asking the code to do by having put the statement in the wrong place.
 
 ### Python's Bane: Backslashes in ASCII Art
 
