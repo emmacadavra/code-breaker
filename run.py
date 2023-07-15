@@ -191,15 +191,15 @@ def player_guess_input(attempt):
             guess_list = [g for g in guess]
 
             if len(guess_list) != CODE_LENGTH:
-                raise ValueError(f"Invalid - please enter {CODE_LENGTH} characters.\n" +
-                                 f"Choose only from the following characters, with no commas or spaces:\n" +
+                raise ValueError(f"Invalid - please enter {CODE_LENGTH} valid characters.\n" +
+                                 f"Please choose only from the following characters, with no commas or spaces:\n" +
                                  f"{Colors.red}R  {Colors.green}G  {Colors.blue}B  {Colors.yellow}Y  {Colors.purple}P  {Colors.white}W{Colors.default}\n")
                 continue
 
             for character in guess_list:
                 if character not in COLOR_CHOICES:
-                    raise ValueError(f"Error: '{character}' is not a valid character.\n" +
-                                     f"Choose only from the following characters, with no commas or spaces:\n" +
+                    raise ValueError(f"Error: You have entered one or more invalid characters.\n" +
+                                     f"Please choose only from the following characters, with no commas or spaces:\n" +
                                      f"{Colors.red}R  {Colors.green}G  {Colors.blue}B  {Colors.yellow}Y  {Colors.purple}P  {Colors.white}W{Colors.default}\n")
             break
 

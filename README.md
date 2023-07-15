@@ -67,7 +67,7 @@ As a user:
 - When playing the game, I would like to see the visual representation of my guesses.
 - When I have entered my guess, I want to see how many colours in my guess were correct and in the right position, and how many were correct but in the wrong position, so that I can advance the game without being in the dark.
 - I want to be reminded of how many attempts I have remaining.
-- I wish for enjoyable graphics that represent whether I won the game or lost the game.
+- I wish for feedback in the form of enjoyable graphics that represent whether I won the game or lost the game.
 - I want to be able to exit the game from the menu.
 
 ### **Application Aims**
@@ -80,6 +80,8 @@ This application aims to:
 - Run successfully as a continuous loop for as long as the player needs, without crashing due to errors in either the logic or in the player's input.
 
 ### **UX Flow Chart**
+
+
 
 ### **Technology Used**
 
@@ -99,9 +101,15 @@ Two libraries were imported for this code:
 
 ## **Current Features**
 
-### **Main Menu**
+### **Main Menu with Error Handling**
 
 ![Screenshot of the Main Menu on Heroku](docs/images/main-menu-heroku.png)
+
+The main menu screen is the first thing the player sees upon starting the program. It displays the main logo graphic, and below it provides the user with four options:
+
+![Screenshot of main menu options](docs/images/main-menu-options.png)
+
+
 
 #### **Main Logo Graphic**
 
@@ -139,7 +147,7 @@ During the making of this game, I found it harder and harder to resist the urge 
 
 I was pleased to discover that there is no shortage of options when it comes to including the Triforce in Python code, but of all the ones I came across, I thought this one (created by John Cartwright as mentioned in the [Credits](#credits) section) was not only the most visually appealing, but also the most interesting as it involves actual code, rather than being an ASCII graphic.
 
-Really this is just a fun gimmick, with a nod to both _Ocarina of Time_ in the form of Navi's infamous "Hey! Listen!" and a description of the Triforce from the [_The Legend of Zelda Instruction Booklet_](https://www.nintendo.co.jp/clv/manuals/en/pdf/CLV-P-NAANE.pdf) which was released alongside the original _The Legend of Zelda_ game in 1986.
+Really this is just a fun gimmick, with a nod to both _Ocarina of Time_ in the form of Navi's infamous "Hey! Listen!" and a description of the Triforce from the [_The Legend of Zelda Instruction Booklet_](https://www.nintendo.co.jp/clv/manuals/en/pdf/CLV-P-NAANE.pdf) which was released alongside the original _The Legend of Zelda_ video game in 1986.
 
 ![screenshot of Triforce graphic/page on VSCode](docs/images/triforce-vscode.png)
 
@@ -156,6 +164,8 @@ If the player wishes to exit the game from the menu, they can press 4, and the f
 The sword pattern used as a divider for the text is taken directly from the [ASCII Art Archives](https://www.asciiart.eu/weapons/swords).
 
 ### **Run Game**
+
+When 
 
 #### **Generating the Secret Code**
 
