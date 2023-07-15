@@ -227,6 +227,18 @@ A short line of text explains that the player was 'defeated' this time, but not 
 
 ### **Play Again Function with Error Handling**
 
+The play_game() function is named as such because it runs at the end of each instance of the game, whether the player wins or loses. However, it does also run at the end of the instructions page, as well as the Triforce page. It is a simple input function, similar to the one found in the main menu, which gives the player two options: Press 'Y' to play the game, press 'N' to return to the main menu. The wording is adjusted based on where the function is called, so that it always makes contextual sense to the user.
+
+As with all other input functions in this game, error handling is used in the form of a ValueError for any key presses that are not 'Y' or 'N'. If the user enters 'y' or 'n', the upper() function is used to convert them to upper case to avoid any confusion. If any other characters are entered, such as numbers, special characters or other letters, the following error appears:
+
+After the 'Game Over' screen:
+
+![Screenshot of play_again() ValueErrors after 'Game Over'](docs/images/play-again-game-over.png)
+
+At the end of the instructions page:
+
+![Screenshot of play_again() ValueErrors on the instructions page](docs/images/play-again-instructions.png)
+
 ### **Clear Screen Function**
 
 ## **Considerations for Future Enhancements**
