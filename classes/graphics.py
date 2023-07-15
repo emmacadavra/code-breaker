@@ -49,9 +49,9 @@ def divider_image():
     Displays a divider image of two swords"
     """
     print("""
-        O                                     O
-  {o)xxx|===============-  *  -===============|xxx(o}
-        O                                     O
+         O                                     O
+   {o)xxx|===============-  *  -===============|xxx(o}
+         O                                     O
     """)
 
 
@@ -69,8 +69,8 @@ def triforce():
     for t2 in big_tri:
         print(t2 + " " + t2)
 
-    print(f"{Colors.cyan}Hey, listen! These golden triangles possess mystical powers...")
-    print(f"{Colors.default}Would you like to play MasterCode? ('Y' to play, 'N' to return to the menu)")
+    print(f"{Colors.cyan} Hey, listen! These golden triangles possess mystical powers...")
+    print(f"{Colors.default} Would you like to play MasterCode? ('Y' to play, 'N' to return to the menu)")
 
 
 # You Win! graphic function
@@ -101,22 +101,22 @@ def game_over():
     Displays a 'Game Over' graphic when the player loses
     """
     print(f"""{Colors.red}
-  ▄████  ▄▄▄       ███▄ ▄███▓▓█████
- ██▒ ▀█▒▒████▄    ▓██▒▀█▀ ██▒▓█   ▀
-▒██░▄▄▄░▒██  ▀█▄  ▓██    ▓██░▒███
-░▓█  ██▓░██▄▄▄▄██ ▒██    ▒██ ▒▓█  ▄
-░▒▓███▀▒ ▓█   ▓██▒▒██▒   ░██▒░▒████▒
- ░▒   ▒  ▒▒   ▓▒█░░ ▒░   ░  ░░░ ▒░ ░
-  ░   ░   ▒   ▒▒ ░░  ░      ░ ░ ░  ░
-░ ░   ░   ░   ▒   ░      ░      ░
- ▒█████   ██▒ ░ █▓▓█████ ░██▀███░  ░
-▒██▒  ██▒▓██░   █▒▓█   ▀ ▓██ ▒ ██▒
-▒██░  ██▒ ▓██  █▒░▒███   ▓██ ░▄█ ▒
-▒██   ██░  ▒██ █░░▒▓█  ▄ ▒██▀▀█▄
-░ ████▓▒░   ▒▀█░  ░▒████▒░██▓ ▒██▒
-░ ▒░▒░▒░    ░ ▐░  ░░ ▒░ ░░ ▒▓ ░▒▓░
-  ░ ▒ ▒░    ░ ░░   ░ ░  ░  ░▒ ░ ▒░
-░ ░ ░ ▒       ░░     ░     ░░   ░
-    ░ ░        ░     ░  ░   ░
-              ░{Colors.default}
+   ▄████  ▄▄▄       ███▄ ▄███▓▓█████
+  ██▒ ▀█▒▒████▄    ▓██▒▀█▀ ██▒▓█   ▀
+ ▒██░▄▄▄░▒██  ▀█▄  ▓██    ▓██░▒███
+ ░▓█  ██▓░██▄▄▄▄██ ▒██    ▒██ ▒▓█  ▄
+ ░▒▓███▀▒ ▓█   ▓██▒▒██▒   ░██▒░▒████▒
+  ░▒   ▒  ▒▒   ▓▒█░░ ▒░   ░  ░░░ ▒░ ░
+   ░   ░   ▒   ▒▒ ░░  ░      ░ ░ ░  ░
+ ░ ░   ░   ░   ▒   ░      ░      ░
+  ▒█████   ██▒ ░ █▓▓█████ ░██▀███░  ░
+ ▒██▒  ██▒▓██░   █▒▓█   ▀ ▓██ ▒ ██▒
+ ▒██░  ██▒ ▓██  █▒░▒███   ▓██ ░▄█ ▒
+ ▒██   ██░  ▒██ █░░▒▓█  ▄ ▒██▀▀█▄
+ ░ ████▓▒░   ▒▀█░  ░▒████▒░██▓ ▒██▒
+ ░ ▒░▒░▒░    ░ ▐░  ░░ ▒░ ░░ ▒▓ ░▒▓░
+   ░ ▒ ▒░    ░ ░░   ░ ░  ░  ░▒ ░ ▒░
+ ░ ░ ░ ▒       ░░     ░     ░░   ░
+     ░ ░        ░     ░  ░   ░
+               ░{Colors.default}
     """)
