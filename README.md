@@ -113,6 +113,10 @@ I was pleased to discover that there is no shortage of options when it comes to 
 
 Really this is just a fun gimmick, with a nod to both _Ocarina of Time_ in the form of Navi's infamous "Hey! Listen!" and a description of the Triforce from the [_The Legend of Zelda Instruction Booklet_](https://www.nintendo.co.jp/clv/manuals/en/pdf/CLV-P-NAANE.pdf) which was released alongside the original _The Legend of Zelda_ game in 1986.
 
+![screenshot of Triforce graphic/page on VSCode](docs/images/triforce-vscode.png)
+
+![screenshot of Triforce graphic/page on Heroku](docs/images/triforce-heroku.png)
+
 #### **Exit Game**
 
 ### **Run Game**
