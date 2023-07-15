@@ -269,6 +269,28 @@ As this game has no dependencies on external libraries (only Python's own 'rando
 
 ### Final Deployment (Heroku)
 
+To deploy this project to Heroku, the following procedure was followed:
+
+1. From the Heroku dashboard, click on 'New' in the top right-hand corner, and select "Create New App" from the drop-down menu.
+1. Enter a unique name for the app (this project uses "mastercode-breaker").
+1. When a unique name that is available has been provided, select your region.
+1. Click on the "Create App" button.
+1. The page that will now be displayed contains important information for setting up the app, across different tabs. First navigate to the "Settings" tab.
+1. Scroll to the section called "Config Vars", and click on the button that says "Reveal Config Vars".
+1. In the left-hand input field labelled "KEY", enter "PORT".
+1. In the right-hand input field labelled "VALUE", enter "8000".
+1. Scroll down to the next section called "Buildpacks", and click on the button that says "Add buildpack".
+1. Select "python" from the list, then click on the button that says "Add buildpack".
+
+- **IMPORTANT:** It is extremely important that you add Python's buildpack first, as detailed here. Buildpacks must be added in the correct order, and for this project to work, Python must come first.
+
+1. Once Python has been added, click on the "Add buildpack" button once more, and select "nodejs" from the list. Click on the button that says "Add buildpack" to add node.js AFTER Python.
+1. Scroll back up to the top of the page, and navigate to the "Deploy" tab.
+1. Under the "Deployment method" section, select GitHub as the deployment method, and confirm that you wish to connect to GitHub.
+1. Search for the project's GitHub repository name, and click the "Connect" button when you have located the correct one.
+1. Scroll further down the page to see two separate options regarding the deployment method. The project can be deployed automatically from GitHub pushes by clicking "Enable Automatic Deploys" under the "Automatic deploys" section, or manually by selecting the branch to be deployed from (ie 'main') in the "Manual deploys" section.
+1. The project is now successfully deployed on Heroku.
+
 ## **Credits**
 
 ### **Honourable Mentions**
@@ -278,6 +300,8 @@ As this game has no dependencies on external libraries (only Python's own 'rando
 - [**Richard Wells**](https://github.com/D0nni387)
 
 - **Riley** and **Bobby**
+
+- **CI Students**
 
 ### **Code and Content References**
 
@@ -301,4 +325,6 @@ As this game has no dependencies on external libraries (only Python's own 'rando
 
 - The specific style and text for the 'Game Over' graphic was originally done by [PeterQ93](https://github.com/PeterQ93/hangman), and I thought it was so fantastic that couldn't resist using it myself!
 
-- Although the image itself is not subject to copyright, [the word "Triforce" is trademarked by Nintendo](https://trademarks.justia.com/792/40/triforce-79240030.html#:~:text=TRIFORCE%20Trademark%20of%20Nintendo%20of,Number%2079240030%20%3A%3A%20Justia%20Trademarks), and all rights belong to them. It also wouldn't feel right for me not to credit them here for being the minds behind [_The Legend of Zelda_](https://zelda.com/about/), one of my favourite video game franchises of all time.
+- Although the image itself is not subject to copyright, [the word "Triforce" is trademarked by Nintendo](https://trademarks.justia.com/792/40/triforce-79240030.html#:~:text=TRIFORCE%20Trademark%20of%20Nintendo%20of,Number%2079240030%20%3A%3A%20Justia%20Trademarks), and all rights belong to them. It also wouldn't feel right for me not to include them in these credits for being the minds behind [_The Legend of Zelda_](https://zelda.com/about/), one of my favourite video game franchises of all time.
+
+- Throughout the project, I often utilised and relied upon [Python's Official Documentation](https://www.python.org/)[Stack Overflow](https://stackoverflow.com/), [W3Schools](https://www.w3schools.com/) and Code Institute's Programme Content and Slack Channels as references when I was stuck or needed to refresh my knowledge.
