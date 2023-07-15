@@ -241,6 +241,10 @@ At the end of the instructions page:
 
 ### **Clear Screen Function**
 
+The clear_screen() function exists to clear the terminal before running the code that follows it, to make it less messy and to make the user feel as though they are in separate 'sections' of the program. It can be found inside the main_menu() function, before the triforce() function is called from the main menu, in the run_game() function, and in the play_again() function.
+
+**_Please note: this function does not work as intended in the final deployed version of this game on Heroku, due to relying on Python's os.system() function. As this project is being hosted in a virtual environment, OS information is not available._**
+
 ## **Considerations for Future Enhancements**
 
 ## **Testing**
