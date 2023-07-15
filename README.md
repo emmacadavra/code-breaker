@@ -293,4 +293,12 @@ As this game has no dependencies on external libraries (only Python's own 'rando
 
 ![Screenshot of John Cartwright's code](docs/images/triforce-script.png)
 
--
+- I learned how to add colours to the text and graphics thanks to [Mark Williams' "Add Colour to Text in Python"](https://ozzmaker.com/add-colour-to-text-in-python/).
+
+- All ASCII images of swords are either taken directly from, or modified versions of, images found on the [ASCII Art Archives](https://www.asciiart.eu/weapons/swords).
+
+- All ASCII text for the graphics was created using [patorjk.com's ASCII Text Generator](https://patorjk.com/software/taag/#p=display&f=Gothic&t=Master%0ACode).
+
+- The specific style and text for the 'Game Over' graphic was originally done by [PeterQ93](https://github.com/PeterQ93/hangman), and I thought it was so fantastic that couldn't resist using it myself!
+
+- Although the image itself is not subject to copyright, [the word "Triforce" is trademarked by Nintendo](https://trademarks.justia.com/792/40/triforce-79240030.html#:~:text=TRIFORCE%20Trademark%20of%20Nintendo%20of,Number%2079240030%20%3A%3A%20Justia%20Trademarks), and all rights belong to them. It also wouldn't feel right for me not to credit them here for being the minds behind [_The Legend of Zelda_](https://zelda.com/about/), one of my favourite video game franchises of all time.

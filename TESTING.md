@@ -66,6 +66,8 @@
 
 ### **Testing Final Deployed Version**
 
+(mention increased frequency in commits & pushes)
+
 (asking friends to test on local machines & deployed version)
 
 Please click the following link to return to the [**README.md**](README.md) file.
