@@ -139,10 +139,8 @@ def run_game():
     print("  Have you the courage to face up to the mighty task...?")
     graphics.divider_image()
 
-    # randomly generate a new secret code
+    # randomly generate a new secret code, and set the attempt number to 0
     original_answer = generate_code()
-    print(original_answer)
-
     attempt_number = 0
 
     while attempt_number <= MAX_ATTEMPTS:
