@@ -25,7 +25,7 @@
 
 ### **Manual Testing Methods**
 
-During the development of this project, I used a number of methods to manually test my code as I went.
+During the development of this project, I used a number of methods to manually test my code as I went along.
 
 #### Print Statements
 
@@ -41,17 +41,17 @@ Occasionally, I would use the 'python3' terminal command in order to test code t
 
 #### Python Tutor
 
-There were a few occasions during development (which I elaborate on in the [Notable Bugs and Fixes](#notable-bugs-and-fixes) section) where ([Python Tutor](https://pythontutor.com/python-debugger.html#mode=edit)) was an absolutely invaluable tool, not just for testing the funtionality of my code (and indentifying bugs created by poorly placed 'print' and 'break' statements), but also for testing my understanding of how the functions were interacting with one another. This helped develop my knowledge by solidifying my understanding of the arguments needed for certain functions, where those arguments needed to come from and how, and in general it helped me test the overall game logic to make sure I was doing things in the right order.
+There were a few occasions during development (which I elaborate on in the [Notable Bugs and Fixes](#notable-bugs-and-fixes) section) where ([Python Tutor](https://pythontutor.com/python-debugger.html#mode=edit)) was an absolutely invaluable tool, not just for testing the functionality of my code (and identifying bugs created by poorly placed 'print' and 'break' statements), but also for testing my understanding of how the functions were interacting with one another. This helped develop my knowledge by solidifying my understanding of the arguments needed for certain functions, where those arguments needed to come from and how, and in general it helped me test the overall game logic to make sure I was doing things in the right order.
 
 Python Tutor was also especially helpful in testing functions that required input to work, but I had not yet defined the functions that would take in the required input. By running them through Python Tutor, I could at least be reassured that my logic was sound, and that I could move onto the next step which was creating the functions to provide the input arguments needed.
 
 #### **Input Testing**
 
-Input testing was a crucial during development, as I needed to make absolutely certain that wherever player input is required, there could be no circumstances under which the game could crash or cause bugs if incorrect input was entered.
+Input testing was crucial during development, as I needed to make absolutely certain that wherever player input is required, there could be no circumstances under which the game could crash or cause bugs if incorrect input was entered.
 
 As such, I used the 'python3 run.py' terminal command almost non-stop whilst testing that my ValueErrors were being raised correctly. Essentially, in order to successfully do the input testing, I needed to go out of my way to enter everything wrong on purpose, in as many different ways as I could think of, to make sure that the correct errors were being raised and that the inputs were not being accepted if they were invalid.
 
-At one stage during input testing, I did attempt to implement the 'getpass' input function, as I had hoped to take the player's's input and then convert it to the coloured blocks output, without printing their guess to the terminal. However, after importing 'getpass' and testing it out, I found that it was generally unsuitable for what I had in mind and decided against using it.
+At one stage during input testing, I did attempt to implement the 'getpass' input function, as I had hoped to take the player's input and then convert it to the coloured blocks output, without printing their guess to the terminal. However, after importing 'getpass' and testing it out, I found that it was generally unsuitable for what I had in mind and decided against using it.
 
 ## **Notable Bugs and Fixes**
 
@@ -61,7 +61,7 @@ _(I have given them thematically appropriate names to these bugs that tie in wit
 
 ### Print Statement Sabotage
 
-The first major bug I encountered during testing was actually the result of testing itself, but it took me quite a while to figure it out. As I've mentioned above, one of the most crucial things I needed to do throughout the development of this game is actually see the randomly generated code so that I could test whether the game was functioning properly. I did this intially for the generate_code() function, but didn't properly begin to utilise this until the majority of the main functions were created. I quickly found quite a significant bug:
+The first major bug I encountered during testing was actually the result of testing itself, but it took me quite a while to figure it out. As I've mentioned above, one of the most crucial things I needed to do throughout the development of this game is actually see the randomly generated code so that I could test whether the game was functioning properly. I did this initially for the generate_code() function, but didn't properly begin to utilise this until the majority of the main functions were created. I quickly found quite a significant bug:
 
 ![Screenshot of correct code entered, but result showing as 0 in correct position, only 2 correct in wrong position](docs/images/print-statement-sabotage-1.png)
 
@@ -101,7 +101,7 @@ When I first began experimenting with ASCII text, I experienced the following bu
 
 A quick Google search led me immediately to the answer for this, which is that Python ignores backslashes as it's an escape character. This is a common feature in most, if not all, programming languages, but I had not considered this when including the graphics.
 
-To fix this, as will be evident in the functions within graphics.py, I needed to add many, many additional backslashes so that the output matched what was intended. Unfotunately, as a result, the code itself looks quite messy at times. I will be interested to learn whether there are neater ways of fixing this issue for future projects.
+To fix this, as will be evident in the functions within graphics.py, I needed to add many, many additional backslashes so that the output matched what was intended. Unfortunately, as a result, the code itself looks quite messy at times. I will be interested to learn whether there are neater ways of fixing this issue for future projects.
 
 ### "None" Shall Follow
 
@@ -125,7 +125,7 @@ This first bug was creating an infinite gameplay loop that was impossible to bre
 
 ![Screenshot of infinite loop after answering 'f' to play_again()](docs/images/infinite-loop-3.png)
 
-The culprit for this issue was a series of wrongly placed, and ultimately unnecessary, 'break' statements within the function itself that were interfering its functionality. They were also causing the game to skip some parts of the run_game() function (such as clearing the screen, displaying the banner image, etc). The bug was fixed by removing these break statements, and more care was taken to investigate whether any similar issues had arisen from issues like this.
+The culprit for this issue was a series of wrongly placed, and ultimately unnecessary, 'break' statements within the function itself that were interfering with its functionality. They were also causing the game to skip some parts of the run_game() function (such as clearing the screen, displaying the banner image, etc). The bug was fixed by removing these break statements, and more care was taken to investigate whether any similar issues had arisen from issues like this.
 
 ### Not Even A Hero Can Escape
 
@@ -135,7 +135,7 @@ My investigation led me almost immediately to a different kind of infinite loop 
 
 In this instance, the problem was that pressing '4' to exit the game was creating a similar infinite gameplay loop to the one seen in the previous bug. The reason I was able to identify where the issue was coming from so quickly was that this bug only occurred AFTER playing the main game/visiting the instructions or Triforce pages once. If you ran the program and pressed '4' straight away, the program would close as expected. This meant the issue had to be with the play_game() function.
 
-Whereas the prevous issue had been that I had too many wrongly places break statements, in this case the problem was that I _hadn't_ included break statements after calling the play_game() function in the main menu options. This was leading to two separate instanced of the game trying to run side-by-side, resulting in the bug pictured above. Adding break statements under each option fixed this bug.
+Whereas the previous issue had been that I had too many wrongly placed break statements, in this case the problem was that I _hadn't_ included break statements after calling the play_game() function in the main menu options. This was leading to two separate instances of the game trying to run side-by-side, resulting in the bug pictured above. Adding break statements under each option fixed this bug.
 
 ## **Post Development Testing**
 
