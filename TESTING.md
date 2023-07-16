@@ -2,7 +2,7 @@
 
 ## **Table of Contents (Testing):**
 
-1. [**Testing Throughout Development**]
+1. [**Testing Throughout Development**](#testing-throughout-development)
    - [**Manual Testing Methods**](#manual-testing-methods)
      - [**Print Statements**](#print-statements)
      - [**python3 run.py**](#python3-runpy)
