@@ -93,7 +93,7 @@ def play_again():
     """
     while True:
         try:
-            play_again_choice = (input(" Enter choice: \n")).upper().strip()
+            play_again_choice = (input("Enter choice: \n")).upper().strip()
             if play_again_choice == "Y":
                 clear_screen()
                 run_game()

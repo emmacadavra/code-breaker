@@ -85,6 +85,10 @@ This application aims to:
 
 ### **UX Flow Chart**
 
+In order to help me visualise the basic logic flow I would need to implement for a smooth user experience, I created the following flow chart during the planning stages using [draw.io's flow chart maker](https://app.diagrams.net/):
+
+![UX planning flow chart](docs/images/game-flow-chart.png)
+
 ### **Technology Used**
 
 This project has been written entirely in Python (version 3.11.4, which is the latest version at the time of making this game).
