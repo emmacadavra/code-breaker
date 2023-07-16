@@ -141,16 +141,30 @@ Whereas the prevous issue had been that I had too many wrongly places break stat
 
 ### **Validation**
 
-Once I was happy with my code overall, I entered the code from each of my files into the [CI Python Linter](https://pep8ci.herokuapp.com/) to validate it. Initially, there were a few issues such as trailing whitespace, or the accidental inclusion of white space on what should have been a blank line. This was very quickly tidied up. All significant issues such as this were removed, though if you run my 'run.py' and 'graphics.py' files through the linter you will see that many issues remain, which I have detailed in the [Unresolved Bugs](#unresolved-bugs) sections below.
+Once I was happy with my code overall, I entered the code from each of my files into the [CI Python Linter](https://pep8ci.herokuapp.com/) to validate it. Initially, there were a few issues such as trailing whitespace, or the accidental inclusion of white space on what should have been a blank line. This was very quickly tidied up. All significant issues such as this were removed, though if you run my 'run.py' and 'graphics.py' files through the linter you will see that many issues remain, which I have detailed in the [Unresolved Bugs](#unresolved-bugs) section below.
 
 ### **Unresolved Bugs**
 
-(code linter - multiple issues with line length (22 issues) in code due to indentation/inclusion of f strings for colour classes, but not in output)
+At the time of submission, there are no known bugs within the game's code, save for the following issue regarding the [CI Python Linter](https://pep8ci.herokuapp.com/).
+
+When running my 'run.py' and 'graphics.py' files through the linter, you will see that the 'run.py' file returns twenty-two "E501 line too long" errors, and my 'graphics.py' file returns ten "E501 line too long" errors as well as thirty-one "W605 invalid escape sequence" errors.
+
+Looking at the code in these files, and also by looking at some of the information in the README and TESTING files, it is easy to see where these errors are coming from. In the case of the "E501 line too long" errors, they are all due either to strings that begin several indentations in, or due to changing colours throughout the strings. When printed into the terminal, I have taken significant care to ensure that not a single line of text is longer than 79 characters when displayed.
+
+It is also evident that the "W605 invalid escape sequence" errors are due to the issues I have mentioned above regarding the use of escape characters in the ASCII artwork.
+
+I would absolutely welcome any and all feedback on how I might avoid these kinds of errors whilst also ensuring that the output displayed in the terminal is as visually appealing as intended!
 
 ### **Testing Final Deployed Version**
 
-(mention increased frequency in commits & pushes)
+As I conducted most of my testing through the terminal in Gitpod's VSCode cloud IDE, once I had deployed to Heroku I needed to ensure that my final submitted project was to the highest standard, and optimised specifically for the Heroku virtual platform.
 
-(asking friends to test on local machines & deployed version)
+As a result, after deployment, there was a large increase in the frequency of my commits and pushes to GitHub, to update my code as I went. By doing this, I was able to make minor tweaks such as reducing the size of some graphics, condensing certain text strings, rearranging the layouts of certain outputs, etc, and confirming that everything was outputting properly without interfering with any of the game's logic.
+
+When I was confident that the game was optimised for the Heroku platform, I shared the link with some friends so that they could test it in their browsers. No issues were reported.
+
+Thanks to [**Damon Kreft**](https://github.com/damon-kreft) I was also able to confirm that the game runs perfectly on local machines if this repository is cloned. Damon tested it in Ubuntu's default terminal, and in [Terminator (Linux's Terminal Emulator)](https://gnome-terminator.org/), and in each case the game ran as smoothly, and with no issues.
+
+I am therefore confident that the testing that has been conducted throughout development and post-development has resulted in a stable, robust application that works consistently and without error.
 
 Please click the following link to return to the [**README.md**](README.md) file.
